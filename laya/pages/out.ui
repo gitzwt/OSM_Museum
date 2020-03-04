@@ -1,8 +1,8 @@
 {
     "type":"View",
     "selectedBox":1,
-    "selecteID":11,
-    "props":{"width":1624,"sceneColor":"#000000","sceneBg":"laya/views/out.jpg","height":750},
+    "selecteID":2,
+    "props":{"width":1624,"visible":false,"sceneColor":"#000000","sceneBg":"laya/views/out.jpg","height":750},
     "nodeParent":-1,
     "label":"View",
     "isOpen":true,
@@ -37,7 +37,7 @@
         },
         {
             "type":"Box",
-            "props":{"y":628,"x":996,"width":64,"name":"ar","height":97},
+            "props":{"y":628,"x":996,"width":64,"visible":false,"name":"ar","height":97},
             "nodeParent":1,
             "label":"Box(ar)",
             "isOpen":false,
@@ -100,7 +100,7 @@
             "props":{"y":0,"x":0,"var":"Pearls"},
             "nodeParent":1,
             "label":"Box(Pearls)",
-            "isOpen":true,
+            "isOpen":false,
             "isDirectory":true,
             "isAniNode":true,
             "hasChild":true,
@@ -226,6 +226,150 @@
                     "child":[
                         ]
                 }]
+        },
+        {
+            "type":"Sprite",
+            "props":{"y":0,"x":0,"width":1624,"height":750,"alpha":0.7},
+            "nodeParent":1,
+            "label":"Sprite",
+            "isOpen":false,
+            "isDirectory":true,
+            "isAniNode":true,
+            "hasChild":true,
+            "compId":20,
+            "child":[
+                {
+                    "type":"Rect",
+                    "props":{"width":1624,"lineWidth":1,"height":750,"fillColor":"#000000"},
+                    "nodeParent":20,
+                    "label":"Rect",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":21,
+                    "child":[
+                        ]
+                }]
+        },
+        {
+            "type":"Image",
+            "props":{"y":338,"x":812,"var":"load","skin":"images/loading/loading.png","pivotX":105},
+            "nodeParent":1,
+            "label":"Image(load)",
+            "isDirectory":false,
+            "isAniNode":true,
+            "hasChild":false,
+            "compId":22,
+            "child":[
+                ]
+        },
+        {
+            "type":"Image",
+            "props":{"y":265,"x":334,"skin":"images/loading/1.png","alpha":0},
+            "nodeParent":1,
+            "label":"Image",
+            "isDirectory":false,
+            "isAniNode":true,
+            "hasChild":false,
+            "compId":23,
+            "child":[
+                ]
+        },
+        {
+            "type":"Image",
+            "props":{"y":265,"x":334,"skin":"images/loading/2.png","alpha":0},
+            "nodeParent":1,
+            "label":"Image",
+            "isDirectory":false,
+            "isAniNode":true,
+            "hasChild":false,
+            "compId":24,
+            "child":[
+                ]
+        },
+        {
+            "type":"Image",
+            "props":{"y":265,"x":334,"skin":"images/loading/3.png","alpha":0},
+            "nodeParent":1,
+            "label":"Image",
+            "isDirectory":false,
+            "isAniNode":true,
+            "hasChild":false,
+            "compId":25,
+            "child":[
+                ]
+        },
+        {
+            "type":"Box",
+            "props":{"y":265,"x":334,"alpha":0},
+            "nodeParent":1,
+            "label":"Box",
+            "isOpen":false,
+            "isDirectory":true,
+            "isAniNode":true,
+            "hasChild":true,
+            "compId":27,
+            "child":[
+                {
+                    "type":"Image",
+                    "props":{"skin":"images/loading/4.png"},
+                    "nodeParent":27,
+                    "label":"Image",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":26,
+                    "child":[
+                        ]
+                },
+                {
+                    "type":"Image",
+                    "props":{"y":335,"x":331,"skin":"images/loading/icon.png","alpha":0.9299999999999999},
+                    "nodeParent":27,
+                    "label":"Image",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":28,
+                    "child":[
+                        ]
+                },
+                {
+                    "type":"Image",
+                    "props":{"y":-211,"x":307,"skin":"images/loading/t.png"},
+                    "nodeParent":27,
+                    "label":"Image",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":29,
+                    "child":[
+                        ]
+                }]
+        },
+        {
+            "type":"Sprite",
+            "props":{"y":547,"x":660,"width":297,"var":"openBtn","height":118},
+            "nodeParent":1,
+            "label":"Sprite(openBtn)",
+            "isDirectory":false,
+            "isAniNode":true,
+            "hasChild":false,
+            "compId":30,
+            "child":[
+                ]
+        },
+        {
+            "type":"Sprite",
+            "props":{"y":615,"x":960,"width":144,"var":"enterBtn","height":112},
+            "nodeParent":1,
+            "label":"Sprite(enterBtn)",
+            "isDirectory":false,
+            "isAniNode":true,
+            "hasChild":false,
+            "compId":31,
+            "child":[
+                ]
         }],
     "animations":[
         {
@@ -361,7 +505,7 @@
             "name":"arAnime",
             "id":1,
             "frameRate":24,
-            "action":0
+            "action":2
         },
         {
             "nodes":[
@@ -920,6 +1064,80 @@
             "name":"ppAni",
             "id":2,
             "frameRate":24,
-            "action":0
+            "action":2
+        },
+        {
+            "nodes":[
+                {
+                    "target":22,
+                    "keyframes":{
+                        "alpha":[
+                            {
+                                "value":0.3,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":22,
+                                "key":"alpha",
+                                "index":0
+                            },
+                            {
+                                "value":1,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":22,
+                                "key":"alpha",
+                                "index":10
+                            },
+                            {
+                                "value":0.3,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":22,
+                                "key":"alpha",
+                                "index":20
+                            }]
+                    }
+                }],
+            "name":"loadAni",
+            "id":3,
+            "frameRate":24,
+            "action":2
+        },
+        {
+            "nodes":[
+                {
+                    "target":28,
+                    "keyframes":{
+                        "alpha":[
+                            {
+                                "value":1,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":28,
+                                "key":"alpha",
+                                "index":0
+                            },
+                            {
+                                "value":0.3,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":28,
+                                "key":"alpha",
+                                "index":10
+                            },
+                            {
+                                "value":1,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":28,
+                                "key":"alpha",
+                                "index":20
+                            }]
+                    }
+                }],
+            "name":"tipsAni",
+            "id":4,
+            "frameRate":24,
+            "action":2
         }]
 }
