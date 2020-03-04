@@ -1,8 +1,7 @@
 {
-    "x":0,
     "type":"View",
     "selectedBox":1,
-    "selecteID":1,
+    "selecteID":2,
     "props":{"width":58,"sceneColor":"#000000","height":73},
     "nodeParent":-1,
     "label":"View",
@@ -13,7 +12,6 @@
     "compId":1,
     "child":[
         {
-            "x":15,
             "type":"Box",
             "props":{"y":18.666666666666668,"x":0},
             "nodeParent":1,
@@ -25,9 +23,8 @@
             "compId":5,
             "child":[
                 {
-                    "x":30,
                     "type":"Image",
-                    "props":{"y":0,"x":0,"width":58,"skin":"images/hall/a3.png","height":53,"alpha":0.4},
+                    "props":{"y":0,"x":0,"width":58,"skin":"images/tips/a3.png","height":53,"alpha":0.4},
                     "nodeParent":5,
                     "label":"Image",
                     "isDirectory":false,
@@ -38,9 +35,8 @@
                         ]
                 },
                 {
-                    "x":30,
                     "type":"Image",
-                    "props":{"y":0,"x":0,"width":58,"skin":"images/hall/a2.png","height":53,"alpha":1},
+                    "props":{"y":0,"x":0,"width":58,"skin":"images/tips/a2.png","height":53,"alpha":1},
                     "nodeParent":5,
                     "label":"Image",
                     "isDirectory":false,
@@ -51,9 +47,8 @@
                         ]
                 },
                 {
-                    "x":30,
                     "type":"Image",
-                    "props":{"y":0,"x":0,"width":58,"skin":"images/hall/a1.png","height":53},
+                    "props":{"y":0,"x":0,"width":58,"skin":"images/tips/a1.png","height":53},
                     "nodeParent":5,
                     "label":"Image",
                     "isDirectory":false,
@@ -184,6 +179,6 @@
             "name":"tipsAni",
             "id":1,
             "frameRate":24,
-            "action":0
+            "action":2
         }]
 }
