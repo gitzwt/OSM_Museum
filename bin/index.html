@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset='utf-8' />
-	<title>www.layabox.com</title>
+	<title>欧诗漫</title>
 	<meta name='viewport' content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no'
 	/>
 	<meta name="renderer" content="webkit"/>
@@ -14,42 +14,149 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 	<meta http-equiv='expires' content='0' />
 	<meta http-equiv="Cache-Control" content="no-siteapp"/>
+	<style>
+		*{font-family:'Microsoft YaHei',arial;}
+		aside.turnBoxLandscape{ position:fixed; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,1); z-index:10999; display: none;}
+		aside.turnBoxLandscape>div.lock{ margin: 50px auto 0; width: 50px; height: 50px; background-color: #fff; border-radius: 15px; position: relative; animation: turnLock 3.2s linear infinite both;}
+		aside.turnBoxLandscape>div.lock span{position: absolute; left: 10px; top: 10px; width: 30px; height: 30px;}
+		aside.turnBoxLandscape>div.lock span:nth-child(1){ background-image: url(images/common/turn_unlock.png);background-size: 100%; animation: turnLock1 3.2s linear infinite both;}
+		aside.turnBoxLandscape>div.lock span:nth-child(2){ background-image: url(images/common/turn_lock.png);background-size: 100%; animation: turnLock2 3.2s linear infinite both;}
+		aside.turnBoxLandscape>div.sign{ margin-top: 10px; width: 100%; height: 16px; position: relative;}
+		aside.turnBoxLandscape>div.sign span{ position: absolute; left: 0; top: 0; width: 100%; text-align: center; font-size:16px; color: #fff;}
+		aside.turnBoxLandscape>div.sign span:nth-child(1){ animation: turnSign1 3.2s linear infinite both;}
+		aside.turnBoxLandscape>div.sign span:nth-child(2){ animation: turnSign2 3.2s linear infinite both;}
+		aside.turnBoxLandscape>div.phone{ width: 60px; height: 120px; margin:-10px auto 0; position: relative; transform: rotate(-90deg);}
+		aside.turnBoxLandscape>div.phone img{ width: 100%; height: 100%;}
+		aside.turnBoxLandscape>div.phone i{ position: absolute; left: 50%; top: 48px; width: 30px; margin-left: -15px; height: 22.5px;}
+		aside.turnBoxLandscape>div.phone i.yes{ background-image: url(images/common/turn_yes.png);background-size: 100%; opacity: 0; animation: turnYes 3.2s linear infinite both;}
+		aside.turnBoxLandscape>div.phone i.no{ background-image: url(images/common/turn_no.png);background-size: 100%; opacity: 0; animation: turnNo 3.2s linear infinite both;}
+		aside.turnBoxLandscape>p{ text-align:center; font-size:24px; color:rgba(255,255,255,0.65); margin-top: 10px;}
+
+		@-webkit-keyframes turnLock{
+			0%{ transform: scale(1);}
+			40%{ transform: scale(1);}
+			45%{ transform: scale(1.2);}
+			50%{ transform: scale(1);}
+			90%{ transform: scale(1);}
+			95%{ transform: scale(1.2);}
+			100%{ transform: scale(1);}
+		}
+
+
+		@-webkit-keyframes turnLock1{
+			0%{ transform: rotate(0); opacity: 1;}
+			40%{ transform: rotate(0);  opacity: 1;}
+			45%{ transform: rotate(0); opacity: 0.5;}
+			50%{ transform: rotate(0); opacity: 0;}
+			90%{ transform: rotate(0); opacity: 0;}
+			100%{ transform: rotate(360deg); opacity: 1;}
+		}
+
+		@-webkit-keyframes turnLock2{
+			0%{ transform: rotate(0); opacity: 0;}
+			40%{ transform: rotate(0); opacity: 0;}
+			45%{ transform: rotate(0); opacity: 0.5;}
+			50%{ transform: rotate(0); opacity: 1;}
+			53%{ transform: rotate(-8deg); opacity: 1;}
+			56%{ transform: rotate(6deg); opacity: 1;}
+			59%{ transform: rotate(-4deg); opacity: 1;}
+			62%{ transform: rotate(4deg); opacity: 1;}
+			65%{ transform: rotate(0); opacity: 1;}
+			90%{ transform: rotate(0); opacity: 1;}
+			100%{ transform: rotate(360deg); opacity: 0;}
+		}
+
+		@-webkit-keyframes turnSign1{
+			0%{ opacity: 1;}
+			45%{ opacity: 1;}
+			50%{ opacity: 0;}
+			90%{ opacity: 0;}
+			95%{ opacity: 1;}
+			100%{ opacity: 1;}
+		}
+
+		@-webkit-keyframes turnSign2{
+			0%{  opacity: 0;}
+			45%{ opacity: 0;}
+			50%{ opacity: 1;}
+			90%{ opacity: 1;}
+			95%{ opacity: 0;}
+			100%{ opacity: 0;}
+		}
+
+		@-webkit-keyframes turnYes{
+			0%{ transform: scale(0) rotate(90deg); opacity: 0;}
+			50%{ transform: scale(0) rotate(90deg); opacity: 0;}
+			54%{ transform: scale(1.15) rotate(90deg); opacity: 1;}
+			58%{ transform: scale(0.85) rotate(90deg); opacity: 1;}
+			62%{ transform: scale(1) rotate(90deg); opacity: 1;}
+			80%{ transform: scale(1) rotate(90deg); opacity: 1;}
+			85%{ transform: scale(0) rotate(90deg); opacity: 0;}
+			100%{ transform: scale(0) rotate(90deg); opacity: 0;}
+		}
+
+		@-webkit-keyframes turnNo{
+			0%{ transform: scale(0); opacity: 0;}
+			4%{ transform: scale(1.15); opacity: 1;}
+			8%{ transform: scale(0.85); opacity: 1;}
+			12%{ transform: scale(1); opacity: 1;}
+			30%{ transform: scale(1); opacity: 1;}
+			35%{ transform: scale(0); opacity: 0;}
+			100%{ transform: scale(0); opacity: 0;}
+		}
+
+		/* 页面样式部分 */
+
+		aside{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,0.7);
+			z-index: 9999;
+		}
+		.none{
+			display: none;
+		}
+		.cont{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 7.5rem;
+			height: 7.5rem;
+			transform: translate(-50%,-50%);
+		}
+	</style>
 </head>
 <body>
 	<!--以下引用了常用类库，如果不使用，可以删除-->
 	
 	<!--核心包，封装了显示对象渲染，事件，时间管理，时间轴动画，缓动，消息交互,socket，本地存储，鼠标触摸，声音，加载，颜色滤镜，位图字体等-->
 	<script type="text/javascript" src="libs/laya.core.js"></script>
-	<!--提供了微信小游戏的适配-->
-	<script type="text/javascript" src="libs/laya.wxmini.js"></script>
-	<!--提供了百度小游戏的适配-->
-	<script type="text/javascript" src="libs/laya.bdmini.js"></script>
-	<!--提供了小米小游戏的适配-->
-	<script type="text/javascript" src="libs/laya.xmmini.js"></script>
- 	<!--提供了OPPO小游戏的适配-->
- 	<script type="text/javascript" src="libs/laya.quickgamemini.js"></script>
-	<!--提供了qq小游戏的适配-->
-	<script type="text/javascript" src="libs/laya.qqmini.js"></script>
 	<!--封装了webgl渲染管线，如果使用webgl渲染，可以在初始化时调用Laya.init(1000,800,laya.webgl.WebGL);-->
     <script type="text/javascript" src="libs/laya.webgl.js"></script>
-	<!--提供了VIVO小游戏的适配-->
-	<script type="text/javascript" src="libs/laya.vvmini.js"></script>
 	<!--是动画模块，包含了swf动画，骨骼动画等-->
     <script type="text/javascript" src="libs/laya.ani.js"></script>
-	<!--包含更多webgl滤镜，比如外发光，阴影，模糊以及更多-->
-    <script type="text/javascript" src="libs/laya.filter.js"></script>
-	<!--封装了html动态排版功能-->
-    <script type="text/javascript" src="libs/laya.html.js"></script>
-	<!--粒子类库-->
-    <script type="text/javascript" src="libs/laya.particle.js"></script>
-	<!--提供tileMap解析支持-->
-    <script type="text/javascript" src="libs/laya.tiledmap.js"></script>
+	
 	<!--提供了制作UI的各种组件实现-->
     <script type="text/javascript" src="libs/laya.ui.js"></script>
-	<!--自定义的js(src文件夹下)文件自动添加到下面jsfile模块标签里面里，js的顺序可以手动修改，修改后保留修改的顺序，新增加的js会默认依次追加到标签里-->
-	<!--删除标签，ide不会自动添加js文件，请谨慎操作-->
 	<!--jsfile--startTag-->
-	<script src="../src/LayaSample.js"></script>
+	<script src="../src/plugs/jquery.js"></script>
+	<script src="../src/plugs/API.js"></script>
+	<script src="../src/plugs/monitor.js"></script>
+	<script src="../src/utils/utils.js?v=12"></script>
+	<script src="../src/utils/data.js?v=12"></script>
+	<script src="../src/utils/resource.js?v=12"></script>
+	<script src="../src/ui/layaUI.max.all.js?v=12"></script>
+	<script src="../src/pages/clickTips.js?v=12"></script>
+	<script src="../src/pages/slideTips.js?v=12"></script>
+	<script src="../src/pages/out.js?v=12"></script>
+	<script src="../src/pages/culture.js?v=12"></script>
+	<script src="../src/pages/hall.js?v=12"></script>
+	<script src="../src/pages/lab.js?v=12"></script>
+	<script src="../src/pages/perfection.js?v=12"></script>
+	<script src="../src/index.js?v=12"></script>
 	<!--jsfile--endTag-->
 </body>
 </html>

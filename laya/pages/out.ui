@@ -1,8 +1,9 @@
 {
+    "x":0,
     "type":"View",
-    "selectedBox":1,
-    "selecteID":2,
-    "props":{"width":1624,"visible":false,"sceneColor":"#000000","sceneBg":"laya/views/out.jpg","height":750},
+    "selectedBox":33,
+    "selecteID":22,
+    "props":{"y":520,"x":1037,"width":1624,"visible":true,"sceneColor":"#000000","sceneBg":"laya/views/out.jpg","scaleX":1,"pivotY":520,"pivotX":1037,"height":750},
     "nodeParent":-1,
     "label":"View",
     "isOpen":true,
@@ -12,6 +13,7 @@
     "compId":1,
     "child":[
         {
+            "x":15,
             "type":"Image",
             "props":{"var":"bg","skin":"images/out/bg.jpg","alpha":1},
             "nodeParent":1,
@@ -24,6 +26,7 @@
                 ]
         },
         {
+            "x":15,
             "type":"Image",
             "props":{"y":151,"x":247,"skin":"images/out/word.png","name":"word","alpha":0},
             "nodeParent":1,
@@ -36,8 +39,9 @@
                 ]
         },
         {
+            "x":15,
             "type":"Box",
-            "props":{"y":628,"x":996,"width":64,"visible":false,"name":"ar","height":97},
+            "props":{"y":628,"x":996,"width":64,"visible":false,"var":"ar","height":97,"alpha":0},
             "nodeParent":1,
             "label":"Box(ar)",
             "isOpen":false,
@@ -96,6 +100,7 @@
                 }]
         },
         {
+            "x":15,
             "type":"Box",
             "props":{"y":0,"x":0,"var":"Pearls"},
             "nodeParent":1,
@@ -228,138 +233,7 @@
                 }]
         },
         {
-            "type":"Sprite",
-            "props":{"y":0,"x":0,"width":1624,"height":750,"alpha":0.7},
-            "nodeParent":1,
-            "label":"Sprite",
-            "isOpen":false,
-            "isDirectory":true,
-            "isAniNode":true,
-            "hasChild":true,
-            "compId":20,
-            "child":[
-                {
-                    "type":"Rect",
-                    "props":{"width":1624,"lineWidth":1,"height":750,"fillColor":"#000000"},
-                    "nodeParent":20,
-                    "label":"Rect",
-                    "isDirectory":false,
-                    "isAniNode":true,
-                    "hasChild":false,
-                    "compId":21,
-                    "child":[
-                        ]
-                }]
-        },
-        {
-            "type":"Image",
-            "props":{"y":338,"x":812,"var":"load","skin":"images/loading/loading.png","pivotX":105},
-            "nodeParent":1,
-            "label":"Image(load)",
-            "isDirectory":false,
-            "isAniNode":true,
-            "hasChild":false,
-            "compId":22,
-            "child":[
-                ]
-        },
-        {
-            "type":"Image",
-            "props":{"y":265,"x":334,"skin":"images/loading/1.png","alpha":0},
-            "nodeParent":1,
-            "label":"Image",
-            "isDirectory":false,
-            "isAniNode":true,
-            "hasChild":false,
-            "compId":23,
-            "child":[
-                ]
-        },
-        {
-            "type":"Image",
-            "props":{"y":265,"x":334,"skin":"images/loading/2.png","alpha":0},
-            "nodeParent":1,
-            "label":"Image",
-            "isDirectory":false,
-            "isAniNode":true,
-            "hasChild":false,
-            "compId":24,
-            "child":[
-                ]
-        },
-        {
-            "type":"Image",
-            "props":{"y":265,"x":334,"skin":"images/loading/3.png","alpha":0},
-            "nodeParent":1,
-            "label":"Image",
-            "isDirectory":false,
-            "isAniNode":true,
-            "hasChild":false,
-            "compId":25,
-            "child":[
-                ]
-        },
-        {
-            "type":"Box",
-            "props":{"y":265,"x":334,"alpha":0},
-            "nodeParent":1,
-            "label":"Box",
-            "isOpen":false,
-            "isDirectory":true,
-            "isAniNode":true,
-            "hasChild":true,
-            "compId":27,
-            "child":[
-                {
-                    "type":"Image",
-                    "props":{"skin":"images/loading/4.png"},
-                    "nodeParent":27,
-                    "label":"Image",
-                    "isDirectory":false,
-                    "isAniNode":true,
-                    "hasChild":false,
-                    "compId":26,
-                    "child":[
-                        ]
-                },
-                {
-                    "type":"Image",
-                    "props":{"y":335,"x":331,"skin":"images/loading/icon.png","alpha":0.9299999999999999},
-                    "nodeParent":27,
-                    "label":"Image",
-                    "isDirectory":false,
-                    "isAniNode":true,
-                    "hasChild":false,
-                    "compId":28,
-                    "child":[
-                        ]
-                },
-                {
-                    "type":"Image",
-                    "props":{"y":-211,"x":307,"skin":"images/loading/t.png"},
-                    "nodeParent":27,
-                    "label":"Image",
-                    "isDirectory":false,
-                    "isAniNode":true,
-                    "hasChild":false,
-                    "compId":29,
-                    "child":[
-                        ]
-                }]
-        },
-        {
-            "type":"Sprite",
-            "props":{"y":547,"x":660,"width":297,"var":"openBtn","height":118},
-            "nodeParent":1,
-            "label":"Sprite(openBtn)",
-            "isDirectory":false,
-            "isAniNode":true,
-            "hasChild":false,
-            "compId":30,
-            "child":[
-                ]
-        },
-        {
+            "x":15,
             "type":"Sprite",
             "props":{"y":615,"x":960,"width":144,"var":"enterBtn","height":112},
             "nodeParent":1,
@@ -368,6 +242,158 @@
             "isAniNode":true,
             "hasChild":false,
             "compId":31,
+            "child":[
+                ]
+        },
+        {
+            "x":15,
+            "type":"Box",
+            "props":{"y":0,"x":0,"var":"aside"},
+            "nodeParent":1,
+            "label":"Box(aside)",
+            "isOpen":true,
+            "isDirectory":true,
+            "isAniNode":true,
+            "hasChild":true,
+            "compId":33,
+            "child":[
+                {
+                    "x":30,
+                    "type":"Sprite",
+                    "props":{"y":0,"x":0,"width":1624,"height":750,"alpha":0.7},
+                    "nodeParent":33,
+                    "label":"Sprite",
+                    "isOpen":false,
+                    "isDirectory":true,
+                    "isAniNode":true,
+                    "hasChild":true,
+                    "compId":20,
+                    "child":[
+                        {
+                            "type":"Rect",
+                            "props":{"width":1624,"lineWidth":1,"height":750,"fillColor":"#000000"},
+                            "nodeParent":20,
+                            "label":"Rect",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":21,
+                            "child":[
+                                ]
+                        }]
+                },
+                {
+                    "x":30,
+                    "type":"Image",
+                    "props":{"y":338,"x":812,"var":"load","skin":"images/loading/loading.png","pivotX":105},
+                    "nodeParent":33,
+                    "label":"Image(load)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":22,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Image",
+                    "props":{"y":265,"x":334,"skin":"images/loading/1.png","alpha":0},
+                    "nodeParent":33,
+                    "label":"Image",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":23,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Image",
+                    "props":{"y":265,"x":334,"skin":"images/loading/2.png","alpha":0},
+                    "nodeParent":33,
+                    "label":"Image",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":24,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Image",
+                    "props":{"y":265,"x":334,"skin":"images/loading/3.png","alpha":0},
+                    "nodeParent":33,
+                    "label":"Image",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":25,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Box",
+                    "props":{"y":265,"x":334,"alpha":0},
+                    "nodeParent":33,
+                    "label":"Box",
+                    "isOpen":false,
+                    "isDirectory":true,
+                    "isAniNode":true,
+                    "hasChild":true,
+                    "compId":27,
+                    "child":[
+                        {
+                            "type":"Image",
+                            "props":{"skin":"images/loading/4.png"},
+                            "nodeParent":27,
+                            "label":"Image",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":26,
+                            "child":[
+                                ]
+                        },
+                        {
+                            "type":"Image",
+                            "props":{"y":335,"x":331,"skin":"images/loading/icon.png","alpha":0.9299999999999999},
+                            "nodeParent":27,
+                            "label":"Image",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":28,
+                            "child":[
+                                ]
+                        },
+                        {
+                            "type":"Image",
+                            "props":{"y":-211,"x":307,"skin":"images/loading/t.png"},
+                            "nodeParent":27,
+                            "label":"Image",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":29,
+                            "child":[
+                                ]
+                        }]
+                }]
+        },
+        {
+            "x":15,
+            "type":"Sprite",
+            "props":{"y":547,"x":660,"width":297,"var":"openBtn","height":118},
+            "nodeParent":1,
+            "label":"Sprite(openBtn)",
+            "isDirectory":false,
+            "isAniNode":true,
+            "hasChild":false,
+            "compId":30,
             "child":[
                 ]
         }],
@@ -1139,5 +1165,172 @@
             "id":4,
             "frameRate":24,
             "action":2
+        },
+        {
+            "nodes":[
+                {
+                    "target":23,
+                    "keyframes":{
+                        "alpha":[
+                            {
+                                "value":0,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":23,
+                                "key":"alpha",
+                                "index":0
+                            },
+                            {
+                                "value":1,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":23,
+                                "key":"alpha",
+                                "index":25
+                            },
+                            {
+                                "value":1,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":23,
+                                "key":"alpha",
+                                "index":75
+                            },
+                            {
+                                "value":0,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":23,
+                                "key":"alpha",
+                                "index":100
+                            }]
+                    }
+                },
+                {
+                    "target":24,
+                    "keyframes":{
+                        "alpha":[
+                            {
+                                "value":0,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":24,
+                                "key":"alpha",
+                                "index":0
+                            },
+                            {
+                                "value":0,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":24,
+                                "key":"alpha",
+                                "index":100
+                            },
+                            {
+                                "value":1,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":24,
+                                "key":"alpha",
+                                "index":125
+                            },
+                            {
+                                "value":1,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":24,
+                                "key":"alpha",
+                                "index":175
+                            },
+                            {
+                                "value":0,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":24,
+                                "key":"alpha",
+                                "index":200
+                            }]
+                    }
+                },
+                {
+                    "target":25,
+                    "keyframes":{
+                        "alpha":[
+                            {
+                                "value":0,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":25,
+                                "key":"alpha",
+                                "index":0
+                            },
+                            {
+                                "value":0,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":25,
+                                "key":"alpha",
+                                "index":200
+                            },
+                            {
+                                "value":1,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":25,
+                                "key":"alpha",
+                                "index":225
+                            },
+                            {
+                                "value":1,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":25,
+                                "key":"alpha",
+                                "index":275
+                            },
+                            {
+                                "value":0,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":25,
+                                "key":"alpha",
+                                "index":300
+                            }]
+                    }
+                },
+                {
+                    "target":27,
+                    "keyframes":{
+                        "alpha":[
+                            {
+                                "value":0,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":27,
+                                "key":"alpha",
+                                "index":0
+                            },
+                            {
+                                "value":0,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":27,
+                                "key":"alpha",
+                                "index":300
+                            },
+                            {
+                                "value":1,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":27,
+                                "key":"alpha",
+                                "index":325
+                            }]
+                    }
+                }],
+            "name":"openAni",
+            "id":5,
+            "frameRate":24,
+            "action":0
         }]
 }
