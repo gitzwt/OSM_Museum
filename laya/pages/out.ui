@@ -1,8 +1,8 @@
 {
     "x":0,
     "type":"View",
-    "selectedBox":33,
-    "selecteID":22,
+    "selectedBox":1,
+    "selecteID":30,
     "props":{"y":520,"x":1037,"width":1624,"visible":true,"sceneColor":"#000000","sceneBg":"laya/views/out.jpg","scaleX":1,"pivotY":520,"pivotX":1037,"height":750},
     "nodeParent":-1,
     "label":"View",
@@ -235,7 +235,7 @@
         {
             "x":15,
             "type":"Sprite",
-            "props":{"y":615,"x":960,"width":144,"var":"enterBtn","height":112},
+            "props":{"y":275,"x":824,"width":413,"var":"enterBtn","height":452},
             "nodeParent":1,
             "label":"Sprite(enterBtn)",
             "isDirectory":false,
@@ -243,7 +243,8 @@
             "hasChild":false,
             "compId":31,
             "child":[
-                ]
+                ],
+            "$HIDDEN":true
         },
         {
             "x":15,
@@ -383,19 +384,6 @@
                                 ]
                         }]
                 }]
-        },
-        {
-            "x":15,
-            "type":"Sprite",
-            "props":{"y":547,"x":660,"width":297,"var":"openBtn","height":118},
-            "nodeParent":1,
-            "label":"Sprite(openBtn)",
-            "isDirectory":false,
-            "isAniNode":true,
-            "hasChild":false,
-            "compId":30,
-            "child":[
-                ]
         }],
     "animations":[
         {
@@ -1132,43 +1120,6 @@
         {
             "nodes":[
                 {
-                    "target":28,
-                    "keyframes":{
-                        "alpha":[
-                            {
-                                "value":1,
-                                "tweenMethod":"linearNone",
-                                "tween":true,
-                                "target":28,
-                                "key":"alpha",
-                                "index":0
-                            },
-                            {
-                                "value":0.3,
-                                "tweenMethod":"linearNone",
-                                "tween":true,
-                                "target":28,
-                                "key":"alpha",
-                                "index":10
-                            },
-                            {
-                                "value":1,
-                                "tweenMethod":"linearNone",
-                                "tween":true,
-                                "target":28,
-                                "key":"alpha",
-                                "index":20
-                            }]
-                    }
-                }],
-            "name":"tipsAni",
-            "id":4,
-            "frameRate":24,
-            "action":2
-        },
-        {
-            "nodes":[
-                {
                     "target":23,
                     "keyframes":{
                         "alpha":[
@@ -1186,7 +1137,7 @@
                                 "tween":true,
                                 "target":23,
                                 "key":"alpha",
-                                "index":25
+                                "index":15
                             },
                             {
                                 "value":1,
@@ -1194,7 +1145,7 @@
                                 "tween":true,
                                 "target":23,
                                 "key":"alpha",
-                                "index":75
+                                "index":45
                             },
                             {
                                 "value":0,
@@ -1202,7 +1153,7 @@
                                 "tween":true,
                                 "target":23,
                                 "key":"alpha",
-                                "index":100
+                                "index":60
                             }]
                     }
                 },
@@ -1224,7 +1175,7 @@
                                 "tween":true,
                                 "target":24,
                                 "key":"alpha",
-                                "index":100
+                                "index":60
                             },
                             {
                                 "value":1,
@@ -1232,7 +1183,7 @@
                                 "tween":true,
                                 "target":24,
                                 "key":"alpha",
-                                "index":125
+                                "index":75
                             },
                             {
                                 "value":1,
@@ -1240,7 +1191,7 @@
                                 "tween":true,
                                 "target":24,
                                 "key":"alpha",
-                                "index":175
+                                "index":105
                             },
                             {
                                 "value":0,
@@ -1248,7 +1199,7 @@
                                 "tween":true,
                                 "target":24,
                                 "key":"alpha",
-                                "index":200
+                                "index":120
                             }]
                     }
                 },
@@ -1270,7 +1221,7 @@
                                 "tween":true,
                                 "target":25,
                                 "key":"alpha",
-                                "index":200
+                                "index":120
                             },
                             {
                                 "value":1,
@@ -1278,7 +1229,7 @@
                                 "tween":true,
                                 "target":25,
                                 "key":"alpha",
-                                "index":225
+                                "index":135
                             },
                             {
                                 "value":1,
@@ -1286,7 +1237,7 @@
                                 "tween":true,
                                 "target":25,
                                 "key":"alpha",
-                                "index":275
+                                "index":165
                             },
                             {
                                 "value":0,
@@ -1294,7 +1245,7 @@
                                 "tween":true,
                                 "target":25,
                                 "key":"alpha",
-                                "index":300
+                                "index":180
                             }]
                     }
                 },
@@ -1316,7 +1267,7 @@
                                 "tween":true,
                                 "target":27,
                                 "key":"alpha",
-                                "index":300
+                                "index":180
                             },
                             {
                                 "value":1,
@@ -1324,7 +1275,7 @@
                                 "tween":true,
                                 "target":27,
                                 "key":"alpha",
-                                "index":325
+                                "index":195
                             }]
                     }
                 }],
