@@ -7,6 +7,7 @@ function LayaInit() {
     Laya.stage.alignH = "center";
     Laya.stage.alignV = "center";
     Laya.stage.screenMode = "horizontal";
+    Laya.stage.bgColor = "#ffffff";
     Laya.UIConfig.closeDialogOnSide = false;
     // Laya.URL.basePath = "https://beatsAdgame.beats-digital.com/";
     Laya.loader.load(PreResources, laya.utils.Handler.create(this, loadUIInit), null);
@@ -18,7 +19,7 @@ LayaInit();
  */
 function loadUIInit() {
     CountPageSize();
-    // iOutPage.init();
+    iOutPage.init();
     // Laya.loader.load(Resources, laya.utils.Handler.create(this, loadComplete), laya.utils.Handler.create(this, loadPerUpdate, null, false));
     Laya.loader.load(Resources, laya.utils.Handler.create(this, loadComplete));
 }
@@ -30,8 +31,8 @@ function loadComplete() {
     remUnitConverter(750);
     turnBoxPortraitTips();
     // landscape_lock();
-    // iOutPage.openAnime();
-    DevelopTest();
+    iOutPage.openAnime();
+    // DevelopTest();
     
 }
 
@@ -41,6 +42,7 @@ function loadComplete() {
 function DevelopTest(){
     iHallPage.init();
     // iPerfectionPage.init();
+    // iCulturePage.init();
     // iLabPage.init();
 }
 

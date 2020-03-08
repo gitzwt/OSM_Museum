@@ -1,4 +1,5 @@
 {
+    "x":0,
     "type":"View",
     "selectedBox":1,
     "props":{"width":58,"sceneColor":"#000000","height":73},
@@ -11,6 +12,7 @@
     "compId":1,
     "child":[
         {
+            "x":15,
             "type":"Box",
             "props":{"y":18.666666666666668,"x":0},
             "nodeParent":1,
@@ -22,6 +24,7 @@
             "compId":5,
             "child":[
                 {
+                    "x":30,
                     "type":"Image",
                     "props":{"y":0,"x":0,"width":58,"skin":"images/tips/a3.png","height":53,"alpha":0.4},
                     "nodeParent":5,
@@ -34,6 +37,7 @@
                         ]
                 },
                 {
+                    "x":30,
                     "type":"Image",
                     "props":{"y":0,"x":0,"width":58,"skin":"images/tips/a2.png","height":53,"alpha":1},
                     "nodeParent":5,
@@ -46,6 +50,7 @@
                         ]
                 },
                 {
+                    "x":30,
                     "type":"Image",
                     "props":{"y":0,"x":0,"width":58,"skin":"images/tips/a1.png","height":53},
                     "nodeParent":5,
@@ -141,6 +146,36 @@
                                 "tween":true,
                                 "target":3,
                                 "key":"alpha",
+                                "index":30
+                            }]
+                    }
+                },
+                {
+                    "target":5,
+                    "keyframes":{
+                        "y":[
+                            {
+                                "value":0,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":5,
+                                "key":"y",
+                                "index":0
+                            },
+                            {
+                                "value":20,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":5,
+                                "key":"y",
+                                "index":15
+                            },
+                            {
+                                "value":0,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":5,
+                                "key":"y",
                                 "index":30
                             }]
                     }

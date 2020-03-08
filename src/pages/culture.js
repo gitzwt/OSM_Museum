@@ -9,6 +9,7 @@ var CulturePage = function () {
     var controlFlag = false;
     var clickFlag = false;
     var moveViewFlag = false;
+    var lightAniFlag = true;
     var MoveData;
     var bgWidth = 5320;
 
@@ -105,6 +106,15 @@ var CulturePage = function () {
     function updatePagePos(){
         correctData();
         page.cont.x = pageX;
+
+        if(pageX < -1000  && lightAniFlag){
+            lightAniFlag = false;
+
+            page.lightAni.play(0,false);
+            setTimeout(function(){
+                page.lightAni.play(0,false);
+            },3000);
+        }
     }
 
     /**
@@ -160,6 +170,8 @@ var CulturePage = function () {
         iClickTips.init(page.clickTips);
         tipsFlag = true;
         Laya.stage.addChild(page);
+        pageX = BgPageX + 50;
+        updatePagePos();
     }
 }
 iCulturePage = new CulturePage();

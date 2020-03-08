@@ -151,6 +151,8 @@ var LabPage = function () {
         iClickTips.init(page.clickTips);
         tipsFlag = true;
         Laya.stage.addChild(page);
+        pageX = BgPageX;
+        updatePagePos();
         
         maskInit();
     }
@@ -162,6 +164,10 @@ var LabPage = function () {
         var maskSp = new Laya.Sprite();
         maskSp.loadImage('images/lab/mask.png');
         page.maskSp.mask = maskSp;
+
+        var lightSp = new Laya.Sprite();
+        lightSp.loadImage('images/lab/mask2.png');
+        page.lightSp.mask = lightSp;
     }
 }
 iLabPage = new LabPage();

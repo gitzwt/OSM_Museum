@@ -1,9 +1,9 @@
 {
     "x":0,
     "type":"View",
-    "selectedBox":1,
-    "selecteID":53,
-    "props":{"width":1624,"sceneColor":"#000000","sceneBg":"laya/views/culture.jpg","height":750},
+    "selectedBox":45,
+    "selecteID":47,
+    "props":{"width":5320,"sceneColor":"#000000","sceneBg":"laya/views/culture.jpg","height":750},
     "nodeParent":-1,
     "label":"View",
     "isOpen":true,
@@ -30,7 +30,7 @@
                     "props":{"y":0,"x":0,"name":"bg"},
                     "nodeParent":53,
                     "label":"Box(bg)",
-                    "isOpen":null,
+                    "isOpen":false,
                     "isDirectory":true,
                     "isAniNode":true,
                     "hasChild":true,
@@ -50,7 +50,7 @@
                         },
                         {
                             "type":"Image",
-                            "props":{"x":1773,"skin":"images/culture/bg_02.jpg"},
+                            "props":{"x":1330,"skin":"images/culture/bg_02.jpg"},
                             "nodeParent":52,
                             "label":"Image",
                             "isDirectory":false,
@@ -62,7 +62,7 @@
                         },
                         {
                             "type":"Image",
-                            "props":{"x":3547,"skin":"images/culture/bg_03.jpg"},
+                            "props":{"x":2660,"skin":"images/culture/bg_03.jpg"},
                             "nodeParent":52,
                             "label":"Image",
                             "isDirectory":false,
@@ -71,7 +71,20 @@
                             "compId":51,
                             "child":[
                                 ]
-                        }]
+                        },
+                        {
+                            "type":"Image",
+                            "props":{"y":0,"x":3990,"skin":"images/culture/bg_04.jpg"},
+                            "nodeParent":52,
+                            "label":"Image",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":54,
+                            "child":[
+                                ]
+                        }],
+                    "$HIDDEN":true
                 },
                 {
                     "x":30,
@@ -90,7 +103,7 @@
                             "props":{"y":0,"x":0,"var":"ball"},
                             "nodeParent":11,
                             "label":"Box(ball)",
-                            "isOpen":false,
+                            "isOpen":true,
                             "isDirectory":true,
                             "isAniNode":true,
                             "hasChild":true,
@@ -236,18 +249,19 @@
                     "props":{"y":42,"x":1462,"width":1999,"var":"part2","height":699},
                     "nodeParent":53,
                     "label":"Box(part2)",
-                    "isOpen":false,
+                    "isOpen":true,
                     "isDirectory":true,
                     "isAniNode":true,
                     "hasChild":true,
                     "compId":18,
                     "child":[
                         {
+                            "x":45,
                             "type":"Box",
                             "props":{"y":0,"x":0,"width":1942,"name":"ball","height":680},
                             "nodeParent":18,
                             "label":"Box(ball)",
-                            "isOpen":true,
+                            "isOpen":false,
                             "isDirectory":true,
                             "isAniNode":true,
                             "hasChild":true,
@@ -255,7 +269,7 @@
                             "child":[
                                 {
                                     "type":"Image",
-                                    "props":{"y":303,"x":39,"skin":"images/culture/2/1.png"},
+                                    "props":{"y":304,"x":37,"skin":"images/culture/2/1.png"},
                                     "nodeParent":19,
                                     "label":"Image",
                                     "isDirectory":false,
@@ -267,7 +281,7 @@
                                 },
                                 {
                                     "type":"Image",
-                                    "props":{"y":333,"x":276,"skin":"images/culture/2/2.png"},
+                                    "props":{"y":333,"x":191,"skin":"images/culture/2/2.png"},
                                     "nodeParent":19,
                                     "label":"Image",
                                     "isDirectory":false,
@@ -279,7 +293,7 @@
                                 },
                                 {
                                     "type":"Image",
-                                    "props":{"y":430,"x":1434,"skin":"images/culture/2/3.png"},
+                                    "props":{"y":338,"x":329,"skin":"images/culture/2/3.png"},
                                     "nodeParent":19,
                                     "label":"Image",
                                     "isDirectory":false,
@@ -291,7 +305,7 @@
                                 },
                                 {
                                     "type":"Image",
-                                    "props":{"y":348,"x":1781,"skin":"images/culture/2/4.png"},
+                                    "props":{"y":430,"x":1435,"skin":"images/culture/2/4.png"},
                                     "nodeParent":19,
                                     "label":"Image",
                                     "isDirectory":false,
@@ -300,11 +314,36 @@
                                     "compId":21,
                                     "child":[
                                         ]
+                                },
+                                {
+                                    "type":"Image",
+                                    "props":{"y":462,"x":1618,"skin":"images/culture/2/5.png"},
+                                    "nodeParent":19,
+                                    "label":"Image",
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":55,
+                                    "child":[
+                                        ]
+                                },
+                                {
+                                    "type":"Image",
+                                    "props":{"y":348,"x":1780,"skin":"images/culture/2/6.png"},
+                                    "nodeParent":19,
+                                    "label":"Image",
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":56,
+                                    "child":[
+                                        ]
                                 }]
                         },
                         {
+                            "x":45,
                             "type":"Image",
-                            "props":{"y":-42,"x":197,"skin":"images/culture/2/p.png","alpha":1},
+                            "props":{"y":118,"x":481,"width":534,"skin":"images/culture/2/p.png","height":615,"alpha":1},
                             "nodeParent":18,
                             "label":"Image",
                             "isDirectory":false,
@@ -318,7 +357,7 @@
                 {
                     "x":30,
                     "type":"Box",
-                    "props":{"y":39,"x":3600,"var":"part3"},
+                    "props":{"y":142,"x":3824,"var":"part3","scaleY":0.83,"scaleX":0.83},
                     "nodeParent":53,
                     "label":"Box(part3)",
                     "isOpen":false,
@@ -547,15 +586,16 @@
                     "props":{"y":58,"x":509,"var":"clickTips"},
                     "nodeParent":53,
                     "label":"Box(clickTips)",
-                    "isOpen":false,
+                    "isOpen":true,
                     "isDirectory":true,
                     "isAniNode":true,
                     "hasChild":true,
                     "compId":45,
                     "child":[
                         {
+                            "x":45,
                             "type":"Sprite",
-                            "props":{"y":19,"x":1,"width":58,"height":73},
+                            "props":{"y":30,"x":88,"width":58,"height":73},
                             "nodeParent":45,
                             "label":"Sprite",
                             "isDirectory":false,
@@ -566,8 +606,9 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"Sprite",
-                            "props":{"y":180,"x":4376,"width":58,"rotation":-90,"pivotY":42,"pivotX":29,"height":73},
+                            "props":{"y":245,"x":4382,"width":58,"rotation":90,"pivotY":42,"pivotX":29,"height":73},
                             "nodeParent":45,
                             "label":"Sprite",
                             "isDirectory":false,
@@ -578,8 +619,9 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"Sprite",
-                            "props":{"y":46,"x":1487,"width":58,"height":73},
+                            "props":{"y":184,"x":1716,"width":58,"height":73},
                             "nodeParent":45,
                             "label":"Sprite",
                             "isDirectory":false,
@@ -621,20 +663,37 @@
                                 "index":0
                             },
                             {
-                                "value":295,
+                                "value":310,
                                 "tweenMethod":"linearNone",
                                 "tween":true,
                                 "target":3,
                                 "key":"y",
-                                "index":25
+                                "index":41
                             },
                             {
-                                "value":285,
+                                "value":287,
                                 "tweenMethod":"linearNone",
                                 "tween":true,
                                 "target":3,
                                 "key":"y",
-                                "index":50
+                                "index":74
+                            }],
+                        "x":[
+                            {
+                                "value":1060,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":3,
+                                "key":"x",
+                                "index":0
+                            },
+                            {
+                                "value":1060,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":3,
+                                "key":"x",
+                                "index":74
                             }]
                     }
                 }],
@@ -650,7 +709,7 @@
                     "keyframes":{
                         "y":[
                             {
-                                "value":465,
+                                "value":450,
                                 "tweenMethod":"linearNone",
                                 "tween":true,
                                 "target":4,
@@ -663,15 +722,24 @@
                                 "tween":true,
                                 "target":4,
                                 "key":"y",
-                                "index":20
+                                "index":25
                             },
                             {
-                                "value":465,
+                                "value":450,
                                 "tweenMethod":"linearNone",
                                 "tween":true,
                                 "target":4,
                                 "key":"y",
-                                "index":40
+                                "index":57
+                            }],
+                        "x":[
+                            {
+                                "value":153,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":4,
+                                "key":"x",
+                                "index":0
                             }]
                     }
                 }],
@@ -700,7 +768,7 @@
                                 "tween":true,
                                 "target":5,
                                 "key":"y",
-                                "index":35
+                                "index":40
                             },
                             {
                                 "value":390,
@@ -708,7 +776,16 @@
                                 "tween":true,
                                 "target":5,
                                 "key":"y",
-                                "index":70
+                                "index":80
+                            }],
+                        "x":[
+                            {
+                                "value":966,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":5,
+                                "key":"x",
+                                "index":0
                             }]
                     }
                 }],
@@ -732,12 +809,12 @@
                                 "index":0
                             },
                             {
-                                "value":310,
+                                "value":320,
                                 "tweenMethod":"linearNone",
                                 "tween":true,
                                 "target":6,
                                 "key":"y",
-                                "index":15
+                                "index":20
                             },
                             {
                                 "value":305,
@@ -745,7 +822,7 @@
                                 "tween":true,
                                 "target":6,
                                 "key":"y",
-                                "index":30
+                                "index":40
                             }]
                     }
                 }],
@@ -761,7 +838,7 @@
                     "keyframes":{
                         "y":[
                             {
-                                "value":525,
+                                "value":558,
                                 "tweenMethod":"linearNone",
                                 "tween":true,
                                 "target":7,
@@ -774,15 +851,24 @@
                                 "tween":true,
                                 "target":7,
                                 "key":"y",
-                                "index":17
+                                "index":30
                             },
                             {
-                                "value":525,
+                                "value":558,
                                 "tweenMethod":"linearNone",
                                 "tween":true,
                                 "target":7,
                                 "key":"y",
-                                "index":34
+                                "index":60
+                            }],
+                        "x":[
+                            {
+                                "value":199,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":7,
+                                "key":"x",
+                                "index":0
                             }]
                     }
                 }],
@@ -798,7 +884,7 @@
                     "keyframes":{
                         "y":[
                             {
-                                "value":280,
+                                "value":320,
                                 "tweenMethod":"linearNone",
                                 "tween":true,
                                 "target":8,
@@ -806,20 +892,29 @@
                                 "index":0
                             },
                             {
-                                "value":260,
-                                "tweenMethod":"linearNone",
-                                "tween":true,
-                                "target":8,
-                                "key":"y",
-                                "index":40
-                            },
-                            {
                                 "value":280,
                                 "tweenMethod":"linearNone",
                                 "tween":true,
                                 "target":8,
                                 "key":"y",
-                                "index":80
+                                "index":60
+                            },
+                            {
+                                "value":320,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":8,
+                                "key":"y",
+                                "index":120
+                            }],
+                        "x":[
+                            {
+                                "value":57,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":8,
+                                "key":"x",
+                                "index":0
                             }]
                     }
                 }],
@@ -835,7 +930,7 @@
                     "keyframes":{
                         "y":[
                             {
-                                "value":120,
+                                "value":137,
                                 "tweenMethod":"linearNone",
                                 "tween":true,
                                 "target":9,
@@ -843,20 +938,29 @@
                                 "index":0
                             },
                             {
-                                "value":100,
+                                "value":105,
                                 "tweenMethod":"linearNone",
                                 "tween":true,
                                 "target":9,
                                 "key":"y",
-                                "index":45
+                                "index":55
                             },
                             {
-                                "value":120,
+                                "value":137,
                                 "tweenMethod":"linearNone",
                                 "tween":true,
                                 "target":9,
                                 "key":"y",
-                                "index":90
+                                "index":110
+                            }],
+                        "x":[
+                            {
+                                "value":961,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":9,
+                                "key":"x",
+                                "index":0
                             }]
                     }
                 }],
@@ -1076,36 +1180,6 @@
                                 "index":70
                             }]
                     }
-                },
-                {
-                    "target":20,
-                    "keyframes":{
-                        "y":[
-                            {
-                                "value":430,
-                                "tweenMethod":"linearNone",
-                                "tween":true,
-                                "target":20,
-                                "key":"y",
-                                "index":0
-                            },
-                            {
-                                "value":440,
-                                "tweenMethod":"linearNone",
-                                "tween":true,
-                                "target":20,
-                                "key":"y",
-                                "index":35
-                            },
-                            {
-                                "value":430,
-                                "tweenMethod":"linearNone",
-                                "tween":true,
-                                "target":20,
-                                "key":"y",
-                                "index":70
-                            }]
-                    }
                 }],
             "name":"ani11",
             "id":11,
@@ -1139,36 +1213,6 @@
                                 "tweenMethod":"linearNone",
                                 "tween":true,
                                 "target":17,
-                                "key":"y",
-                                "index":90
-                            }]
-                    }
-                },
-                {
-                    "target":21,
-                    "keyframes":{
-                        "y":[
-                            {
-                                "value":350,
-                                "tweenMethod":"linearNone",
-                                "tween":true,
-                                "target":21,
-                                "key":"y",
-                                "index":0
-                            },
-                            {
-                                "value":330,
-                                "tweenMethod":"linearNone",
-                                "tween":true,
-                                "target":21,
-                                "key":"y",
-                                "index":45
-                            },
-                            {
-                                "value":350,
-                                "tweenMethod":"linearNone",
-                                "tween":true,
-                                "target":21,
                                 "key":"y",
                                 "index":90
                             }]
@@ -1275,10 +1319,10 @@
                             }]
                     }
                 }],
-            "name":"ani13",
+            "name":"lightAni",
             "id":13,
             "frameRate":24,
-            "action":2
+            "action":0
         },
         {
             "nodes":[
@@ -1824,6 +1868,191 @@
                 }],
             "name":"ani22",
             "id":22,
+            "frameRate":24,
+            "action":2
+        },
+        {
+            "nodes":[
+                {
+                    "target":20,
+                    "keyframes":{
+                        "y":[
+                            {
+                                "value":339,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":20,
+                                "key":"y",
+                                "index":0
+                            },
+                            {
+                                "value":350,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":20,
+                                "key":"y",
+                                "index":40
+                            },
+                            {
+                                "value":339,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":20,
+                                "key":"y",
+                                "index":80
+                            }]
+                    }
+                }],
+            "name":"ani23",
+            "id":23,
+            "frameRate":24,
+            "action":2
+        },
+        {
+            "nodes":[
+                {
+                    "target":21,
+                    "keyframes":{
+                        "y":[
+                            {
+                                "value":430,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":21,
+                                "key":"y",
+                                "index":0
+                            },
+                            {
+                                "value":450,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":21,
+                                "key":"y",
+                                "index":40
+                            },
+                            {
+                                "value":430,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":21,
+                                "key":"y",
+                                "index":80
+                            }]
+                    }
+                }],
+            "name":"ani24",
+            "id":24,
+            "frameRate":24,
+            "action":2
+        },
+        {
+            "nodes":[
+                {
+                    "target":55,
+                    "keyframes":{
+                        "y":[
+                            {
+                                "value":460,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":55,
+                                "key":"y",
+                                "index":0
+                            },
+                            {
+                                "value":440,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":55,
+                                "key":"y",
+                                "index":35
+                            },
+                            {
+                                "value":460,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":55,
+                                "key":"y",
+                                "index":70
+                            }]
+                    }
+                }],
+            "name":"ani25",
+            "id":25,
+            "frameRate":24,
+            "action":2
+        },
+        {
+            "nodes":[
+                {
+                    "target":56,
+                    "keyframes":{
+                        "y":[
+                            {
+                                "value":350,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":56,
+                                "key":"y",
+                                "index":0
+                            },
+                            {
+                                "value":370,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":56,
+                                "key":"y",
+                                "index":55
+                            },
+                            {
+                                "value":350,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":56,
+                                "key":"y",
+                                "index":110
+                            }]
+                    }
+                }],
+            "name":"ani26",
+            "id":26,
+            "frameRate":24,
+            "action":2
+        },
+        {
+            "nodes":[
+                {
+                    "target":25,
+                    "keyframes":{
+                        "y":[
+                            {
+                                "value":140,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":25,
+                                "key":"y",
+                                "index":0
+                            },
+                            {
+                                "value":120,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":25,
+                                "key":"y",
+                                "index":65
+                            },
+                            {
+                                "value":140,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":25,
+                                "key":"y",
+                                "index":120
+                            }]
+                    }
+                }],
+            "name":"ani27",
+            "id":27,
             "frameRate":24,
             "action":2
         }]

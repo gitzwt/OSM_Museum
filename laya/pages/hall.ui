@@ -1,9 +1,8 @@
 {
-    "x":0,
     "type":"View",
     "selectedBox":1,
-    "selecteID":115,
-    "props":{"y":750,"x":812,"width":1624,"sceneColor":"#000000","sceneBg":"laya/views/hall.jpg","pivotY":750,"pivotX":812,"height":750},
+    "selecteID":112,
+    "props":{"y":750,"x":812,"width":6494,"sceneColor":"#000000","sceneBg":"laya/views/hall.jpg","pivotY":750,"pivotX":812,"height":1125},
     "nodeParent":-1,
     "label":"View",
     "isOpen":true,
@@ -13,12 +12,11 @@
     "compId":1,
     "child":[
         {
-            "x":15,
             "type":"Box",
-            "props":{"y":0,"x":0,"var":"cont1","scaleY":1.5,"scaleX":1.5},
+            "props":{"y":0,"x":0,"var":"cont","scaleY":1,"scaleX":1},
             "nodeParent":1,
-            "label":"Box(cont1)",
-            "isOpen":false,
+            "label":"Box(cont)",
+            "isOpen":true,
             "isDirectory":true,
             "isAniNode":true,
             "hasChild":true,
@@ -26,10 +24,10 @@
             "child":[
                 {
                     "type":"Box",
-                    "props":{"y":0,"x":0,"name":"bg"},
+                    "props":{"y":375,"x":0,"width":6494,"var":"bg","pivotY":375,"pivotX":0,"height":750},
                     "nodeParent":115,
                     "label":"Box(bg)",
-                    "isOpen":null,
+                    "isOpen":false,
                     "isDirectory":true,
                     "isAniNode":true,
                     "hasChild":true,
@@ -82,107 +80,72 @@
                             "compId":111,
                             "child":[
                                 ]
-                        }]
+                        }],
+                    "$HIDDEN":false
                 },
                 {
                     "type":"Box",
-                    "props":{"y":583,"x":2448,"var":"tips1"},
-                    "nodeParent":115,
-                    "label":"Box(tips1)",
-                    "isOpen":false,
-                    "isDirectory":true,
-                    "isAniNode":true,
-                    "hasChild":true,
-                    "compId":5,
-                    "child":[
-                        {
-                            "type":"Image",
-                            "props":{"x":-3.666666666666667,"width":190,"skin":"images/hall/p1.png","height":103},
-                            "nodeParent":5,
-                            "label":"Image",
-                            "isDirectory":false,
-                            "isAniNode":true,
-                            "hasChild":false,
-                            "compId":3,
-                            "child":[
-                                ]
-                        },
-                        {
-                            "type":"Image",
-                            "props":{"y":0,"x":0,"width":190,"skin":"images/hall/p2.png","height":103},
-                            "nodeParent":5,
-                            "label":"Image",
-                            "isDirectory":false,
-                            "isAniNode":true,
-                            "hasChild":false,
-                            "compId":4,
-                            "child":[
-                                ]
-                        }]
-                },
-                {
-                    "type":"Box",
-                    "props":{"y":436,"x":5144,"name":"arTips"},
-                    "nodeParent":115,
-                    "label":"Box(arTips)",
-                    "isOpen":false,
-                    "isDirectory":true,
-                    "isAniNode":true,
-                    "hasChild":true,
-                    "compId":9,
-                    "child":[
-                        {
-                            "type":"Image",
-                            "props":{"skin":"images/hall/ar1.png"},
-                            "nodeParent":9,
-                            "label":"Image",
-                            "isDirectory":false,
-                            "isAniNode":true,
-                            "hasChild":false,
-                            "compId":6,
-                            "child":[
-                                ]
-                        },
-                        {
-                            "type":"Image",
-                            "props":{"skin":"images/hall/ar2.png"},
-                            "nodeParent":9,
-                            "label":"Image",
-                            "isDirectory":false,
-                            "isAniNode":true,
-                            "hasChild":false,
-                            "compId":7,
-                            "child":[
-                                ]
-                        },
-                        {
-                            "type":"Image",
-                            "props":{"skin":"images/hall/ar3.png"},
-                            "nodeParent":9,
-                            "label":"Image",
-                            "isDirectory":false,
-                            "isAniNode":true,
-                            "hasChild":false,
-                            "compId":8,
-                            "child":[
-                                ]
-                        }]
-                },
-                {
-                    "type":"Box",
-                    "props":{"y":0,"x":0,"name":"part1"},
+                    "props":{"y":0,"x":0,"var":"part1"},
                     "nodeParent":115,
                     "label":"Box(part1)",
-                    "isOpen":false,
+                    "isOpen":true,
                     "isDirectory":true,
                     "isAniNode":true,
                     "hasChild":true,
-                    "compId":43,
+                    "compId":196,
                     "child":[
                         {
+                            "type":"Image",
+                            "props":{"y":184,"x":1974.2,"skin":"images/hall/2/flag.png","name":"flag"},
+                            "nodeParent":196,
+                            "label":"Image(flag)",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":198,
+                            "child":[
+                                ]
+                        },
+                        {
                             "type":"Box",
-                            "props":{"y":37,"x":371,"name":"ship","alpha":1},
-                            "nodeParent":43,
+                            "props":{"y":621,"x":5148.2,"name":"arTips"},
+                            "nodeParent":196,
+                            "label":"Box(arTips)",
+                            "isOpen":false,
+                            "isDirectory":true,
+                            "isAniNode":true,
+                            "hasChild":true,
+                            "compId":9,
+                            "child":[
+                                {
+                                    "type":"Image",
+                                    "props":{"skin":"images/hall/ar1.png"},
+                                    "nodeParent":9,
+                                    "label":"Image",
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":6,
+                                    "child":[
+                                        ]
+                                },
+                                {
+                                    "type":"Image",
+                                    "props":{"skin":"images/hall/ar2.png"},
+                                    "nodeParent":9,
+                                    "label":"Image",
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":7,
+                                    "child":[
+                                        ]
+                                }]
+                        },
+                        {
+                            "type":"Box",
+                            "props":{"y":281,"x":397,"scaleY":0.9,"scaleX":0.9,"name":"ship","alpha":1},
+                            "nodeParent":196,
                             "label":"Box(ship)",
                             "isOpen":false,
                             "isDirectory":true,
@@ -216,7 +179,7 @@
                                 },
                                 {
                                     "type":"Image",
-                                    "props":{"y":431,"x":477,"width":37,"skin":"images/hall/1/z3.png","height":37},
+                                    "props":{"y":435,"x":497,"width":37,"skin":"images/hall/1/z3.png","height":37},
                                     "nodeParent":42,
                                     "label":"Image",
                                     "isDirectory":false,
@@ -242,8 +205,8 @@
                         },
                         {
                             "type":"Box",
-                            "props":{"y":0,"x":0,"name":"Bubbles"},
-                            "nodeParent":43,
+                            "props":{"y":243,"x":47.19999999999999,"scaleY":0.9,"scaleX":0.9,"name":"Bubbles"},
+                            "nodeParent":196,
                             "label":"Box(Bubbles)",
                             "isOpen":false,
                             "isDirectory":true,
@@ -253,7 +216,7 @@
                             "child":[
                                 {
                                     "type":"Image",
-                                    "props":{"y":69,"x":242,"skin":"images/hall/1/p1.png"},
+                                    "props":{"y":71.2,"x":242,"skin":"images/hall/1/p1.png"},
                                     "nodeParent":49,
                                     "label":"Image",
                                     "isDirectory":false,
@@ -302,8 +265,8 @@
                         },
                         {
                             "type":"Box",
-                            "props":{"y":0,"x":0,"name":"Pearl"},
-                            "nodeParent":43,
+                            "props":{"y":237,"x":80.19999999999999,"scaleY":0.9,"scaleX":0.9,"name":"Pearl"},
+                            "nodeParent":196,
                             "label":"Box(Pearl)",
                             "isOpen":false,
                             "isDirectory":true,
@@ -457,33 +420,9 @@
                                 }]
                         },
                         {
-                            "type":"Image",
-                            "props":{"y":208,"x":218,"skin":"images/hall/1/title.png","name":"title"},
-                            "nodeParent":43,
-                            "label":"Image(title)",
-                            "isDirectory":false,
-                            "isAniNode":true,
-                            "hasChild":false,
-                            "compId":64,
-                            "child":[
-                                ]
-                        }]
-                },
-                {
-                    "type":"Box",
-                    "props":{"y":0,"x":1900,"width":1200,"name":"part2","height":750},
-                    "nodeParent":115,
-                    "label":"Box(part2)",
-                    "isOpen":false,
-                    "isDirectory":true,
-                    "isAniNode":true,
-                    "hasChild":true,
-                    "compId":75,
-                    "child":[
-                        {
                             "type":"Box",
-                            "props":{"y":223,"x":385,"name":"shell"},
-                            "nodeParent":75,
+                            "props":{"y":435,"x":2300.2,"scaleY":0.9,"scaleX":0.9,"name":"shell"},
+                            "nodeParent":196,
                             "label":"Box(shell)",
                             "isOpen":false,
                             "isDirectory":true,
@@ -662,9 +601,9 @@
                         },
                         {
                             "type":"Image",
-                            "props":{"y":177,"x":327,"skin":"images/hall/2/t.png"},
-                            "nodeParent":75,
-                            "label":"Image",
+                            "props":{"y":362,"x":2210.2,"skin":"images/hall/2/t.png","name":"title"},
+                            "nodeParent":196,
+                            "label":"Image(title)",
                             "isDirectory":false,
                             "isAniNode":true,
                             "hasChild":false,
@@ -673,33 +612,9 @@
                                 ]
                         },
                         {
-                            "type":"Image",
-                            "props":{"y":381,"x":120,"skin":"images/hall/2/title.png"},
-                            "nodeParent":75,
-                            "label":"Image",
-                            "isDirectory":false,
-                            "isAniNode":true,
-                            "hasChild":false,
-                            "compId":77,
-                            "child":[
-                                ]
-                        }]
-                },
-                {
-                    "type":"Box",
-                    "props":{"y":145,"x":3324,"name":"part3"},
-                    "nodeParent":115,
-                    "label":"Box(part3)",
-                    "isOpen":false,
-                    "isDirectory":true,
-                    "isAniNode":true,
-                    "hasChild":true,
-                    "compId":97,
-                    "child":[
-                        {
                             "type":"Box",
-                            "props":{"y":0,"x":0,"name":"shadows"},
-                            "nodeParent":97,
+                            "props":{"y":330,"x":3307.2,"name":"shadows"},
+                            "nodeParent":196,
                             "label":"Box(shadows)",
                             "isOpen":false,
                             "isDirectory":true,
@@ -721,7 +636,7 @@
                                 },
                                 {
                                     "type":"Image",
-                                    "props":{"y":0,"skin":"images/hall/3/s5.png"},
+                                    "props":{"y":6.75,"skin":"images/hall/3/s5.png"},
                                     "nodeParent":96,
                                     "label":"Image",
                                     "isDirectory":false,
@@ -733,7 +648,7 @@
                                 },
                                 {
                                     "type":"Image",
-                                    "props":{"y":0,"skin":"images/hall/3/s2.png"},
+                                    "props":{"y":5.625,"skin":"images/hall/3/s2.png"},
                                     "nodeParent":96,
                                     "label":"Image",
                                     "isDirectory":false,
@@ -745,7 +660,7 @@
                                 },
                                 {
                                     "type":"Image",
-                                    "props":{"y":0,"skin":"images/hall/3/s4.png"},
+                                    "props":{"y":-2.5,"skin":"images/hall/3/s4.png"},
                                     "nodeParent":96,
                                     "label":"Image",
                                     "isDirectory":false,
@@ -757,7 +672,7 @@
                                 },
                                 {
                                     "type":"Image",
-                                    "props":{"y":0,"skin":"images/hall/3/s3.png"},
+                                    "props":{"y":-13.5,"skin":"images/hall/3/s3.png"},
                                     "nodeParent":96,
                                     "label":"Image",
                                     "isDirectory":false,
@@ -767,23 +682,96 @@
                                     "child":[
                                         ]
                                 }]
+                        }]
+                },
+                {
+                    "type":"Image",
+                    "props":{"y":465,"x":3386,"skin":"images/hall/3/b.png","name":"table"},
+                    "nodeParent":115,
+                    "label":"Image(table)",
+                    "isOpen":true,
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":89,
+                    "child":[
+                        ]
+                },
+                {
+                    "type":"Box",
+                    "props":{"y":0,"x":0,"var":"part2"},
+                    "nodeParent":115,
+                    "label":"Box(part2)",
+                    "isOpen":false,
+                    "isDirectory":true,
+                    "isAniNode":true,
+                    "hasChild":true,
+                    "compId":197,
+                    "child":[
+                        {
+                            "type":"Box",
+                            "props":{"y":783,"x":2469,"var":"tips","scaleY":0.8,"scaleX":0.8},
+                            "nodeParent":197,
+                            "label":"Box(tips)",
+                            "isOpen":false,
+                            "isDirectory":true,
+                            "isAniNode":true,
+                            "hasChild":true,
+                            "compId":5,
+                            "child":[
+                                {
+                                    "type":"Image",
+                                    "props":{"x":-3.666666666666667,"width":190,"skin":"images/hall/p1.png","height":103},
+                                    "nodeParent":5,
+                                    "label":"Image",
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":3,
+                                    "child":[
+                                        ]
+                                },
+                                {
+                                    "type":"Image",
+                                    "props":{"y":0,"x":0,"width":190,"skin":"images/hall/p2.png","height":103},
+                                    "nodeParent":5,
+                                    "label":"Image",
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":4,
+                                    "child":[
+                                        ]
+                                }]
                         },
                         {
                             "type":"Image",
-                            "props":{"y":0,"x":0,"skin":"images/hall/3/b.png"},
-                            "nodeParent":97,
-                            "label":"Image",
+                            "props":{"y":417,"x":207,"width":265,"skin":"images/hall/1/title.png","name":"title","height":264},
+                            "nodeParent":197,
+                            "label":"Image(title)",
                             "isDirectory":false,
                             "isAniNode":true,
                             "hasChild":false,
-                            "compId":89,
+                            "compId":64,
+                            "child":[
+                                ]
+                        },
+                        {
+                            "type":"Image",
+                            "props":{"y":566,"x":2003,"skin":"images/hall/2/title.png","name":"intro"},
+                            "nodeParent":197,
+                            "label":"Image(intro)",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":77,
                             "child":[
                                 ]
                         },
                         {
                             "type":"Box",
-                            "props":{"y":0,"x":0,"name":"shells"},
-                            "nodeParent":97,
+                            "props":{"y":337,"x":3380,"scaleY":0.95,"scaleX":0.95,"name":"shells"},
+                            "nodeParent":197,
                             "label":"Box(shells)",
                             "isOpen":false,
                             "isDirectory":true,
@@ -805,7 +793,7 @@
                                 },
                                 {
                                     "type":"Image",
-                                    "props":{"y":0,"skin":"images/hall/3/2.png"},
+                                    "props":{"y":5.625,"skin":"images/hall/3/2.png"},
                                     "nodeParent":95,
                                     "label":"Image",
                                     "isDirectory":false,
@@ -817,7 +805,7 @@
                                 },
                                 {
                                     "type":"Image",
-                                    "props":{"y":0,"skin":"images/hall/3/3.png"},
+                                    "props":{"y":-25,"x":42,"width":1557,"skin":"images/hall/3/3.png","height":573},
                                     "nodeParent":95,
                                     "label":"Image",
                                     "isDirectory":false,
@@ -829,7 +817,7 @@
                                 },
                                 {
                                     "type":"Image",
-                                    "props":{"y":0,"skin":"images/hall/3/4.png"},
+                                    "props":{"y":-2.5,"skin":"images/hall/3/4.png"},
                                     "nodeParent":95,
                                     "label":"Image",
                                     "isDirectory":false,
@@ -841,7 +829,7 @@
                                 },
                                 {
                                     "type":"Image",
-                                    "props":{"y":0,"skin":"images/hall/3/5.png"},
+                                    "props":{"y":6.75,"skin":"images/hall/3/5.png"},
                                     "nodeParent":95,
                                     "label":"Image",
                                     "isDirectory":false,
@@ -854,8 +842,8 @@
                         },
                         {
                             "type":"Image",
-                            "props":{"y":7,"x":-32,"skin":"images/hall/3/title.png","name":"title"},
-                            "nodeParent":97,
+                            "props":{"y":337,"x":3275,"skin":"images/hall/3/title.png","name":"title"},
+                            "nodeParent":197,
                             "label":"Image(title)",
                             "isDirectory":false,
                             "isAniNode":true,
@@ -863,109 +851,109 @@
                             "compId":98,
                             "child":[
                                 ]
-                        }]
-                },
-                {
-                    "type":"Box",
-                    "props":{"y":57,"x":701,"width":2879,"var":"clickTips1","height":185},
-                    "nodeParent":115,
-                    "label":"Box(clickTips1)",
-                    "isOpen":false,
-                    "isDirectory":true,
-                    "isAniNode":true,
-                    "hasChild":true,
-                    "compId":100,
-                    "child":[
-                        {
-                            "type":"Sprite",
-                            "props":{"y":0,"x":21,"width":58,"height":73},
-                            "nodeParent":100,
-                            "label":"Sprite",
-                            "isDirectory":false,
-                            "isAniNode":true,
-                            "hasChild":false,
-                            "compId":101,
-                            "child":[
-                                ]
                         },
                         {
-                            "type":"Sprite",
-                            "props":{"y":59,"x":1814,"width":58,"height":73},
-                            "nodeParent":100,
-                            "label":"Sprite",
-                            "isDirectory":false,
+                            "type":"Box",
+                            "props":{"y":242,"x":684,"width":2879,"var":"clickTips","height":185},
+                            "nodeParent":197,
+                            "label":"Box(clickTips)",
+                            "isOpen":false,
+                            "isDirectory":true,
                             "isAniNode":true,
-                            "hasChild":false,
-                            "compId":102,
+                            "hasChild":true,
+                            "compId":100,
                             "child":[
-                                ]
-                        },
-                        {
-                            "type":"Sprite",
-                            "props":{"y":193,"x":2718,"width":58,"height":73},
-                            "nodeParent":100,
-                            "label":"Sprite",
-                            "isDirectory":false,
-                            "isAniNode":true,
-                            "hasChild":false,
-                            "compId":103,
-                            "child":[
-                                ]
-                        },
-                        {
-                            "type":"Sprite",
-                            "props":{"y":77,"x":3087,"width":58,"height":73},
-                            "nodeParent":100,
-                            "label":"Sprite",
-                            "isDirectory":false,
-                            "isAniNode":true,
-                            "hasChild":false,
-                            "compId":104,
-                            "child":[
-                                ]
-                        },
-                        {
-                            "type":"Sprite",
-                            "props":{"y":157,"x":3425,"width":58,"height":73},
-                            "nodeParent":100,
-                            "label":"Sprite",
-                            "isDirectory":false,
-                            "isAniNode":true,
-                            "hasChild":false,
-                            "compId":105,
-                            "child":[
-                                ]
-                        },
-                        {
-                            "type":"Sprite",
-                            "props":{"y":47,"x":3661,"width":58,"height":73},
-                            "nodeParent":100,
-                            "label":"Sprite",
-                            "isDirectory":false,
-                            "isAniNode":true,
-                            "hasChild":false,
-                            "compId":106,
-                            "child":[
-                                ]
-                        },
-                        {
-                            "type":"Sprite",
-                            "props":{"y":-9,"x":3961,"width":58,"height":73},
-                            "nodeParent":100,
-                            "label":"Sprite",
-                            "isDirectory":false,
-                            "isAniNode":true,
-                            "hasChild":false,
-                            "compId":107,
-                            "child":[
-                                ]
+                                {
+                                    "type":"Sprite",
+                                    "props":{"y":8,"x":27,"width":58,"height":73},
+                                    "nodeParent":100,
+                                    "label":"Sprite",
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":101,
+                                    "child":[
+                                        ]
+                                },
+                                {
+                                    "type":"Sprite",
+                                    "props":{"y":75,"x":1818,"width":58,"height":73},
+                                    "nodeParent":100,
+                                    "label":"Sprite",
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":102,
+                                    "child":[
+                                        ]
+                                },
+                                {
+                                    "type":"Sprite",
+                                    "props":{"y":-9,"x":2762,"width":58,"height":73},
+                                    "nodeParent":100,
+                                    "label":"Sprite",
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":103,
+                                    "child":[
+                                        ]
+                                },
+                                {
+                                    "type":"Sprite",
+                                    "props":{"y":-9,"x":3158,"width":58,"height":73},
+                                    "nodeParent":100,
+                                    "label":"Sprite",
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":104,
+                                    "child":[
+                                        ]
+                                },
+                                {
+                                    "type":"Sprite",
+                                    "props":{"y":-9,"x":3447,"width":58,"height":73},
+                                    "nodeParent":100,
+                                    "label":"Sprite",
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":105,
+                                    "child":[
+                                        ]
+                                },
+                                {
+                                    "type":"Sprite",
+                                    "props":{"y":-9,"x":3707,"width":58,"height":73},
+                                    "nodeParent":100,
+                                    "label":"Sprite",
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":106,
+                                    "child":[
+                                        ]
+                                },
+                                {
+                                    "type":"Sprite",
+                                    "props":{"y":-9,"x":3961,"width":58,"height":73},
+                                    "nodeParent":100,
+                                    "label":"Sprite",
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":107,
+                                    "child":[
+                                        ]
+                                }]
                         }]
                 },
                 {
                     "type":"Sprite",
-                    "props":{"y":431,"x":5127,"width":511,"var":"nextBtn1","height":281},
+                    "props":{"y":616,"x":5110,"width":511,"var":"nextBtn","height":281},
                     "nodeParent":115,
-                    "label":"Sprite(nextBtn1)",
+                    "label":"Sprite(nextBtn)",
                     "isOpen":true,
                     "isDirectory":false,
                     "isAniNode":true,
@@ -974,971 +962,8 @@
                     "child":[
                         ],
                     "$HIDDEN":true
-                }]
-        },
-        {
-            "x":15,
-            "type":"Box",
-            "props":{"y":0,"x":0,"var":"cont2","scaleY":1.5,"scaleX":1.5},
-            "nodeParent":1,
-            "label":"Box(cont2)",
-            "isOpen":false,
-            "isDirectory":true,
-            "isAniNode":true,
-            "hasChild":true,
-            "compId":116,
-            "child":[
-                {
-                    "type":"Box",
-                    "props":{"y":0,"x":0,"name":"bg"},
-                    "nodeParent":116,
-                    "label":"Box(bg)",
-                    "isOpen":null,
-                    "isDirectory":true,
-                    "isAniNode":true,
-                    "hasChild":true,
-                    "compId":117,
-                    "child":[
-                        {
-                            "type":"Image",
-                            "props":{"skin":"images/hall/bg_01.jpg"},
-                            "nodeParent":117,
-                            "label":"Image",
-                            "isDirectory":false,
-                            "isAniNode":true,
-                            "hasChild":false,
-                            "compId":118,
-                            "child":[
-                                ]
-                        },
-                        {
-                            "type":"Image",
-                            "props":{"x":1624,"skin":"images/hall/bg_02.jpg"},
-                            "nodeParent":117,
-                            "label":"Image",
-                            "isDirectory":false,
-                            "isAniNode":true,
-                            "hasChild":false,
-                            "compId":119,
-                            "child":[
-                                ]
-                        },
-                        {
-                            "type":"Image",
-                            "props":{"x":3247,"skin":"images/hall/bg_03.jpg"},
-                            "nodeParent":117,
-                            "label":"Image",
-                            "isDirectory":false,
-                            "isAniNode":true,
-                            "hasChild":false,
-                            "compId":120,
-                            "child":[
-                                ]
-                        },
-                        {
-                            "type":"Image",
-                            "props":{"x":4871,"skin":"images/hall/bg_04.jpg"},
-                            "nodeParent":117,
-                            "label":"Image",
-                            "isDirectory":false,
-                            "isAniNode":true,
-                            "hasChild":false,
-                            "compId":121,
-                            "child":[
-                                ]
-                        }]
-                },
-                {
-                    "type":"Box",
-                    "props":{"y":583,"x":2448,"var":"tips2"},
-                    "nodeParent":116,
-                    "label":"Box(tips2)",
-                    "isOpen":false,
-                    "isDirectory":true,
-                    "isAniNode":true,
-                    "hasChild":true,
-                    "compId":122,
-                    "child":[
-                        {
-                            "type":"Image",
-                            "props":{"x":-3.666666666666667,"width":190,"skin":"images/hall/p1.png","height":103},
-                            "nodeParent":122,
-                            "label":"Image",
-                            "isDirectory":false,
-                            "isAniNode":true,
-                            "hasChild":false,
-                            "compId":123,
-                            "child":[
-                                ]
-                        },
-                        {
-                            "type":"Image",
-                            "props":{"y":0,"x":0,"width":190,"skin":"images/hall/p2.png","height":103},
-                            "nodeParent":122,
-                            "label":"Image",
-                            "isDirectory":false,
-                            "isAniNode":true,
-                            "hasChild":false,
-                            "compId":124,
-                            "child":[
-                                ]
-                        }]
-                },
-                {
-                    "type":"Box",
-                    "props":{"y":436,"x":5144,"name":"arTips"},
-                    "nodeParent":116,
-                    "label":"Box(arTips)",
-                    "isOpen":false,
-                    "isDirectory":true,
-                    "isAniNode":true,
-                    "hasChild":true,
-                    "compId":125,
-                    "child":[
-                        {
-                            "type":"Image",
-                            "props":{"skin":"images/hall/ar1.png"},
-                            "nodeParent":125,
-                            "label":"Image",
-                            "isDirectory":false,
-                            "isAniNode":true,
-                            "hasChild":false,
-                            "compId":126,
-                            "child":[
-                                ]
-                        },
-                        {
-                            "type":"Image",
-                            "props":{"skin":"images/hall/ar2.png"},
-                            "nodeParent":125,
-                            "label":"Image",
-                            "isDirectory":false,
-                            "isAniNode":true,
-                            "hasChild":false,
-                            "compId":127,
-                            "child":[
-                                ]
-                        },
-                        {
-                            "type":"Image",
-                            "props":{"skin":"images/hall/ar3.png"},
-                            "nodeParent":125,
-                            "label":"Image",
-                            "isDirectory":false,
-                            "isAniNode":true,
-                            "hasChild":false,
-                            "compId":128,
-                            "child":[
-                                ]
-                        }]
-                },
-                {
-                    "type":"Box",
-                    "props":{"y":0,"x":0,"name":"part1"},
-                    "nodeParent":116,
-                    "label":"Box(part1)",
-                    "isOpen":false,
-                    "isDirectory":true,
-                    "isAniNode":true,
-                    "hasChild":true,
-                    "compId":129,
-                    "child":[
-                        {
-                            "type":"Box",
-                            "props":{"y":37,"x":371,"name":"ship","alpha":1},
-                            "nodeParent":129,
-                            "label":"Box(ship)",
-                            "isOpen":false,
-                            "isDirectory":true,
-                            "isAniNode":true,
-                            "hasChild":true,
-                            "compId":130,
-                            "child":[
-                                {
-                                    "type":"Image",
-                                    "props":{"y":0,"x":0,"skin":"images/hall/1/c3.png"},
-                                    "nodeParent":130,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":131,
-                                    "child":[
-                                        ]
-                                },
-                                {
-                                    "type":"Image",
-                                    "props":{"y":418,"x":561,"width":851,"skin":"images/hall/1/c2.png","pivotY":418,"pivotX":561,"height":654},
-                                    "nodeParent":130,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":132,
-                                    "child":[
-                                        ]
-                                },
-                                {
-                                    "type":"Image",
-                                    "props":{"y":431,"x":477,"width":37,"skin":"images/hall/1/z3.png","height":37},
-                                    "nodeParent":130,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":133,
-                                    "child":[
-                                        ]
-                                },
-                                {
-                                    "type":"Image",
-                                    "props":{"y":0,"x":0,"skin":"images/hall/1/c1.png"},
-                                    "nodeParent":130,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":134,
-                                    "child":[
-                                        ]
-                                }],
-                            "$HIDDEN":false
-                        },
-                        {
-                            "type":"Box",
-                            "props":{"y":0,"x":0,"name":"Bubbles"},
-                            "nodeParent":129,
-                            "label":"Box(Bubbles)",
-                            "isOpen":false,
-                            "isDirectory":true,
-                            "isAniNode":true,
-                            "hasChild":true,
-                            "compId":135,
-                            "child":[
-                                {
-                                    "type":"Image",
-                                    "props":{"y":69,"x":242,"skin":"images/hall/1/p1.png"},
-                                    "nodeParent":135,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":136,
-                                    "child":[
-                                        ]
-                                },
-                                {
-                                    "type":"Image",
-                                    "props":{"y":176,"x":391,"skin":"images/hall/1/p2.png"},
-                                    "nodeParent":135,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":137,
-                                    "child":[
-                                        ]
-                                },
-                                {
-                                    "type":"Image",
-                                    "props":{"y":558,"x":378,"skin":"images/hall/1/p3.png"},
-                                    "nodeParent":135,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":138,
-                                    "child":[
-                                        ]
-                                },
-                                {
-                                    "type":"Image",
-                                    "props":{"y":536,"x":1247,"skin":"images/hall/1/p5.png"},
-                                    "nodeParent":135,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":139,
-                                    "child":[
-                                        ]
-                                }]
-                        },
-                        {
-                            "type":"Box",
-                            "props":{"y":0,"x":0,"name":"Pearl"},
-                            "nodeParent":129,
-                            "label":"Box(Pearl)",
-                            "isOpen":false,
-                            "isDirectory":true,
-                            "isAniNode":true,
-                            "hasChild":true,
-                            "compId":140,
-                            "child":[
-                                {
-                                    "type":"Image",
-                                    "props":{"y":95,"x":534,"width":49,"skin":"images/hall/1/z3.png","height":49},
-                                    "nodeParent":140,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":141,
-                                    "child":[
-                                        ]
-                                },
-                                {
-                                    "type":"Image",
-                                    "props":{"y":496,"x":735,"skin":"images/hall/1/z6.png"},
-                                    "nodeParent":140,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":142,
-                                    "child":[
-                                        ]
-                                },
-                                {
-                                    "type":"Image",
-                                    "props":{"y":477,"x":974,"skin":"images/hall/1/z8.png"},
-                                    "nodeParent":140,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":143,
-                                    "child":[
-                                        ]
-                                },
-                                {
-                                    "type":"Image",
-                                    "props":{"y":469,"x":1023,"skin":"images/hall/1/z9.png"},
-                                    "nodeParent":140,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":144,
-                                    "child":[
-                                        ]
-                                },
-                                {
-                                    "type":"Image",
-                                    "props":{"y":344,"x":703,"skin":"images/hall/1/z3.png"},
-                                    "nodeParent":140,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":145,
-                                    "child":[
-                                        ]
-                                },
-                                {
-                                    "type":"Image",
-                                    "props":{"y":534,"x":1076,"width":64,"skin":"images/hall/1/z9.png","height":64},
-                                    "nodeParent":140,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":146,
-                                    "child":[
-                                        ]
-                                },
-                                {
-                                    "type":"Image",
-                                    "props":{"y":515,"x":1117,"width":21,"skin":"images/hall/1/z6.png","height":21},
-                                    "nodeParent":140,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":147,
-                                    "child":[
-                                        ]
-                                },
-                                {
-                                    "type":"Image",
-                                    "props":{"y":402,"x":585,"width":24,"skin":"images/hall/1/z6.png","height":24},
-                                    "nodeParent":140,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":148,
-                                    "child":[
-                                        ]
-                                },
-                                {
-                                    "type":"Image",
-                                    "props":{"y":494,"x":907,"width":19,"skin":"images/hall/1/z6.png","height":19},
-                                    "nodeParent":140,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":149,
-                                    "child":[
-                                        ]
-                                },
-                                {
-                                    "type":"Image",
-                                    "props":{"y":475,"x":729,"width":13,"skin":"images/hall/1/z8.png","height":12},
-                                    "nodeParent":140,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":150,
-                                    "child":[
-                                        ]
-                                },
-                                {
-                                    "type":"Image",
-                                    "props":{"y":488,"x":952,"width":13,"skin":"images/hall/1/z8.png","height":12},
-                                    "nodeParent":140,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":151,
-                                    "child":[
-                                        ]
-                                },
-                                {
-                                    "type":"Image",
-                                    "props":{"y":413,"x":768,"width":15,"skin":"images/hall/1/z8.png","height":14},
-                                    "nodeParent":140,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":152,
-                                    "child":[
-                                        ]
-                                }]
-                        },
-                        {
-                            "type":"Image",
-                            "props":{"y":208,"x":218,"skin":"images/hall/1/title.png","name":"title"},
-                            "nodeParent":129,
-                            "label":"Image(title)",
-                            "isDirectory":false,
-                            "isAniNode":true,
-                            "hasChild":false,
-                            "compId":153,
-                            "child":[
-                                ]
-                        }]
-                },
-                {
-                    "type":"Box",
-                    "props":{"y":0,"x":1900,"width":1200,"name":"part2","height":750},
-                    "nodeParent":116,
-                    "label":"Box(part2)",
-                    "isOpen":false,
-                    "isDirectory":true,
-                    "isAniNode":true,
-                    "hasChild":true,
-                    "compId":154,
-                    "child":[
-                        {
-                            "type":"Box",
-                            "props":{"y":223,"x":385,"name":"shell"},
-                            "nodeParent":154,
-                            "label":"Box(shell)",
-                            "isOpen":false,
-                            "isDirectory":true,
-                            "isAniNode":true,
-                            "hasChild":true,
-                            "compId":155,
-                            "child":[
-                                {
-                                    "type":"Image",
-                                    "props":{"y":0,"x":0,"skin":"images/hall/2/b2.png"},
-                                    "nodeParent":155,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":156,
-                                    "child":[
-                                        ]
-                                },
-                                {
-                                    "type":"Image",
-                                    "props":{"y":0,"skin":"images/hall/2/1.png"},
-                                    "nodeParent":155,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":157,
-                                    "child":[
-                                        ]
-                                },
-                                {
-                                    "type":"Image",
-                                    "props":{"y":0,"skin":"images/hall/2/2.png"},
-                                    "nodeParent":155,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":158,
-                                    "child":[
-                                        ]
-                                },
-                                {
-                                    "type":"Image",
-                                    "props":{"y":-2,"skin":"images/hall/2/3.png"},
-                                    "nodeParent":155,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":159,
-                                    "child":[
-                                        ]
-                                },
-                                {
-                                    "type":"Image",
-                                    "props":{"y":0,"skin":"images/hall/2/4.png"},
-                                    "nodeParent":155,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":160,
-                                    "child":[
-                                        ]
-                                },
-                                {
-                                    "type":"Image",
-                                    "props":{"y":0,"skin":"images/hall/2/5.png"},
-                                    "nodeParent":155,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":161,
-                                    "child":[
-                                        ]
-                                },
-                                {
-                                    "type":"Image",
-                                    "props":{"y":0,"skin":"images/hall/2/6.png"},
-                                    "nodeParent":155,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":162,
-                                    "child":[
-                                        ]
-                                },
-                                {
-                                    "type":"Image",
-                                    "props":{"y":0,"x":0,"skin":"images/hall/2/b1.png"},
-                                    "nodeParent":155,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":163,
-                                    "child":[
-                                        ]
-                                },
-                                {
-                                    "type":"Image",
-                                    "props":{"y":105,"x":349,"skin":"images/hall/2/light.png"},
-                                    "nodeParent":155,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":164,
-                                    "child":[
-                                        ]
-                                },
-                                {
-                                    "type":"Image",
-                                    "props":{"y":114,"x":278,"skin":"images/hall/2/light.png","alpha":0},
-                                    "nodeParent":155,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":165,
-                                    "child":[
-                                        ]
-                                },
-                                {
-                                    "type":"Image",
-                                    "props":{"y":106,"x":134,"skin":"images/hall/2/light.png","alpha":0},
-                                    "nodeParent":155,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":166,
-                                    "child":[
-                                        ]
-                                },
-                                {
-                                    "type":"Image",
-                                    "props":{"y":121,"x":64,"skin":"images/hall/2/light.png","alpha":0},
-                                    "nodeParent":155,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":167,
-                                    "child":[
-                                        ]
-                                },
-                                {
-                                    "type":"Image",
-                                    "props":{"y":137,"x":455,"skin":"images/hall/2/light.png","alpha":0},
-                                    "nodeParent":155,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":168,
-                                    "child":[
-                                        ]
-                                },
-                                {
-                                    "type":"Image",
-                                    "props":{"y":175,"x":419,"skin":"images/hall/2/light.png","alpha":0},
-                                    "nodeParent":155,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":169,
-                                    "child":[
-                                        ]
-                                }]
-                        },
-                        {
-                            "type":"Image",
-                            "props":{"y":177,"x":327,"skin":"images/hall/2/t.png"},
-                            "nodeParent":154,
-                            "label":"Image",
-                            "isDirectory":false,
-                            "isAniNode":true,
-                            "hasChild":false,
-                            "compId":170,
-                            "child":[
-                                ]
-                        },
-                        {
-                            "type":"Image",
-                            "props":{"y":381,"x":120,"skin":"images/hall/2/title.png"},
-                            "nodeParent":154,
-                            "label":"Image",
-                            "isDirectory":false,
-                            "isAniNode":true,
-                            "hasChild":false,
-                            "compId":171,
-                            "child":[
-                                ]
-                        }]
-                },
-                {
-                    "type":"Box",
-                    "props":{"y":145,"x":3324,"name":"part3"},
-                    "nodeParent":116,
-                    "label":"Box(part3)",
-                    "isOpen":false,
-                    "isDirectory":true,
-                    "isAniNode":true,
-                    "hasChild":true,
-                    "compId":172,
-                    "child":[
-                        {
-                            "type":"Box",
-                            "props":{"y":0,"x":0,"name":"shadows"},
-                            "nodeParent":172,
-                            "label":"Box(shadows)",
-                            "isOpen":false,
-                            "isDirectory":true,
-                            "isAniNode":true,
-                            "hasChild":true,
-                            "compId":173,
-                            "child":[
-                                {
-                                    "type":"Image",
-                                    "props":{"y":0,"skin":"images/hall/3/s1.png"},
-                                    "nodeParent":173,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":174,
-                                    "child":[
-                                        ]
-                                },
-                                {
-                                    "type":"Image",
-                                    "props":{"y":0,"skin":"images/hall/3/s5.png"},
-                                    "nodeParent":173,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":175,
-                                    "child":[
-                                        ]
-                                },
-                                {
-                                    "type":"Image",
-                                    "props":{"y":0,"skin":"images/hall/3/s2.png"},
-                                    "nodeParent":173,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":176,
-                                    "child":[
-                                        ]
-                                },
-                                {
-                                    "type":"Image",
-                                    "props":{"y":0,"skin":"images/hall/3/s4.png"},
-                                    "nodeParent":173,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":177,
-                                    "child":[
-                                        ]
-                                },
-                                {
-                                    "type":"Image",
-                                    "props":{"y":0,"skin":"images/hall/3/s3.png"},
-                                    "nodeParent":173,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":178,
-                                    "child":[
-                                        ]
-                                }]
-                        },
-                        {
-                            "type":"Image",
-                            "props":{"y":0,"x":0,"skin":"images/hall/3/b.png"},
-                            "nodeParent":172,
-                            "label":"Image",
-                            "isDirectory":false,
-                            "isAniNode":true,
-                            "hasChild":false,
-                            "compId":179,
-                            "child":[
-                                ]
-                        },
-                        {
-                            "type":"Box",
-                            "props":{"y":0,"x":0,"name":"shells"},
-                            "nodeParent":172,
-                            "label":"Box(shells)",
-                            "isOpen":false,
-                            "isDirectory":true,
-                            "isAniNode":true,
-                            "hasChild":true,
-                            "compId":180,
-                            "child":[
-                                {
-                                    "type":"Image",
-                                    "props":{"y":0,"skin":"images/hall/3/1.png"},
-                                    "nodeParent":180,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":181,
-                                    "child":[
-                                        ]
-                                },
-                                {
-                                    "type":"Image",
-                                    "props":{"y":0,"skin":"images/hall/3/2.png"},
-                                    "nodeParent":180,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":182,
-                                    "child":[
-                                        ]
-                                },
-                                {
-                                    "type":"Image",
-                                    "props":{"y":0,"skin":"images/hall/3/3.png"},
-                                    "nodeParent":180,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":183,
-                                    "child":[
-                                        ]
-                                },
-                                {
-                                    "type":"Image",
-                                    "props":{"y":0,"skin":"images/hall/3/4.png"},
-                                    "nodeParent":180,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":184,
-                                    "child":[
-                                        ]
-                                },
-                                {
-                                    "type":"Image",
-                                    "props":{"y":0,"skin":"images/hall/3/5.png"},
-                                    "nodeParent":180,
-                                    "label":"Image",
-                                    "isDirectory":false,
-                                    "isAniNode":true,
-                                    "hasChild":false,
-                                    "compId":185,
-                                    "child":[
-                                        ]
-                                }]
-                        },
-                        {
-                            "type":"Image",
-                            "props":{"y":7,"x":-32,"skin":"images/hall/3/title.png","name":"title"},
-                            "nodeParent":172,
-                            "label":"Image(title)",
-                            "isDirectory":false,
-                            "isAniNode":true,
-                            "hasChild":false,
-                            "compId":186,
-                            "child":[
-                                ]
-                        }]
-                },
-                {
-                    "type":"Box",
-                    "props":{"y":57,"x":701,"width":2879,"var":"clickTips2","height":185},
-                    "nodeParent":116,
-                    "label":"Box(clickTips2)",
-                    "isOpen":false,
-                    "isDirectory":true,
-                    "isAniNode":true,
-                    "hasChild":true,
-                    "compId":187,
-                    "child":[
-                        {
-                            "type":"Sprite",
-                            "props":{"y":0,"x":21,"width":58,"height":73},
-                            "nodeParent":187,
-                            "label":"Sprite",
-                            "isDirectory":false,
-                            "isAniNode":true,
-                            "hasChild":false,
-                            "compId":188,
-                            "child":[
-                                ]
-                        },
-                        {
-                            "type":"Sprite",
-                            "props":{"y":59,"x":1814,"width":58,"height":73},
-                            "nodeParent":187,
-                            "label":"Sprite",
-                            "isDirectory":false,
-                            "isAniNode":true,
-                            "hasChild":false,
-                            "compId":189,
-                            "child":[
-                                ]
-                        },
-                        {
-                            "type":"Sprite",
-                            "props":{"y":193,"x":2718,"width":58,"height":73},
-                            "nodeParent":187,
-                            "label":"Sprite",
-                            "isDirectory":false,
-                            "isAniNode":true,
-                            "hasChild":false,
-                            "compId":190,
-                            "child":[
-                                ]
-                        },
-                        {
-                            "type":"Sprite",
-                            "props":{"y":77,"x":3087,"width":58,"height":73},
-                            "nodeParent":187,
-                            "label":"Sprite",
-                            "isDirectory":false,
-                            "isAniNode":true,
-                            "hasChild":false,
-                            "compId":191,
-                            "child":[
-                                ]
-                        },
-                        {
-                            "type":"Sprite",
-                            "props":{"y":157,"x":3425,"width":58,"height":73},
-                            "nodeParent":187,
-                            "label":"Sprite",
-                            "isDirectory":false,
-                            "isAniNode":true,
-                            "hasChild":false,
-                            "compId":192,
-                            "child":[
-                                ]
-                        },
-                        {
-                            "type":"Sprite",
-                            "props":{"y":47,"x":3661,"width":58,"height":73},
-                            "nodeParent":187,
-                            "label":"Sprite",
-                            "isDirectory":false,
-                            "isAniNode":true,
-                            "hasChild":false,
-                            "compId":193,
-                            "child":[
-                                ]
-                        },
-                        {
-                            "type":"Sprite",
-                            "props":{"y":-9,"x":3961,"width":58,"height":73},
-                            "nodeParent":187,
-                            "label":"Sprite",
-                            "isDirectory":false,
-                            "isAniNode":true,
-                            "hasChild":false,
-                            "compId":194,
-                            "child":[
-                                ]
-                        }]
-                },
-                {
-                    "type":"Sprite",
-                    "props":{"y":431,"x":5127,"width":511,"var":"nextBtn2","height":281},
-                    "nodeParent":116,
-                    "label":"Sprite(nextBtn2)",
-                    "isOpen":true,
-                    "isDirectory":false,
-                    "isAniNode":true,
-                    "hasChild":false,
-                    "compId":195,
-                    "child":[
-                        ],
-                    "$HIDDEN":true
-                }]
+                }],
+            "$HIDDEN":false
         }],
     "animations":[
         {
@@ -1981,77 +1006,23 @@
         {
             "nodes":[
                 {
-                    "target":6,
-                    "keyframes":{
-                        "x":[
-                            {
-                                "value":0,
-                                "tweenMethod":"linearNone",
-                                "tween":true,
-                                "target":6,
-                                "key":"x",
-                                "index":0
-                            },
-                            {
-                                "value":25,
-                                "tweenMethod":"linearNone",
-                                "tween":true,
-                                "target":6,
-                                "key":"x",
-                                "index":8
-                            },
-                            {
-                                "value":25,
-                                "tweenMethod":"linearNone",
-                                "tween":true,
-                                "target":6,
-                                "key":"x",
-                                "index":25
-                            },
-                            {
-                                "value":0,
-                                "tweenMethod":"linearNone",
-                                "tween":true,
-                                "target":6,
-                                "key":"x",
-                                "index":30
-                            }]
-                    }
-                },
-                {
                     "target":7,
                     "keyframes":{
-                        "x":[
+                        "alpha":[
                             {
                                 "value":0,
                                 "tweenMethod":"linearNone",
                                 "tween":true,
                                 "target":7,
-                                "key":"x",
+                                "key":"alpha",
                                 "index":0
                             },
                             {
-                                "value":0,
+                                "value":1,
                                 "tweenMethod":"linearNone",
                                 "tween":true,
                                 "target":7,
-                                "key":"x",
-                                "index":5
-                            },
-                            {
-                                "value":25,
-                                "tweenMethod":"linearNone",
-                                "tween":true,
-                                "target":7,
-                                "key":"x",
-                                "index":13
-                            },
-                            {
-                                "value":25,
-                                "tweenMethod":"linearNone",
-                                "tween":true,
-                                "target":7,
-                                "key":"x",
+                                "key":"alpha",
                                 "index":25
                             },
                             {
@@ -2059,54 +1030,8 @@
                                 "tweenMethod":"linearNone",
                                 "tween":true,
                                 "target":7,
-                                "key":"x",
-                                "index":30
-                            }]
-                    }
-                },
-                {
-                    "target":8,
-                    "keyframes":{
-                        "x":[
-                            {
-                                "value":0,
-                                "tweenMethod":"linearNone",
-                                "tween":true,
-                                "target":8,
-                                "key":"x",
-                                "index":0
-                            },
-                            {
-                                "value":0,
-                                "tweenMethod":"linearNone",
-                                "tween":true,
-                                "target":8,
-                                "key":"x",
-                                "index":10
-                            },
-                            {
-                                "value":25,
-                                "tweenMethod":"linearNone",
-                                "tween":true,
-                                "target":8,
-                                "key":"x",
-                                "index":18
-                            },
-                            {
-                                "value":25,
-                                "tweenMethod":"linearNone",
-                                "tween":true,
-                                "target":8,
-                                "key":"x",
-                                "index":25
-                            },
-                            {
-                                "value":0,
-                                "tweenMethod":"linearNone",
-                                "tween":true,
-                                "target":8,
-                                "key":"x",
-                                "index":30
+                                "key":"alpha",
+                                "index":50
                             }]
                     }
                 }],
@@ -2135,7 +1060,7 @@
                                 "tween":true,
                                 "target":40,
                                 "key":"y",
-                                "index":30
+                                "index":51
                             },
                             {
                                 "value":418,
@@ -2143,7 +1068,7 @@
                                 "tween":true,
                                 "target":40,
                                 "key":"y",
-                                "index":60
+                                "index":101
                             }],
                         "rotation":[
                             {
@@ -2160,7 +1085,7 @@
                                 "tween":true,
                                 "target":40,
                                 "key":"rotation",
-                                "index":15
+                                "index":25
                             },
                             {
                                 "value":1,
@@ -2168,7 +1093,7 @@
                                 "tween":true,
                                 "target":40,
                                 "key":"rotation",
-                                "index":30
+                                "index":51
                             },
                             {
                                 "value":-1,
@@ -2176,7 +1101,7 @@
                                 "tween":true,
                                 "target":40,
                                 "key":"rotation",
-                                "index":45
+                                "index":75
                             },
                             {
                                 "value":0,
@@ -2184,7 +1109,7 @@
                                 "tween":true,
                                 "target":40,
                                 "key":"rotation",
-                                "index":60
+                                "index":101
                             }]
                     }
                 }],
@@ -2492,36 +1417,6 @@
                                 "target":67,
                                 "key":"y",
                                 "index":70
-                            }]
-                    }
-                },
-                {
-                    "target":68,
-                    "keyframes":{
-                        "y":[
-                            {
-                                "value":0,
-                                "tweenMethod":"linearNone",
-                                "tween":true,
-                                "target":68,
-                                "key":"y",
-                                "index":0
-                            },
-                            {
-                                "value":-30,
-                                "tweenMethod":"linearNone",
-                                "tween":true,
-                                "target":68,
-                                "key":"y",
-                                "index":30
-                            },
-                            {
-                                "value":0,
-                                "tweenMethod":"linearNone",
-                                "tween":true,
-                                "target":68,
-                                "key":"y",
-                                "index":60
                             }]
                     }
                 },
@@ -2966,7 +1861,7 @@
                                 "index":0
                             },
                             {
-                                "value":80,
+                                "value":90,
                                 "tweenMethod":"linearNone",
                                 "tween":true,
                                 "target":44,
@@ -3003,7 +1898,7 @@
                                 "index":0
                             },
                             {
-                                "value":160,
+                                "value":150,
                                 "tweenMethod":"linearNone",
                                 "tween":true,
                                 "target":45,
@@ -3040,12 +1935,12 @@
                                 "index":0
                             },
                             {
-                                "value":570,
+                                "value":590,
                                 "tweenMethod":"linearNone",
                                 "tween":true,
                                 "target":46,
                                 "key":"y",
-                                "index":25
+                                "index":35
                             },
                             {
                                 "value":560,
@@ -3053,7 +1948,7 @@
                                 "tween":true,
                                 "target":46,
                                 "key":"y",
-                                "index":50
+                                "index":70
                             }]
                     }
                 }],
@@ -3077,12 +1972,12 @@
                                 "index":0
                             },
                             {
-                                "value":540,
+                                "value":560,
                                 "tweenMethod":"linearNone",
                                 "tween":true,
                                 "target":48,
                                 "key":"y",
-                                "index":10
+                                "index":19
                             },
                             {
                                 "value":535,
@@ -3090,7 +1985,7 @@
                                 "tween":true,
                                 "target":48,
                                 "key":"y",
-                                "index":20
+                                "index":35
                             }]
                     }
                 }],
@@ -3512,6 +2407,117 @@
                 }],
             "name":"bubbleAni12",
             "id":19,
+            "frameRate":24,
+            "action":2
+        },
+        {
+            "nodes":[
+                {
+                    "target":9,
+                    "keyframes":{
+                        "x":[
+                            {
+                                "value":5166,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":9,
+                                "key":"x",
+                                "index":0
+                            },
+                            {
+                                "value":5230,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":9,
+                                "key":"x",
+                                "index":15
+                            },
+                            {
+                                "value":5166,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":9,
+                                "key":"x",
+                                "index":30
+                            }]
+                    }
+                }],
+            "name":"ani20",
+            "id":20,
+            "frameRate":24,
+            "action":2
+        },
+        {
+            "nodes":[
+                {
+                    "target":57,
+                    "keyframes":{
+                        "y":[
+                            {
+                                "value":436,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":57,
+                                "key":"y",
+                                "index":0
+                            },
+                            {
+                                "value":425,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":57,
+                                "key":"y",
+                                "index":20
+                            },
+                            {
+                                "value":436,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":57,
+                                "key":"y",
+                                "index":40
+                            }]
+                    }
+                }],
+            "name":"ani21",
+            "id":21,
+            "frameRate":24,
+            "action":2
+        },
+        {
+            "nodes":[
+                {
+                    "target":68,
+                    "keyframes":{
+                        "y":[
+                            {
+                                "value":0,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":68,
+                                "key":"y",
+                                "index":0
+                            },
+                            {
+                                "value":-40,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":68,
+                                "key":"y",
+                                "index":30
+                            },
+                            {
+                                "value":0,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":68,
+                                "key":"y",
+                                "index":60
+                            }]
+                    }
+                }],
+            "name":"ani22",
+            "id":22,
             "frameRate":24,
             "action":2
         }]

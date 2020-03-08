@@ -166,6 +166,8 @@ var PerfectionPage = function () {
         iClickTips.init(page.clickTips);
         tipsFlag = true;
         Laya.stage.addChild(page);
+        pageX = BgPageX - 20;
+        updatePagePos();
     }
 }
 iPerfectionPage = new PerfectionPage();

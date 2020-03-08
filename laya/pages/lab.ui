@@ -1,8 +1,8 @@
 {
     "type":"View",
     "selectedBox":1,
-    "selecteID":17,
-    "props":{"width":1624,"sceneColor":"#000000","sceneBg":"laya/views/lab.jpg","height":750},
+    "selecteID":43,
+    "props":{"width":3248,"sceneColor":"#000000","sceneBg":"laya/views/lab.jpg","height":750},
     "nodeParent":-1,
     "label":"View",
     "isOpen":true,
@@ -56,11 +56,86 @@
                             "compId":26,
                             "child":[
                                 ]
-                        }]
+                        }],
+                    "$HIDDEN":true
                 },
                 {
                     "type":"Box",
-                    "props":{"y":428,"x":604,"width":521,"var":"award","height":125},
+                    "props":{"y":198,"x":364,"name":"wall"},
+                    "nodeParent":29,
+                    "label":"Box(wall)",
+                    "isOpen":false,
+                    "isDirectory":true,
+                    "isAniNode":true,
+                    "hasChild":true,
+                    "compId":37,
+                    "child":[
+                        {
+                            "type":"Image",
+                            "props":{"y":3,"x":-1,"skin":"images/lab/b1.png"},
+                            "nodeParent":37,
+                            "label":"Image",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":35,
+                            "child":[
+                                ]
+                        },
+                        {
+                            "type":"Image",
+                            "props":{"y":3,"x":-1,"skin":"images/lab/b2.png"},
+                            "nodeParent":37,
+                            "label":"Image",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":36,
+                            "child":[
+                                ],
+                            "$HIDDEN":false
+                        }]
+                },
+                {
+                    "type":"Image",
+                    "props":{"y":457,"x":608,"skin":"images/lab/table.png","name":"table"},
+                    "nodeParent":29,
+                    "label":"Image(table)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":30,
+                    "child":[
+                        ]
+                },
+                {
+                    "type":"Sprite",
+                    "props":{"y":457,"x":608,"width":456,"var":"lightSp","height":194},
+                    "nodeParent":29,
+                    "label":"Sprite(lightSp)",
+                    "isOpen":false,
+                    "isDirectory":true,
+                    "isAniNode":true,
+                    "hasChild":true,
+                    "compId":32,
+                    "child":[
+                        {
+                            "type":"Image",
+                            "props":{"y":-250,"x":92,"width":47,"skin":"images/lab/light.png","rotation":30,"height":543},
+                            "nodeParent":32,
+                            "label":"Image",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":33,
+                            "child":[
+                                ]
+                        }],
+                    "$HIDDEN":true
+                },
+                {
+                    "type":"Box",
+                    "props":{"y":453,"x":626,"width":521,"var":"award","scaleY":0.83,"scaleX":0.83,"height":125},
                     "nodeParent":29,
                     "label":"Box(award)",
                     "isOpen":false,
@@ -131,8 +206,20 @@
                         }]
                 },
                 {
+                    "type":"Image",
+                    "props":{"y":183,"x":298,"skin":"images/lab/title.png"},
+                    "nodeParent":29,
+                    "label":"Image",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":34,
+                    "child":[
+                        ]
+                },
+                {
                     "type":"Sprite",
-                    "props":{"y":192,"x":2304,"width":147,"var":"maskSp","height":201},
+                    "props":{"y":246,"x":2321,"width":136,"var":"maskSp","height":185},
                     "nodeParent":29,
                     "label":"Sprite(maskSp)",
                     "isOpen":true,
@@ -179,7 +266,7 @@
                         },
                         {
                             "type":"Image",
-                            "props":{"y":91,"x":195,"skin":"images/lab/2.png"},
+                            "props":{"y":116,"x":197,"skin":"images/lab/2.png"},
                             "nodeParent":12,
                             "label":"Image",
                             "isDirectory":false,
@@ -204,7 +291,7 @@
                 },
                 {
                     "type":"Image",
-                    "props":{"y":289,"x":2480,"skin":"images/lab/rang.png","name":"rang"},
+                    "props":{"y":337,"x":2480,"skin":"images/lab/rang.png","name":"rang"},
                     "nodeParent":29,
                     "label":"Image(rang)",
                     "isDirectory":false,
@@ -219,7 +306,7 @@
                     "props":{"y":490,"x":2845,"width":309,"name":"tips","height":217},
                     "nodeParent":29,
                     "label":"Box(tips)",
-                    "isOpen":false,
+                    "isOpen":true,
                     "isDirectory":true,
                     "isAniNode":true,
                     "hasChild":true,
@@ -252,7 +339,7 @@
                 },
                 {
                     "type":"Box",
-                    "props":{"y":78,"x":675,"var":"clickTips"},
+                    "props":{"y":118,"x":684,"var":"clickTips"},
                     "nodeParent":29,
                     "label":"Box(clickTips)",
                     "isOpen":false,
@@ -275,7 +362,7 @@
                         },
                         {
                             "type":"Sprite",
-                            "props":{"y":18,"x":1672,"width":58,"height":73},
+                            "props":{"y":41,"x":1672,"width":58,"height":73},
                             "nodeParent":21,
                             "label":"Sprite",
                             "isDirectory":false,
@@ -297,6 +384,66 @@
                     "compId":28,
                     "child":[
                         ]
+                },
+                {
+                    "type":"Box",
+                    "props":{"y":-2,"x":1224,"width":970,"pivotY":1,"pivotX":1,"name":"ball2","height":449},
+                    "nodeParent":29,
+                    "label":"Box(ball2)",
+                    "isOpen":false,
+                    "isDirectory":true,
+                    "isAniNode":true,
+                    "hasChild":true,
+                    "compId":42,
+                    "child":[
+                        {
+                            "type":"Image",
+                            "props":{"y":177,"x":282,"skin":"images/lab/4.png"},
+                            "nodeParent":42,
+                            "label":"Image",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":38,
+                            "child":[
+                                ]
+                        },
+                        {
+                            "type":"Image",
+                            "props":{"y":26,"x":26,"skin":"images/lab/5.png"},
+                            "nodeParent":42,
+                            "label":"Image",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":39,
+                            "child":[
+                                ]
+                        },
+                        {
+                            "type":"Image",
+                            "props":{"y":217,"x":447,"skin":"images/lab/6.png"},
+                            "nodeParent":42,
+                            "label":"Image",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":40,
+                            "child":[
+                                ]
+                        },
+                        {
+                            "type":"Image",
+                            "props":{"y":2,"x":359,"skin":"images/lab/7.png"},
+                            "nodeParent":42,
+                            "label":"Image",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":41,
+                            "child":[
+                                ]
+                        }]
                 }]
         }],
     "animations":[
@@ -557,7 +704,7 @@
                     "keyframes":{
                         "y":[
                             {
-                                "value":90,
+                                "value":120,
                                 "tweenMethod":"linearNone",
                                 "tween":true,
                                 "target":10,
@@ -565,20 +712,20 @@
                                 "index":0
                             },
                             {
-                                "value":100,
+                                "value":130,
                                 "tweenMethod":"linearNone",
                                 "tween":true,
                                 "target":10,
                                 "key":"y",
-                                "index":35
+                                "index":40
                             },
                             {
-                                "value":90,
+                                "value":120,
                                 "tweenMethod":"linearNone",
                                 "tween":true,
                                 "target":10,
                                 "key":"y",
-                                "index":70
+                                "index":80
                             }]
                     }
                 }],
@@ -631,7 +778,7 @@
                     "keyframes":{
                         "y":[
                             {
-                                "value":290,
+                                "value":335,
                                 "tweenMethod":"linearNone",
                                 "tween":true,
                                 "target":13,
@@ -639,7 +786,7 @@
                                 "index":0
                             },
                             {
-                                "value":270,
+                                "value":350,
                                 "tweenMethod":"linearNone",
                                 "tween":true,
                                 "target":13,
@@ -647,7 +794,7 @@
                                 "index":33
                             },
                             {
-                                "value":290,
+                                "value":335,
                                 "tweenMethod":"linearNone",
                                 "tween":true,
                                 "target":13,
@@ -813,6 +960,237 @@
                 }],
             "name":"ani7",
             "id":7,
+            "frameRate":24,
+            "action":2
+        },
+        {
+            "nodes":[
+                {
+                    "target":33,
+                    "keyframes":{
+                        "y":[
+                            {
+                                "value":-233,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":33,
+                                "key":"y",
+                                "index":0
+                            },
+                            {
+                                "value":-30,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":33,
+                                "key":"y",
+                                "index":83
+                            }],
+                        "x":[
+                            {
+                                "value":71,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":33,
+                                "key":"x",
+                                "index":0
+                            },
+                            {
+                                "value":620,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":33,
+                                "key":"x",
+                                "index":83
+                            }]
+                    }
+                }],
+            "name":"ani8",
+            "id":8,
+            "frameRate":24,
+            "action":2
+        },
+        {
+            "nodes":[
+                {
+                    "target":36,
+                    "keyframes":{
+                        "alpha":[
+                            {
+                                "value":0,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":36,
+                                "key":"alpha",
+                                "index":0
+                            },
+                            {
+                                "value":1,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":36,
+                                "key":"alpha",
+                                "index":35
+                            },
+                            {
+                                "value":0,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":36,
+                                "key":"alpha",
+                                "index":70
+                            }]
+                    }
+                }],
+            "name":"ani9",
+            "id":9,
+            "frameRate":24,
+            "action":2
+        },
+        {
+            "nodes":[
+                {
+                    "target":38,
+                    "keyframes":{
+                        "y":[
+                            {
+                                "value":180,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":38,
+                                "key":"y",
+                                "index":0
+                            },
+                            {
+                                "value":200,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":38,
+                                "key":"y",
+                                "index":35
+                            },
+                            {
+                                "value":180,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":38,
+                                "key":"y",
+                                "index":70
+                            }]
+                    }
+                }],
+            "name":"ani10",
+            "id":10,
+            "frameRate":24,
+            "action":2
+        },
+        {
+            "nodes":[
+                {
+                    "target":39,
+                    "keyframes":{
+                        "y":[
+                            {
+                                "value":25,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":39,
+                                "key":"y",
+                                "index":0
+                            },
+                            {
+                                "value":10,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":39,
+                                "key":"y",
+                                "index":45
+                            },
+                            {
+                                "value":25,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":39,
+                                "key":"y",
+                                "index":90
+                            }]
+                    }
+                }],
+            "name":"ani11",
+            "id":11,
+            "frameRate":24,
+            "action":2
+        },
+        {
+            "nodes":[
+                {
+                    "target":40,
+                    "keyframes":{
+                        "y":[
+                            {
+                                "value":220,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":40,
+                                "key":"y",
+                                "index":0
+                            },
+                            {
+                                "value":240,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":40,
+                                "key":"y",
+                                "index":40
+                            },
+                            {
+                                "value":220,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":40,
+                                "key":"y",
+                                "index":80
+                            }]
+                    }
+                }],
+            "name":"ani12",
+            "id":12,
+            "frameRate":24,
+            "action":2
+        },
+        {
+            "nodes":[
+                {
+                    "target":41,
+                    "keyframes":{
+                        "y":[
+                            {
+                                "value":0,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":41,
+                                "key":"y",
+                                "index":0
+                            },
+                            {
+                                "value":-15,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":41,
+                                "key":"y",
+                                "index":50
+                            },
+                            {
+                                "value":0,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":41,
+                                "key":"y",
+                                "index":100
+                            }]
+                    }
+                }],
+            "name":"ani13",
+            "id":13,
             "frameRate":24,
             "action":2
         }]

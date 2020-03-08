@@ -1,19 +1,21 @@
 var HallPage = function(){
     var _self = this;
-    var page;
+    var pageA,pageB;
     var pages = [];
     var pagePos = [{x:0,y:0},{x:0,y:0}];
 
     var showFlag = false;
     var controlFlag = false;
     var clickFlag = false;
-    var centerX = 3817;
-    var bgWidth = 9741;
+    var centerX = 2545;
+    var bgWidth = 6494;
     var nowIndex = 0;
 
     var moveViewFlag = false;
     var MoveData;
     var GyeData;
+
+    var ParallaxTimer;
 
     /**
      * 初始化
@@ -47,7 +49,8 @@ var HallPage = function(){
     _self.distroy = function(){
         showFlag = false;
         controlFlag = false;
-        page.removeSelf();
+        pageA.removeSelf();
+        pageB.removeSelf();
     }
 
     /**
@@ -58,12 +61,12 @@ var HallPage = function(){
                 if (controlFlag) dealGyeData(e);
         }, false);
 
-        page.on(Laya.Event.MOUSE_DOWN, this, recordMoveData);
-        page.on(Laya.Event.MOUSE_MOVE, this, changeInitGyeData);
-        page.on(Laya.Event.MOUSE_UP, this, clearMoveData);
+        Laya.stage.on(Laya.Event.MOUSE_DOWN, this, recordMoveData);
+        Laya.stage.on(Laya.Event.MOUSE_MOVE, this, changeMoveData);
+        Laya.stage.on(Laya.Event.MOUSE_UP, this, clearMoveData);
 
-        page.nextBtn1.on(Laya.Event.CLICK,this,showPerfectionPage);
-        page.nextBtn2.on(Laya.Event.CLICK,this,showPerfectionPage);
+        pageA.nextBtn.on(Laya.Event.CLICK,this,showPerfectionPage);
+        pageB.nextBtn.on(Laya.Event.CLICK,this,showPerfectionPage);
     }
 
     /**
@@ -74,22 +77,22 @@ var HallPage = function(){
             showFlag = false;
             controlFlag = false;
 
-            page.zOrder = 99;
+            pageA.zOrder = 99;
+            pageB.zOrder = 99;
             iPerfectionPage.init();
 
-            Laya.Tween.to(page, {
-                scaleX: 1.5,
-                scaleY: 1.5
-            }, 800);
-
-            Laya.Tween.to(page, {
-                x: page.x - 200,
+            Laya.Tween.to(pageA, {
+                x: pageA.x - 200,
                 alpha:0
-            }, 800,Laya.Ease.linearIn,null,800);
+            }, 1000,Laya.Ease.linearIn,null);
+            Laya.Tween.to(pageB, {
+                x: pageA.x - 200,
+                alpha:0
+            }, 1000,Laya.Ease.linearIn,null);
 
             setTimeout(function(){
                 _self.distroy();
-            },1600);
+            },1000);
         }
     }
 
@@ -104,12 +107,25 @@ var HallPage = function(){
 
             diffX = diffX < -20 || diffX > 20 ? 0 : diffX;            
             diffY = diffY < -20 || diffY > 20 ? 0 : diffY;
+            
 
-            pagePos[0].x += diffX * GYE_SENSITIVITY_X;
-            pagePos[1].x += diffX * GYE_SENSITIVITY_X;
-            pagePos[0].y += diffY * GYE_SENSITIVITY_Y;
-            pagePos[1].y += diffY * GYE_SENSITIVITY_Y;
-            updatePagePos();            
+            if(Math.abs(diffX) > 0.1){
+                pagePos[0].x += diffX * GYE_SENSITIVITY_X;
+                pagePos[1].x += diffX * GYE_SENSITIVITY_X;
+                GyeData.alpha = e.alpha;
+            }
+
+            if(Math.abs(diffY) > 0.05){
+                pagePos[0].y -= diffY * GYE_SENSITIVITY_Y;
+                pagePos[1].y -= diffY * GYE_SENSITIVITY_Y;
+                GyeData.gamma = e.gamma;
+            }
+
+            if(Math.abs(diffX) > 0.1 || Math.abs(diffY) > 0.05){
+                updatePagePos(); 
+                updateParallax(diffX * 5, diffY * 5);   
+            }
+                    
         }
         GyeData = e;
         hideTips();
@@ -130,9 +146,9 @@ var HallPage = function(){
     }
 
     /**
-     * 改变陀螺仪记录的初始值
+     * 改变手指记录的值
      */
-    function changeInitGyeData(e) {
+    function changeMoveData(e) {
         if (controlFlag && MoveData && moveViewFlag) {
             var diffX = (e.stageX - MoveData.x) * MOVE_SENSITIVITY;
             var diffY = (e.stageY - MoveData.y) * MOVE_SENSITIVITY;
@@ -143,6 +159,7 @@ var HallPage = function(){
             pagePos[1].y += diffY;
 
             updatePagePos();
+            updateParallax(diffX, diffY);
 
             MoveData.x = e.stageX;
             MoveData.y = e.stageY;
@@ -172,16 +189,133 @@ var HallPage = function(){
     }
 
     /**
+     * 更新视差
+     */
+    function updateParallax(x,y){
+        ClearResumeParallax();
+        // updateParallaxBg(x,y);
+        updateParallaxPart1(x,y);
+        updateParallaxPart2(x,y);
+
+        
+        clearTimeout(ParallaxTimer);
+        ParallaxTimer = setTimeout(function() {
+            resumeParallax();
+        }, 200);
+    }
+
+    /**
+     * 更新背景视差
+     */
+    function updateParallaxBg(x,y){
+        var diffS = Math.abs(x+y);
+        var scale = pageA.bg.scaleY;
+
+        scale -= diffS * SCALE_SENSITIVITY_BG;
+        scale = scale < 0.98 ? 0.98 : scale;
+
+        pageA.bg.scaleY = scale;
+        pageB.bg.scaleY = scale;   
+    }
+
+    /**
+     * 更新part1视差
+     * @param {*} x 
+     * @param {*} y 
+     */
+    function updateParallaxPart1(x,y){
+        var lastx = pageA.part1.x;
+        var lasty = pageA.part1.y;
+
+        lastx -= x * PARALLAX_SENSITIVITY_PART1;
+        lastx = lastx > 20 ? 20 : lastx;
+        lastx = lastx < -20 ? -20 : lastx;
+
+        lasty -= y * PARALLAX_SENSITIVITY_PART1;
+        lasty = lasty > 20 ? 20 : lasty;
+        lasty = lasty < -20 ? -20 : lasty;
+        
+        pageA.part1.x = lastx;
+        pageA.part1.y = lasty;
+        pageB.part1.x = lastx;
+        pageB.part1.y = lasty;
+    }
+
+    /**
+     * 更新part1视差
+     * @param {*} x 
+     * @param {*} y 
+     */
+    function updateParallaxPart2(x,y){
+        var lastx = pageA.part2.x;
+        var lasty = pageA.part2.y;
+
+        lastx -= x * PARALLAX_SENSITIVITY_PART2;
+        lastx = lastx > 40 ? 40 : lastx;
+        lastx = lastx < -40 ? -40 : lastx;
+
+        lasty -= y * PARALLAX_SENSITIVITY_PART2;
+        lasty = lasty > 40 ? 40 : lasty;
+        lasty = lasty < -40 ? -40 : lasty;
+
+        pageA.part2.x = lastx;
+        pageA.part2.y = lasty;
+        pageB.part2.x = lastx;
+        pageB.part2.y = lasty;
+    }
+
+    /**
+     * 清除恢复视差
+     */
+    function ClearResumeParallax(){
+        Laya.Tween.clearAll(pageA.bg);
+        Laya.Tween.clearAll(pageA.part1);
+        Laya.Tween.clearAll(pageA.part2);
+        Laya.Tween.clearAll(pageB.bg);
+        Laya.Tween.clearAll(pageB.part1);
+        Laya.Tween.clearAll(pageB.part2);
+    }
+
+    /**
+     * 恢复视差
+     */
+    function resumeParallax(){
+        // Laya.Tween.to(pageA.bg,{
+        //     scaleY:1
+        // },1000)
+        // Laya.Tween.to(pageB.bg,{
+        //     scaleY:1
+        // },1000)
+
+        Laya.Tween.to(pageA.part1,{
+            x:0,
+            y:0
+        },1200)
+        Laya.Tween.to(pageA.part2,{
+            x:0,
+            y:0
+        },700)
+        Laya.Tween.to(pageB.part1,{
+            x:0,
+            y:0
+        },1200)
+        Laya.Tween.to(pageB.part2,{
+            x:0,
+            y:0
+        },700)
+    }
+
+    /**
      * 隐藏提示
      */
     function hideTips(){
-        if(page.tips2.visible){
-            Laya.Tween.to(page.tips1, {
+        if(pageB.tips.visible){
+            Laya.Tween.to(pageA.tips, {
                 alpha:0
             }, 500);
-            page.tips2.visible = false;
+            pageB.tips.visible = false;
             setTimeout(function(){
-                page.tips1.visible = false;
+                pageA.tips.visible = false;
             },500)
         }
     }
@@ -195,10 +329,16 @@ var HallPage = function(){
         if(pagePos[nowIndex].x < -bgWidth + WindowW + 100 && pagePos[next].x < 0) pagePos[next].x += (bgWidth * 2);
         if(pagePos[nowIndex].x > -100 && pagePos[next].x > 0) pagePos[next].x -= (bgWidth * 2);
         
-        if(pagePos[nowIndex].x < -bgWidth + WindowW + 100 || pagePos[nowIndex].x > WindowW){
+        if(pagePos[nowIndex].x < -bgWidth + WindowW / 2 || pagePos[nowIndex].x > WindowW / 2){
             nowIndex = next;
-            pages[nowIndex].zOrder = 99;
-            pages[next].zOrder = 98;
+            if(nowIndex == 1){
+                pageA.zOrder = 98;
+                pageB.zOrder = 99;
+            }
+            else{
+                pageA.zOrder = 99;
+                pageB.zOrder = 98;
+            }
         }
 
         pagePos[0].y = pagePos[0].y > 0 ? 0 : pagePos[0].y;
@@ -211,16 +351,18 @@ var HallPage = function(){
      * ui初始化
      */
     function uiInit() {
-        page = new hallUI();
-        Laya.stage.addChild(page);
-        pages[0] = page.cont1;
-        pages[1] = page.cont2;
-        iClickTips.init(page.clickTips1);
-        iClickTips.init(page.clickTips2);
+        pageA = new hallUI();
+        pageB = new hallUI();
+        Laya.stage.addChild(pageB);
+        Laya.stage.addChild(pageA);
+        pages[0] = pageA.cont;
+        pages[1] = pageB.cont;
+        iClickTips.init(pageA.clickTips);
+        iClickTips.init(pageB.clickTips);
         pagePos[0].x = -(centerX - 1624 / 2 - BgPageX);
         pagePos[1].x = -(bgWidth - pagePos[0].x);
-        pagePos[0].y = -320;
-        pagePos[1].y = -320;
+        pagePos[0].y = -187;
+        pagePos[1].y = -187;
         updatePagePos();
     }
 }

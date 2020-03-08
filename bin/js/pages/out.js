@@ -51,6 +51,9 @@ var OutPage = function () {
         Laya.Tween.to(page.aside, {
             alpha: 0
         }, 500);
+        Laya.Tween.to(page.word, {
+            alpha: 1
+        }, 500);
 
         setTimeout(function(){
             page.aside.visible = false;
@@ -68,13 +71,13 @@ var OutPage = function () {
             Laya.Tween.to(page, {
                 scaleX: 1.5,
                 scaleY: 1.5
-            }, 1500,Laya.Ease.linearIn,null,50);
+            }, 1200,Laya.Ease.linearIn,null,50);
 
             Laya.Tween.to(page, {
                 scaleX: 2,
                 scaleY: 2,
                 alpha:0
-            }, 750,Laya.Ease.linearIn,null,1500);
+            }, 1200,Laya.Ease.linearIn,null,1200);
 
             setTimeout(function(){
                 _self.distroy();

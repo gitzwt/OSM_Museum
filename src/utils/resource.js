@@ -5,6 +5,8 @@ var PreResources = [
     { url: 'images/loading/4.png', type: Loader.IMAGE },
     { url: 'images/out/bg.jpg', type: Loader.IMAGE },
     { url: 'images/out/word.png', type: Loader.IMAGE },
+    { url: 'images/out/c8.png', type: Loader.IMAGE },
+    { url: 'images/out/font.png', type: Loader.IMAGE },
     { url: 'res/atlas/images/out.atlas', type: Loader.ATLAS },
     { url: 'res/atlas/images/loading.atlas', type: Loader.ATLAS }
 ];
@@ -12,6 +14,7 @@ var Resources = [
     { url: 'images/culture/bg_01.jpg', type: Loader.IMAGE },
     { url: 'images/culture/bg_02.jpg', type: Loader.IMAGE },
     { url: 'images/culture/bg_03.jpg', type: Loader.IMAGE },
+    { url: 'images/culture/bg_04.jpg', type: Loader.IMAGE },
     { url: 'images/culture/2/p.png', type: Loader.IMAGE },
     { url: 'images/culture/3/1.png', type: Loader.IMAGE },
     { url: 'images/culture/3/2.png', type: Loader.IMAGE },
@@ -39,6 +42,7 @@ var Resources = [
     { url: 'images/hall/3/s4.png', type: Loader.IMAGE },
     { url: 'images/hall/3/s5.png', type: Loader.IMAGE },
     { url: 'images/hall/3/title.png', type: Loader.IMAGE },
+    { url: 'images/hall/2/flag.png', type: Loader.IMAGE },
     { url: 'images/hall/bg_01.jpg', type: Loader.IMAGE },
     { url: 'images/hall/bg_02.jpg', type: Loader.IMAGE },
     { url: 'images/hall/bg_03.jpg', type: Loader.IMAGE },
