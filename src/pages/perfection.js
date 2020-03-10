@@ -57,6 +57,24 @@ var PerfectionPage = function () {
         page.on(Laya.Event.MOUSE_UP, this, clearMoveData);
 
         page.nextBtn.on(Laya.Event.CLICK, this, showCulturePage);
+
+        page.seabedBtn.on(Laya.Event.CLICK, this, showIntro,["seabed"]);
+        page.drugBtn.on(Laya.Event.CLICK, this, showIntro,["drug"]);
+        page.peoplesBtn.on(Laya.Event.CLICK, this, showPeoples);
+    }
+
+    /**
+     * 显示介绍页面
+     */
+    function showIntro(name){
+        if(clickFlag) iIntro.show("intro",dialogData[name]);
+    }
+
+    /**
+     * 显示人物介绍
+     */
+    function showPeoples(){
+        if(clickFlag) iIntro.show("people");
     }
 
     /**

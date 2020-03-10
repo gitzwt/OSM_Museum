@@ -2,7 +2,7 @@
     "x":0,
     "type":"View",
     "selectedBox":45,
-    "selecteID":47,
+    "selecteID":62,
     "props":{"width":5320,"sceneColor":"#000000","sceneBg":"laya/views/culture.jpg","height":750},
     "nodeParent":-1,
     "label":"View",
@@ -249,14 +249,13 @@
                     "props":{"y":42,"x":1462,"width":1999,"var":"part2","height":699},
                     "nodeParent":53,
                     "label":"Box(part2)",
-                    "isOpen":true,
+                    "isOpen":false,
                     "isDirectory":true,
                     "isAniNode":true,
                     "hasChild":true,
                     "compId":18,
                     "child":[
                         {
-                            "x":45,
                             "type":"Box",
                             "props":{"y":0,"x":0,"width":1942,"name":"ball","height":680},
                             "nodeParent":18,
@@ -341,7 +340,6 @@
                                 }]
                         },
                         {
-                            "x":45,
                             "type":"Image",
                             "props":{"y":118,"x":481,"width":534,"skin":"images/culture/2/p.png","height":615,"alpha":1},
                             "nodeParent":18,
@@ -630,20 +628,99 @@
                             "compId":48,
                             "child":[
                                 ]
+                        },
+                        {
+                            "x":45,
+                            "type":"Sprite",
+                            "props":{"y":85,"x":4657,"width":58,"height":73},
+                            "nodeParent":45,
+                            "label":"Sprite",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":62,
+                            "child":[
+                                ]
                         }]
                 },
                 {
                     "x":30,
-                    "type":"Sprite",
-                    "props":{"y":498,"x":5143,"width":135,"var":"nextBtn","height":226},
+                    "type":"Box",
+                    "props":{"y":161,"x":488,"name":"btnBox"},
                     "nodeParent":53,
-                    "label":"Sprite(nextBtn)",
-                    "isDirectory":false,
+                    "label":"Box(btnBox)",
+                    "isOpen":true,
+                    "isDirectory":true,
                     "isAniNode":true,
-                    "hasChild":false,
-                    "compId":43,
+                    "hasChild":true,
+                    "compId":58,
                     "child":[
-                        ],
+                        {
+                            "x":45,
+                            "type":"Sprite",
+                            "props":{"width":322,"var":"YJYBtn","height":554},
+                            "nodeParent":58,
+                            "label":"Sprite(YJYBtn)",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":57,
+                            "child":[
+                                ]
+                        },
+                        {
+                            "x":45,
+                            "type":"Sprite",
+                            "props":{"y":337,"x":4655,"width":135,"var":"nextBtn","height":226},
+                            "nodeParent":58,
+                            "label":"Sprite(nextBtn)",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":43,
+                            "child":[
+                                ],
+                            "$HIDDEN":true
+                        },
+                        {
+                            "x":45,
+                            "type":"Sprite",
+                            "props":{"y":173,"x":1598,"width":322,"var":"kingBtn","height":397},
+                            "nodeParent":58,
+                            "label":"Sprite(kingBtn)",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":59,
+                            "child":[
+                                ]
+                        },
+                        {
+                            "x":45,
+                            "type":"Sprite",
+                            "props":{"y":-6,"x":3087,"width":1750,"var":"seaBtn","height":433},
+                            "nodeParent":58,
+                            "label":"Sprite(seaBtn)",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":61,
+                            "child":[
+                                ]
+                        },
+                        {
+                            "x":45,
+                            "type":"Sprite",
+                            "props":{"y":-16,"x":3870,"width":482,"var":"farmBtn","height":433},
+                            "nodeParent":58,
+                            "label":"Sprite(farmBtn)",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":60,
+                            "child":[
+                                ]
+                        }],
                     "$HIDDEN":true
                 }]
         }],

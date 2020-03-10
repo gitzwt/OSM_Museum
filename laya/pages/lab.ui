@@ -1,7 +1,8 @@
 {
+    "x":0,
     "type":"View",
-    "selectedBox":1,
-    "selecteID":43,
+    "selectedBox":29,
+    "selecteID":44,
     "props":{"width":3248,"sceneColor":"#000000","sceneBg":"laya/views/lab.jpg","height":750},
     "nodeParent":-1,
     "label":"View",
@@ -12,6 +13,7 @@
     "compId":1,
     "child":[
         {
+            "x":15,
             "type":"Box",
             "props":{"y":0,"x":0,"var":"cont"},
             "nodeParent":1,
@@ -23,6 +25,7 @@
             "compId":29,
             "child":[
                 {
+                    "x":30,
                     "type":"Box",
                     "props":{"y":0,"x":0,"name":"bg"},
                     "nodeParent":29,
@@ -60,6 +63,7 @@
                     "$HIDDEN":true
                 },
                 {
+                    "x":30,
                     "type":"Box",
                     "props":{"y":198,"x":364,"name":"wall"},
                     "nodeParent":29,
@@ -97,6 +101,7 @@
                         }]
                 },
                 {
+                    "x":30,
                     "type":"Image",
                     "props":{"y":457,"x":608,"skin":"images/lab/table.png","name":"table"},
                     "nodeParent":29,
@@ -109,6 +114,7 @@
                         ]
                 },
                 {
+                    "x":30,
                     "type":"Sprite",
                     "props":{"y":457,"x":608,"width":456,"var":"lightSp","height":194},
                     "nodeParent":29,
@@ -134,6 +140,7 @@
                     "$HIDDEN":true
                 },
                 {
+                    "x":30,
                     "type":"Box",
                     "props":{"y":453,"x":626,"width":521,"var":"award","scaleY":0.83,"scaleX":0.83,"height":125},
                     "nodeParent":29,
@@ -206,6 +213,7 @@
                         }]
                 },
                 {
+                    "x":30,
                     "type":"Image",
                     "props":{"y":183,"x":298,"skin":"images/lab/title.png"},
                     "nodeParent":29,
@@ -218,6 +226,7 @@
                         ]
                 },
                 {
+                    "x":30,
                     "type":"Sprite",
                     "props":{"y":246,"x":2321,"width":136,"var":"maskSp","height":185},
                     "nodeParent":29,
@@ -229,6 +238,7 @@
                     "compId":14,
                     "child":[
                         {
+                            "x":45,
                             "type":"Image",
                             "props":{"y":91,"x":-28,"width":60,"skin":"images/lab/light.png","rotation":40,"pivotY":144,"pivotX":28,"height":290},
                             "nodeParent":14,
@@ -242,6 +252,7 @@
                         }]
                 },
                 {
+                    "x":30,
                     "type":"Box",
                     "props":{"y":140,"x":2194,"width":515,"name":"balls","height":350},
                     "nodeParent":29,
@@ -290,6 +301,7 @@
                         }]
                 },
                 {
+                    "x":30,
                     "type":"Image",
                     "props":{"y":337,"x":2480,"skin":"images/lab/rang.png","name":"rang"},
                     "nodeParent":29,
@@ -302,6 +314,7 @@
                         ]
                 },
                 {
+                    "x":30,
                     "type":"Box",
                     "props":{"y":490,"x":2845,"width":309,"name":"tips","height":217},
                     "nodeParent":29,
@@ -313,6 +326,7 @@
                     "compId":20,
                     "child":[
                         {
+                            "x":45,
                             "type":"Image",
                             "props":{"y":-6,"x":79,"width":91,"skin":"images/lab/tips.png","height":90},
                             "nodeParent":20,
@@ -325,6 +339,7 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"Image",
                             "props":{"y":103,"x":61,"width":72,"skin":"images/lab/ar.png","height":30},
                             "nodeParent":20,
@@ -338,6 +353,7 @@
                         }]
                 },
                 {
+                    "x":30,
                     "type":"Box",
                     "props":{"y":118,"x":684,"var":"clickTips"},
                     "nodeParent":29,
@@ -374,6 +390,7 @@
                         }]
                 },
                 {
+                    "x":30,
                     "type":"Sprite",
                     "props":{"y":502,"x":2907,"width":156,"var":"nextBtn","height":153},
                     "nodeParent":29,
@@ -386,6 +403,7 @@
                         ]
                 },
                 {
+                    "x":30,
                     "type":"Box",
                     "props":{"y":-2,"x":1224,"width":970,"pivotY":1,"pivotX":1,"name":"ball2","height":449},
                     "nodeParent":29,
@@ -444,6 +462,32 @@
                             "child":[
                                 ]
                         }]
+                },
+                {
+                    "x":30,
+                    "type":"Sprite",
+                    "props":{"y":236,"x":440,"width":872,"var":"wallBtn","height":416},
+                    "nodeParent":29,
+                    "label":"Sprite(wallBtn)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":43,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Sprite",
+                    "props":{"y":250,"x":2166,"width":448,"var":"productBtn","height":416},
+                    "nodeParent":29,
+                    "label":"Sprite(productBtn)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":44,
+                    "child":[
+                        ]
                 }]
         }],
     "animations":[

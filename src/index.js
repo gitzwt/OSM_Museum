@@ -30,7 +30,8 @@ function loadUIInit() {
 function loadComplete() {
     remUnitConverter(750);
     turnBoxPortraitTips();
-    // landscape_lock();
+    landscape_lock();
+    iIntro.init();
     iOutPage.openAnime();
     // DevelopTest();
     
@@ -40,8 +41,8 @@ function loadComplete() {
  *  开发测试用
  */
 function DevelopTest(){
-    iHallPage.init();
-    // iPerfectionPage.init();
+    // iHallPage.init();
+    iPerfectionPage.init();
     // iCulturePage.init();
     // iLabPage.init();
 }

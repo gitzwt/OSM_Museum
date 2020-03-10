@@ -61,12 +61,39 @@ var HallPage = function(){
                 if (controlFlag) dealGyeData(e);
         }, false);
 
-        Laya.stage.on(Laya.Event.MOUSE_DOWN, this, recordMoveData);
-        Laya.stage.on(Laya.Event.MOUSE_MOVE, this, changeMoveData);
-        Laya.stage.on(Laya.Event.MOUSE_UP, this, clearMoveData);
+        pageA.on(Laya.Event.MOUSE_DOWN, this, recordMoveData);
+        pageA.on(Laya.Event.MOUSE_MOVE, this, changeMoveData);
+        pageA.on(Laya.Event.MOUSE_UP, this, clearMoveData);
+
+        pageB.on(Laya.Event.MOUSE_DOWN, this, recordMoveData);
+        pageB.on(Laya.Event.MOUSE_MOVE, this, changeMoveData);
+        pageB.on(Laya.Event.MOUSE_UP, this, clearMoveData);
 
         pageA.nextBtn.on(Laya.Event.CLICK,this,showPerfectionPage);
         pageB.nextBtn.on(Laya.Event.CLICK,this,showPerfectionPage);
+
+        pageA.shipBtn.on(Laya.Event.CLICK, this, showIntro,["ship"]);
+        pageA.bellBtn.on(Laya.Event.CLICK, this, showIntro,["bell"]);
+        pageA.conch1Btn.on(Laya.Event.CLICK, this, showIntro,["conch2"]);
+        pageA.conch2Btn.on(Laya.Event.CLICK, this, showIntro,["conch1"]);
+        pageA.conch3Btn.on(Laya.Event.CLICK, this, showIntro,["conch4"]);
+        pageA.conch4Btn.on(Laya.Event.CLICK, this, showIntro,["conch5"]);
+        pageA.conch5Btn.on(Laya.Event.CLICK, this, showIntro,["conch3"]);
+
+        pageB.shipBtn.on(Laya.Event.CLICK, this, showIntro,["ship"]);
+        pageB.bellBtn.on(Laya.Event.CLICK, this, showIntro,["bell"]);
+        pageB.conch1Btn.on(Laya.Event.CLICK, this, showIntro,["conch2"]);
+        pageB.conch2Btn.on(Laya.Event.CLICK, this, showIntro,["conch1"]);
+        pageB.conch3Btn.on(Laya.Event.CLICK, this, showIntro,["conch4"]);
+        pageB.conch4Btn.on(Laya.Event.CLICK, this, showIntro,["conch5"]);
+        pageB.conch5Btn.on(Laya.Event.CLICK, this, showIntro,["conch3"]);
+    }
+
+    /**
+     * 显示介绍页面
+     */
+    function showIntro(name){
+        if(clickFlag) iIntro.show("intro",dialogData[name]);
     }
 
     /**

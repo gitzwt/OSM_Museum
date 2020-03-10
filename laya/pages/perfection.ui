@@ -2,7 +2,7 @@
     "x":0,
     "type":"View",
     "selectedBox":66,
-    "selecteID":54,
+    "selecteID":71,
     "props":{"y":750,"x":1624,"width":4871,"sceneColor":"#000000","sceneBg":"laya/views/perfection.jpg","pivotY":750,"pivotX":1624,"height":750},
     "nodeParent":-1,
     "label":"View",
@@ -84,7 +84,7 @@
                             "child":[
                                 ]
                         }],
-                    "$HIDDEN":true
+                    "$HIDDEN":false
                 },
                 {
                     "x":30,
@@ -705,7 +705,6 @@
                     "compId":59,
                     "child":[
                         {
-                            "x":45,
                             "type":"Sprite",
                             "props":{"y":34,"x":-27,"width":58,"height":73},
                             "nodeParent":59,
@@ -718,7 +717,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"Sprite",
                             "props":{"y":112,"x":1650,"width":58,"height":73},
                             "nodeParent":59,
@@ -731,7 +729,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"Sprite",
                             "props":{"y":26,"x":2611,"width":58,"height":73},
                             "nodeParent":59,
@@ -746,17 +743,65 @@
                 },
                 {
                     "x":30,
-                    "type":"Sprite",
-                    "props":{"y":398,"x":4594,"width":254,"var":"nextBtn","height":275},
+                    "type":"Box",
+                    "props":{"y":171,"x":619,"name":"btnBox"},
                     "nodeParent":66,
-                    "label":"Sprite(nextBtn)",
-                    "isDirectory":false,
+                    "label":"Box(btnBox)",
+                    "isOpen":null,
+                    "isDirectory":true,
                     "isAniNode":true,
-                    "hasChild":false,
-                    "compId":55,
+                    "hasChild":true,
+                    "compId":71,
                     "child":[
-                        ],
-                    "$HIDDEN":true
+                        {
+                            "type":"Sprite",
+                            "props":{"y":227,"x":3975,"width":254,"var":"nextBtn","height":275},
+                            "nodeParent":71,
+                            "label":"Sprite(nextBtn)",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":55,
+                            "child":[
+                                ],
+                            "$HIDDEN":true
+                        },
+                        {
+                            "type":"Sprite",
+                            "props":{"width":464,"var":"seabedBtn","height":464},
+                            "nodeParent":71,
+                            "label":"Sprite(seabedBtn)",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":68,
+                            "child":[
+                                ]
+                        },
+                        {
+                            "type":"Sprite",
+                            "props":{"y":93,"x":1769,"width":270,"var":"drugBtn","height":332},
+                            "nodeParent":71,
+                            "label":"Sprite(drugBtn)",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":69,
+                            "child":[
+                                ]
+                        },
+                        {
+                            "type":"Sprite",
+                            "props":{"y":25,"x":2712,"width":867,"var":"peoplesBtn","height":332},
+                            "nodeParent":71,
+                            "label":"Sprite(peoplesBtn)",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":70,
+                            "child":[
+                                ]
+                        }]
                 }]
         }],
     "animations":[

@@ -9,6 +9,9 @@ R C8B26CC6 bg_04.jpg
 P 8E5EBFA2 t1.png
 P B80A1168 t2.png
 P 4F2383FB t3.png
+D images/dialog
+P B0D528DF arL.png
+P B530B33C arR.png
 D images/hall
 P AB513F1C ar1.png
 P B2C725CB ar2.png
@@ -123,6 +126,53 @@ P 3C0EE9E5 down.png
 P 11B752E9 p.png
 P E3938F9F ship.png
 P 5E43B986 up.png
+D images/dialog/bell
+R 73DB3CB0 1.png
+P EA319015 11.png
+P F7782FB2 12.png
+D images/dialog/conch
+R E8940039 1.png
+P 8F2AE307 11.png
+P 6EC8D05C 12.png
+R 2DC21CEB 2.png
+R FEE9B624 3.png
+R 17C72278 4.png
+R E5C5BAFB 5.png
+D images/dialog/drug
+R D150EDF8 1.png
+D images/dialog/farm
+R BC9CD3C3 1.png
+D images/dialog/king
+R F55079DF 1.png
+P 49954E21 11.png
+P 31619F5C 12.png
+P 26E8F23D 13.png
+P 51671AC5 14.png
+D images/dialog/peoples
+P B75F5CBC 1.png
+P F31D6D44 2.png
+P F1341EEA 3.png
+P 8620E42F 4.png
+R 9713AC5C bg.png
+P 93B1F945 shadow.png
+D images/dialog/product
+R 205FC97F 1.png
+D images/dialog/sea
+R BB88A759 1.png
+P AD87A316 11.png
+P E3FC31EE 12.png
+P F4CDB636 13.png
+D images/dialog/seabed
+R 171265DB 1.png
+D images/dialog/ship
+R 01C97889 1.png
+P 96262344 11.png
+P B483BEC1 12.png
+P 9680C558 13.png
+D images/dialog/wall
+R 3918F52D 1.png
+D images/dialog/YJY
+R 43438C10 1.png
 D images/hall/1
 R BE1C7E00 c1.png
 R 3965D68F c2.png
@@ -162,6 +212,7 @@ R 818F7606 s3.png
 R 9749DCB5 s4.png
 R E0BB38ED s5.png
 R 2510AD2A title.png
+D images/hall/images
 D images/perfection/1
 P 1AA34A15 1.png
 P 570F7328 2.png
