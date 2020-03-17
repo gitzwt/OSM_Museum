@@ -57,6 +57,16 @@ var LabPage = function () {
         page.on(Laya.Event.MOUSE_UP, this, clearMoveData);
 
         page.nextBtn.on(Laya.Event.CLICK, this, showResPage);
+
+        page.wallBtn.on(Laya.Event.CLICK, this, showIntro,["wall"]);
+        page.productBtn.on(Laya.Event.CLICK, this, showIntro,["product"]);
+    }
+
+    /**
+     * 显示介绍页面
+     */
+    function showIntro(name){
+        if(clickFlag) iIntro.show("intro",dialogData[name]);
     }
 
     /**

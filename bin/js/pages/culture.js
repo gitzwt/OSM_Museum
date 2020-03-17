@@ -58,6 +58,18 @@ var CulturePage = function () {
         page.on(Laya.Event.MOUSE_UP, this, clearMoveData);
 
         page.nextBtn.on(Laya.Event.CLICK, this, showLabPage);
+
+        page.YJYBtn.on(Laya.Event.CLICK, this, showIntro,["YJY"]);
+        page.kingBtn.on(Laya.Event.CLICK, this, showIntro,["king"]);
+        page.farmBtn.on(Laya.Event.CLICK, this, showIntro,["farm"]);
+        page.seaBtn.on(Laya.Event.CLICK, this, showIntro,["sea"]);
+    }
+
+    /**
+     * 显示介绍页面
+     */
+    function showIntro(name){
+        if(clickFlag) iIntro.show("intro",dialogData[name]);
     }
 
     /**

@@ -30,7 +30,8 @@ function loadUIInit() {
 function loadComplete() {
     remUnitConverter(750);
     turnBoxPortraitTips();
-    // landscape_lock();
+    landscape_lock();
+    iIntro.init();
     iOutPage.openAnime();
     // DevelopTest();
     
