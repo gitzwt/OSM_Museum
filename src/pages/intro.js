@@ -43,6 +43,11 @@ var Intro = function () {
         peopleBoxInit();
         eventInit();
         Laya.Dialog.manager.maskLayer.alpha = 0;
+        var screenProp = Laya.Browser.height / Laya.Browser.width;
+        if (screenProp < 0.54) {
+            page.cont.scaleX = 1.5;
+            page.cont.scaleY = 1.5;
+        }
     }
 
     /**
