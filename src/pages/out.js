@@ -28,6 +28,14 @@ var OutPage = function () {
     }
 
     /**
+     * 设置百分比
+     */
+    _self.setPer = function(num){
+        page.per.x = -650 + 650 * num;
+        page.perword.text = parseInt(num * 100) + "%";
+    }
+
+    /**
      * 销毁
      */
     _self.distroy = function(){
@@ -71,17 +79,17 @@ var OutPage = function () {
             Laya.Tween.to(page, {
                 scaleX: 1.5,
                 scaleY: 1.5
-            }, 1200,Laya.Ease.linearIn,null,50);
+            }, 1000,Laya.Ease.linearIn,null,50);
 
             Laya.Tween.to(page, {
                 scaleX: 2,
                 scaleY: 2,
                 alpha:0
-            }, 1200,Laya.Ease.linearIn,null,1200);
+            }, 800,Laya.Ease.linearIn,null,1000);
 
             setTimeout(function(){
                 _self.distroy();
-            },2500);
+            },1800);
         }
     }
 
@@ -92,6 +100,9 @@ var OutPage = function () {
         page = new outUI();
         Laya.stage.addChild(page);
         page.x = BgPageX + page.pivotX;
+        var mask = new Laya.Sprite();
+        mask.graphics.drawRect(0,0,650,4,"#ffffff");
+        page.perbox.mask = mask;
     }
 }
 iOutPage = new OutPage();

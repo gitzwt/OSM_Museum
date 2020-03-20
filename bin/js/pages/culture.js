@@ -147,13 +147,21 @@ var CulturePage = function () {
             iLabPage.init();
 
             Laya.Tween.to(page, {
-                y: page.y + 400,
+                scaleX: 1.5,
+                scaleY: 1.5
+            }, 800);
+
+            Laya.Tween.to(page, {
+                y: page.y + 150
+            }, 1000,Laya.Ease.linearIn,null,800);
+
+            Laya.Tween.to(page, {
                 alpha:0
-            }, 1000,Laya.Ease.linearIn);
+            }, 500,Laya.Ease.linearIn,null,1800);
 
             setTimeout(function(){
                 _self.distroy();
-            },1000);
+            },2300);
         }
     }
 
@@ -183,6 +191,8 @@ var CulturePage = function () {
         tipsFlag = true;
         Laya.stage.addChild(page);
         pageX = BgPageX + 50;
+        page.pivotX = page.pivotX + BgPageX;
+        page.x = page.x + BgPageX;
         updatePagePos();
     }
 }

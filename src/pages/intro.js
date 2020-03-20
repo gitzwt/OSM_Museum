@@ -45,8 +45,12 @@ var Intro = function () {
         Laya.Dialog.manager.maskLayer.alpha = 0;
         var screenProp = Laya.Browser.height / Laya.Browser.width;
         if (screenProp < 0.54) {
-            page.cont.scaleX = 1.2;
-            page.cont.scaleY = 1.2;
+            page.cont.scaleX = 1.3;
+            page.cont.scaleY = 1.3;
+        }
+        else {
+            page.cont.scaleX = 1.1;
+            page.cont.scaleY = 1.1;
         }
     }
 
@@ -54,15 +58,21 @@ var Intro = function () {
      * 显示
      */
     _self.show = function (type, data) {
+        page.farmWord.visible = false;
+        page.kingWord.visible = false;
         if (type == "intro") {
             updateIntroUI(data);
             peopleBox.visible = false;
+            if (data.hasOwnProperty("word")) {
+                page[data.word].visible = true;
+            }
         }
         else if (type == "people") {
             bg.source = Laya.Loader.getRes('images/dialog/peoples/bg.png');
             introBox.visible = false;
             peopleBox.visible = true;
         }
+
         pageShow();
     }
 
@@ -178,7 +188,7 @@ var Intro = function () {
      * 切换人物
      */
     function switchPeople(dir) {
-        if (animeFlag && ((nowPeople > 0 && dir < 0) || (nowPeople < 3 && dir > 0))){
+        if (animeFlag && ((nowPeople > 0 && dir < 0) || (nowPeople < 3 && dir > 0))) {
             animeFlag = false;
             nowPeople += dir;
 
@@ -210,20 +220,20 @@ var Intro = function () {
         }, 300);
 
         var shadow = ele.getChildByName("shadow");
-        if(dis == 0){
+        if (dis == 0) {
             Laya.Tween.to(shadow, {
                 alpha: 0
             }, 300);
         }
-        else{
+        else {
             Laya.Tween.to(shadow, {
                 alpha: 1
             }, 300);
         }
 
-        setTimeout(function(){
+        setTimeout(function () {
             ele.zOrder = 4 - (dis);
-        },150);
+        }, 150);
     }
 
     /**

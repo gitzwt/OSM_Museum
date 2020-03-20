@@ -44,6 +44,14 @@ var utils = function(){
 		} //end if
 		else return null;
 	} //end func
+
+	/**
+     * 获得http url参数
+     */
+	_self.dateFormat = function (date) {
+		date = date.split("-");
+		return parseInt(date[0]) + "年" + parseInt(date[1]) + "月" + parseInt(date[2]) + "日";
+	} //end func
 }
 
 var iUtils = new utils();

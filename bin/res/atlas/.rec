@@ -13,12 +13,13 @@ D images/dialog
 P B0D528DF arL.png
 P B530B33C arR.png
 D images/hall
-P AB513F1C ar1.png
-P B2C725CB ar2.png
-R 79105E60 bg_01.jpg
-R 66FEE258 bg_02.jpg
-R B7E49E9F bg_03.jpg
-R 1184708F bg_04.jpg
+P B92FFBFD ar1.png
+P CD1A0754 ar2.png
+P D180F993 ar3.png
+R 36707E63 bg_01.jpg
+R 03952D25 bg_02.jpg
+R E768772E bg_03.jpg
+R D3629713 bg_04.jpg
 P D60E5D6F p1.png
 P 7DFC4B01 p2.png
 D images/lab
@@ -35,14 +36,15 @@ P C2AD8F97 a3.png
 P F2D1D29D a4.png
 P 60862637 a5.png
 P 7A415C29 ar.png
-R 45BACF6E b1.png
-R 2A789C7A b2.png
+R 25625AD0 b1.png
+R B78AC89E b2.png
 R 24BF577B bg_01.jpg
 R 24AFECBB bg_02.jpg
 P 1E0EE986 light.png
 P 704882CF mask.png
 P B79F7A18 mask2.png
 P 34FFB638 rang.png
+P 6083615C t.png
 P 464291E6 table.png
 P D848A15A tips.png
 P 65E8AFD5 title.png
@@ -52,7 +54,13 @@ R CEF011B3 2.png
 R B8A36243 3.png
 R 16AEBB93 4.png
 P A50DF8A2 icon.png
-P BB68B444 loading.png
+P 97EF7F06 l1.png
+P 95A9DDAB l2.png
+P A87B279B l3.png
+P FF1A91AA l4.png
+P 1B7DD1E2 l5.png
+P 52BF977C l6.png
+P BF5F815A p.png
 P A9F16679 t.png
 D images/out
 P 7A17EFEC 1.png
@@ -92,12 +100,25 @@ R FC8D3C0F bg_02.jpg
 R C35CCD77 bg_03.jpg
 R 25D9F3C8 bg_04.jpg
 P AB3F67DC tips.png
+D images/result
+P F42F9432 b.png
+R 41BDBCBE bg.jpg
+R 9B920529 book.png
+R 61811AF6 pattern.png
+P ADDAF746 w1.png
+P 240356A5 w2.png
+R 58BEC3BD w3.png
+R 8C1D7287 w4.png
 D images/tips
 P 77AC1EC6 a1.png
 P 9E7A2332 a2.png
 P E07F340B a3.png
-P A366812A h1.png
+P FFD2ABBA h1.png
 P 37ADCA25 h2.png
+P 99ECF577 vscroll$bar.png
+P 9DE68DE2 vscroll$down.png
+P C0F8A0E2 vscroll$up.png
+P C4273D1E vscroll.png
 D images/culture/1
 P 728B8D6B 1.png
 P 82F8244B 2.png
@@ -109,6 +130,7 @@ P 9B4B9C22 7.png
 P 4872D9C6 c1.png
 P C36373E5 c2.png
 P 6908BACF c3.png
+P DF8F5DD0 t.png
 D images/culture/2
 P A663A249 1.png
 P C1247D64 2.png
@@ -125,54 +147,57 @@ P F0C7BEC2 ball.png
 P 3C0EE9E5 down.png
 P 11B752E9 p.png
 P E3938F9F ship.png
+P 9C7AAD4E t.png
 P 5E43B986 up.png
 D images/dialog/bell
-R 73DB3CB0 1.png
+R 4C41C851 1.png
 P EA319015 11.png
 P F7782FB2 12.png
 D images/dialog/conch
-R E8940039 1.png
+R A72B3B8C 1.png
 P 8F2AE307 11.png
 P 6EC8D05C 12.png
-R 2DC21CEB 2.png
-R FEE9B624 3.png
-R 17C72278 4.png
-R E5C5BAFB 5.png
+R 1FDC3D34 2.png
+R 59B24744 3.png
+R 97292D39 4.png
+R 0B53079C 5.png
 D images/dialog/drug
-R D150EDF8 1.png
+R 8B61C5A5 1.png
 D images/dialog/farm
-R BC9CD3C3 1.png
+R 84714691 1.png
+P 949D62DB word.png
 D images/dialog/king
-R F55079DF 1.png
+R 007953D0 1.png
 P 49954E21 11.png
 P 31619F5C 12.png
 P 26E8F23D 13.png
 P 51671AC5 14.png
+P FA8BDC27 word.png
 D images/dialog/peoples
-P B75F5CBC 1.png
-P F31D6D44 2.png
-P F1341EEA 3.png
-P 8620E42F 4.png
-R 9713AC5C bg.png
+P 31ACA2D3 1.png
+P 8E8B75A2 2.png
+P F6C05ECF 3.png
+P 23896093 4.png
+R 40435E2E bg.png
 P 93B1F945 shadow.png
 D images/dialog/product
-R 205FC97F 1.png
+R 889077B6 1.png
 D images/dialog/sea
-R BB88A759 1.png
+R 52E368BB 1.png
 P AD87A316 11.png
 P E3FC31EE 12.png
 P F4CDB636 13.png
 D images/dialog/seabed
-R 171265DB 1.png
+R 63921388 1.png
 D images/dialog/ship
-R 01C97889 1.png
+R 1DE58BDE 1.png
 P 96262344 11.png
 P B483BEC1 12.png
 P 9680C558 13.png
 D images/dialog/wall
-R 3918F52D 1.png
+R 510C5922 1.png
 D images/dialog/YJY
-R 43438C10 1.png
+R BC9C774A 1.png
 D images/hall/1
 R BE1C7E00 c1.png
 R 3965D68F c2.png
@@ -181,6 +206,7 @@ P F42E082E p1.png
 P 4A576F23 p2.png
 P 7B77E3F7 p3.png
 P 4229C3D2 p5.png
+P 5AC45411 t.png
 P A6814EB5 title.png
 P EE9D3126 z3.png
 P 53D74398 z6.png
@@ -197,8 +223,9 @@ R E1036CB5 b1.png
 R 55DF2038 b2.png
 R B61E7FAE flag.png
 P 074FE0A3 light.png
-P 9E8E66C1 t.png
+P 6A2E48A8 t.png
 P 75A2384F title.png
+R 37DFDFE2 top.png
 D images/hall/3
 R C7772E56 1.png
 R 357C60C3 2.png
@@ -211,8 +238,7 @@ R E346CE37 s2.png
 R 818F7606 s3.png
 R 9749DCB5 s4.png
 R E0BB38ED s5.png
-R 2510AD2A title.png
-D images/hall/images
+R 2AEBF6D3 title.png
 D images/perfection/1
 P 1AA34A15 1.png
 P 570F7328 2.png
@@ -223,6 +249,7 @@ P 642BEAF2 gem.png
 P 60170D9B pao.png
 R 153AC821 people.png
 P 34642974 s1.png
+P 8978AB37 t.png
 D images/perfection/2
 P B2793ED4 1.png
 P E1E53BBE 2.png
@@ -232,6 +259,7 @@ P 11662F29 5.png
 P 5F0D5B55 6.png
 P E19E4E81 m.png
 P 1DBAD08D ms.png
+P 8492BE1A t.png
 D images/perfection/3
 P E08DAFAA 1.png
 P 5D50D862 11.png
@@ -241,4 +269,5 @@ P 0E7113F6 3.png
 P 5090E5C7 33.png
 P 0A519A48 4.png
 P 1EA8092E 44.png
+P BE52806A t.png
 P C387482B title.png

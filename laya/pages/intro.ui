@@ -2,7 +2,7 @@
     "x":0,
     "type":"Dialog",
     "selectedBox":1,
-    "selecteID":37,
+    "selecteID":39,
     "props":{"y":325,"x":812,"width":1624,"sceneColor":"#000000","scaleY":1,"scaleX":1,"pivotY":325,"pivotX":812,"height":750},
     "nodeParent":-1,
     "label":"Dialog",
@@ -27,7 +27,7 @@
                 {
                     "x":30,
                     "type":"Image",
-                    "props":{"y":375,"x":812,"var":"bg","skin":"images/dialog/peoples/bg.png","pivotY":210,"pivotX":425},
+                    "props":{"y":375,"x":812,"var":"bg","skin":"images/dialog/king/1.png","pivotY":210,"pivotX":425},
                     "nodeParent":37,
                     "label":"Image(bg)",
                     "isDirectory":false,
@@ -134,7 +134,7 @@
                                 }]
                         }],
                     "$LOCKED":true,
-                    "$HIDDEN":true
+                    "$HIDDEN":false
                 },
                 {
                     "x":30,
@@ -353,7 +353,58 @@
                                 }]
                         }],
                     "$LOCKED":false,
-                    "$HIDDEN":false
+                    "$HIDDEN":true
+                },
+                {
+                    "x":30,
+                    "type":"Panel",
+                    "props":{"y":290,"x":850,"width":290,"var":"kingWord","vScrollBarSkin":"images/tips/vscroll.png","height":210},
+                    "nodeParent":37,
+                    "label":"Panel(kingWord)",
+                    "isOpen":false,
+                    "isDirectory":true,
+                    "isAniNode":true,
+                    "hasChild":true,
+                    "compId":39,
+                    "child":[
+                        {
+                            "type":"Image",
+                            "props":{"y":0,"x":0,"skin":"images/dialog/king/word.png"},
+                            "nodeParent":39,
+                            "label":"Image",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":38,
+                            "child":[
+                                ]
+                        }]
+                },
+                {
+                    "x":30,
+                    "type":"Panel",
+                    "props":{"y":290,"x":850,"width":290,"var":"farmWord","vScrollBarSkin":"images/tips/vscroll.png","height":210},
+                    "nodeParent":37,
+                    "label":"Panel(farmWord)",
+                    "isOpen":true,
+                    "isDirectory":true,
+                    "isAniNode":true,
+                    "hasChild":true,
+                    "compId":41,
+                    "child":[
+                        {
+                            "x":45,
+                            "type":"Image",
+                            "props":{"y":0,"x":0,"skin":"images/dialog/farm/word.png"},
+                            "nodeParent":41,
+                            "label":"Image",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":42,
+                            "child":[
+                                ]
+                        }]
                 },
                 {
                     "x":30,

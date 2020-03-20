@@ -70,6 +70,11 @@ var Resources = [
     { url: 'images/dialog/ship/1.png', type: Loader.IMAGE },    
     { url: 'images/dialog/wall/1.png', type: Loader.IMAGE },    
     { url: 'images/dialog/YJY/1.png', type: Loader.IMAGE },    
+    { url: 'images/result/bg.jpg', type: Loader.IMAGE },    
+    { url: 'images/result/book.png', type: Loader.IMAGE },    
+    { url: 'images/result/pattern.png', type: Loader.IMAGE },    
+    { url: 'images/result/w3.png', type: Loader.IMAGE },    
+    { url: 'images/result/w4.png', type: Loader.IMAGE },    
     { url: 'res/atlas/images/culture.atlas', type: Loader.ATLAS },
     { url: 'res/atlas/images/hall.atlas', type: Loader.ATLAS },
     { url: 'res/atlas/images/lab.atlas', type: Loader.ATLAS },
@@ -89,5 +94,7 @@ var Resources = [
     { url: 'res/atlas/images/dialog/king.atlas', type: Loader.ATLAS },
     { url: 'res/atlas/images/dialog/peoples.atlas', type: Loader.ATLAS },
     { url: 'res/atlas/images/dialog/sea.atlas', type: Loader.ATLAS },
-    { url: 'res/atlas/images/dialog/ship.atlas', type: Loader.ATLAS }
+    { url: 'res/atlas/images/dialog/ship.atlas', type: Loader.ATLAS },
+    { url: 'res/atlas/images/dialog/farm.atlas', type: Loader.ATLAS },
+    { url: 'res/atlas/images/result.atlas', type: Loader.ATLAS }
 ];

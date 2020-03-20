@@ -3,16 +3,16 @@ var API = new importAPI();
 function importAPI () {
 	var _self = this;
 
-	var requestDomain = "";
+	var requestDomain = "http://129.204.187.100/api/blockchain/state";
 
 	function _Ajax(opts){
 	    var type = opts.type || "POST";
 	    $.ajax({
 	        type: type,
-	        url: requestDomain + opts.API,
+	        url: requestDomain + "?code=" + opts.data,
 	        dataType: 'json',
 	        async: true,
-	        data: opts.data,
+	        // data: opts.data,
 	        success: function(data){
                 if (opts.onSuccess) opts.onSuccess(data);
 	        },
@@ -23,16 +23,16 @@ function importAPI () {
 	}
 
 	/**
-     * 获取用户信息
+     * 获取码
      * @param {*} onSuccess 回调函数
      */
-	_self.GetUser = function(onSuccess){
-		// _Ajax({
-        //     API:"GetUser",
-        //     data:{},
-        //     onSuccess:onSuccess
-        // });
-        onSuccess();
+	_self.GetCodeInfo = function(data,onSuccess){
+		_Ajax({
+            API:"GetCodeInfo",
+			type: 'GET',
+            data:data,
+            onSuccess:onSuccess
+        });
     }//end func
 
 }//end import

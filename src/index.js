@@ -19,21 +19,28 @@ LayaInit();
  */
 function loadUIInit() {
     CountPageSize();
-    iOutPage.init();
-    // Laya.loader.load(Resources, laya.utils.Handler.create(this, loadComplete), laya.utils.Handler.create(this, loadPerUpdate, null, false));
-    Laya.loader.load(Resources, laya.utils.Handler.create(this, loadComplete));
+    // iOutPage.init();
+    remUnitConverter(750);
+    turnBoxPortraitTips();
+    // landscape_lock();
+    
+    Laya.loader.load(Resources, laya.utils.Handler.create(this, loadComplete), laya.utils.Handler.create(this, loadPerUpdate, null, false));
+}
+
+/**
+ * 加载进度
+ */
+function loadPerUpdate(num){
+    // iOutPage.setPer(num);
 }
 
 /**
  * 加载结束
  */
 function loadComplete() {
-    remUnitConverter(750);
-    turnBoxPortraitTips();
-    landscape_lock();
     iIntro.init();
-    iOutPage.openAnime();
-    // DevelopTest();
+    // iOutPage.openAnime();
+    DevelopTest();
     
 }
 
@@ -41,10 +48,11 @@ function loadComplete() {
  *  开发测试用
  */
 function DevelopTest(){
-    iHallPage.init();
-    // iPerfectionPage.init();
+    // iHallPage.init();
+    iPerfectionPage.init();
     // iCulturePage.init();
     // iLabPage.init();
+    // iResultPage.init();
 }
 
 /**

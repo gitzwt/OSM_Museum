@@ -109,17 +109,22 @@ var HallPage = function(){
             iPerfectionPage.init();
 
             Laya.Tween.to(pageA, {
-                x: pageA.x - 200,
-                alpha:0
+                x: pageA.x - 300
             }, 1000,Laya.Ease.linearIn,null);
             Laya.Tween.to(pageB, {
-                x: pageA.x - 200,
-                alpha:0
+                x: pageA.x - 300
             }, 1000,Laya.Ease.linearIn,null);
+
+            Laya.Tween.to(pageA, {
+                alpha: 0
+            }, 700,Laya.Ease.linearIn,null,1000);
+            Laya.Tween.to(pageB, {
+                alpha: 0
+            }, 700,Laya.Ease.linearIn,null,1000);
 
             setTimeout(function(){
                 _self.distroy();
-            },1000);
+            },1700);
         }
     }
 
@@ -221,8 +226,9 @@ var HallPage = function(){
     function updateParallax(x,y){
         ClearResumeParallax();
         // updateParallaxBg(x,y);
-        updateParallaxPart1(x,y);
-        updateParallaxPart2(x,y);
+        updateParallaxPart(x,y,"part1",10,PARALLAX_SENSITIVITY_PART1);
+        updateParallaxPart(x,y,"part2",20,PARALLAX_SENSITIVITY_PART2);
+        updateParallaxPart(x,y,"part3",40,PARALLAX_SENSITIVITY_PART3);
 
         
         clearTimeout(ParallaxTimer);
@@ -246,61 +252,40 @@ var HallPage = function(){
     }
 
     /**
-     * 更新part1视差
+     * 更新视差
      * @param {*} x 
      * @param {*} y 
      */
-    function updateParallaxPart1(x,y){
-        var lastx = pageA.part1.x;
-        var lasty = pageA.part1.y;
+    function updateParallaxPart(x,y,name,max,sens){
+        var lastx = pageA[name].x;
+        var lasty = pageA[name].y;
 
-        lastx -= x * PARALLAX_SENSITIVITY_PART1;
-        lastx = lastx > 20 ? 20 : lastx;
-        lastx = lastx < -20 ? -20 : lastx;
+        lastx -= x * sens;
+        lastx = lastx > max ? max : lastx;
+        lastx = lastx < -max ? -max : lastx;
 
-        lasty -= y * PARALLAX_SENSITIVITY_PART1;
-        lasty = lasty > 20 ? 20 : lasty;
-        lasty = lasty < -20 ? -20 : lasty;
+        lasty -= y * sens;
+        lasty = lasty > max ? max : lasty;
+        lasty = lasty < -max ? -max : lasty;
         
-        pageA.part1.x = lastx;
-        pageA.part1.y = lasty;
-        pageB.part1.x = lastx;
-        pageB.part1.y = lasty;
-    }
-
-    /**
-     * 更新part1视差
-     * @param {*} x 
-     * @param {*} y 
-     */
-    function updateParallaxPart2(x,y){
-        var lastx = pageA.part2.x;
-        var lasty = pageA.part2.y;
-
-        lastx -= x * PARALLAX_SENSITIVITY_PART2;
-        lastx = lastx > 40 ? 40 : lastx;
-        lastx = lastx < -40 ? -40 : lastx;
-
-        lasty -= y * PARALLAX_SENSITIVITY_PART2;
-        lasty = lasty > 40 ? 40 : lasty;
-        lasty = lasty < -40 ? -40 : lasty;
-
-        pageA.part2.x = lastx;
-        pageA.part2.y = lasty;
-        pageB.part2.x = lastx;
-        pageB.part2.y = lasty;
+        pageA[name].x = lastx;
+        pageA[name].y = lasty;
+        pageB[name].x = lastx;
+        pageB[name].y = lasty;
     }
 
     /**
      * 清除恢复视差
      */
     function ClearResumeParallax(){
-        Laya.Tween.clearAll(pageA.bg);
+        // Laya.Tween.clearAll(pageA.bg);
         Laya.Tween.clearAll(pageA.part1);
         Laya.Tween.clearAll(pageA.part2);
-        Laya.Tween.clearAll(pageB.bg);
+        Laya.Tween.clearAll(pageA.part3);
+        // Laya.Tween.clearAll(pageB.bg);
         Laya.Tween.clearAll(pageB.part1);
         Laya.Tween.clearAll(pageB.part2);
+        Laya.Tween.clearAll(pageB.part3);
     }
 
     /**
@@ -317,16 +302,24 @@ var HallPage = function(){
         Laya.Tween.to(pageA.part1,{
             x:0,
             y:0
-        },1200)
+        },1300)
         Laya.Tween.to(pageA.part2,{
+            x:0,
+            y:0
+        },1200)
+        Laya.Tween.to(pageA.part3,{
             x:0,
             y:0
         },700)
         Laya.Tween.to(pageB.part1,{
             x:0,
             y:0
-        },1200)
+        },1300)
         Laya.Tween.to(pageB.part2,{
+            x:0,
+            y:0
+        },1200)
+        Laya.Tween.to(pageB.part3,{
             x:0,
             y:0
         },700)

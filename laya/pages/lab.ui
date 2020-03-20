@@ -3,7 +3,7 @@
     "type":"View",
     "selectedBox":29,
     "selecteID":44,
-    "props":{"width":3248,"sceneColor":"#000000","sceneBg":"laya/views/lab.jpg","height":750},
+    "props":{"y":750,"x":1200,"width":3248,"sceneColor":"#000000","sceneBg":"laya/views/lab.jpg","pivotY":750,"pivotX":1200,"height":750},
     "nodeParent":-1,
     "label":"View",
     "isOpen":true,
@@ -365,8 +365,9 @@
                     "compId":21,
                     "child":[
                         {
+                            "x":45,
                             "type":"Sprite",
-                            "props":{"y":19,"x":1,"width":58,"height":73},
+                            "props":{"y":83,"x":215,"width":58,"height":73},
                             "nodeParent":21,
                             "label":"Sprite",
                             "isDirectory":false,
@@ -377,6 +378,7 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"Sprite",
                             "props":{"y":41,"x":1672,"width":58,"height":73},
                             "nodeParent":21,
@@ -387,7 +389,8 @@
                             "compId":23,
                             "child":[
                                 ]
-                        }]
+                        }],
+                    "$HIDDEN":false
                 },
                 {
                     "x":30,
@@ -461,7 +464,8 @@
                             "compId":41,
                             "child":[
                                 ]
-                        }]
+                        }],
+                    "$HIDDEN":false
                 },
                 {
                     "x":30,
@@ -474,7 +478,8 @@
                     "hasChild":false,
                     "compId":43,
                     "child":[
-                        ]
+                        ],
+                    "$HIDDEN":true
                 },
                 {
                     "x":30,
@@ -486,6 +491,20 @@
                     "isAniNode":true,
                     "hasChild":false,
                     "compId":44,
+                    "child":[
+                        ],
+                    "$HIDDEN":true
+                },
+                {
+                    "x":30,
+                    "type":"Image",
+                    "props":{"y":225,"x":1015,"skin":"images/lab/t.png"},
+                    "nodeParent":29,
+                    "label":"Image",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":45,
                     "child":[
                         ]
                 }]

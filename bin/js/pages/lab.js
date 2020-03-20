@@ -132,7 +132,28 @@ var LabPage = function () {
         if(showFlag && clickFlag){
             showFlag = false;
             page.zOrder = 99;
-            
+
+            Laya.Tween.to(page, {
+                scaleX: 1.5,
+                scaleY: 1.5
+            }, 800);
+
+            Laya.Tween.to(page, {
+                y: page.y + 150,
+                x: page.x - 50
+            }, 1000,Laya.Ease.linearIn,null,800);
+
+            Laya.Tween.to(page, {
+                alpha:0
+            }, 500,Laya.Ease.linearIn,null,1800);
+
+            setTimeout(function(){
+                iResultPage.init();
+            },1800)
+
+            setTimeout(function(){
+                _self.distroy();
+            },2300);
         }
     }
 
@@ -162,6 +183,8 @@ var LabPage = function () {
         tipsFlag = true;
         Laya.stage.addChild(page);
         pageX = BgPageX;
+        page.pivotX = page.pivotX + BgPageX;
+        page.x = page.x + BgPageX;
         updatePagePos();
         
         maskInit();

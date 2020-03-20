@@ -147,13 +147,16 @@ var PerfectionPage = function () {
             }, 800);
 
             Laya.Tween.to(page, {
-                y: page.y + 100,
+                y: page.y + 150
+            }, 1000,Laya.Ease.linearIn,null,800);
+
+            Laya.Tween.to(page, {
                 alpha:0
-            }, 800,Laya.Ease.linearIn,null,800);
+            }, 500,Laya.Ease.linearIn,null,1800);
 
             setTimeout(function(){
                 _self.distroy();
-            },1600);
+            },2300);
         }
     }
 
@@ -185,6 +188,8 @@ var PerfectionPage = function () {
         tipsFlag = true;
         Laya.stage.addChild(page);
         pageX = BgPageX - 20;
+        // page.pivotX = page.pivotX + BgPageX;
+        // page.x = page.x + BgPageX;
         updatePagePos();
     }
 }

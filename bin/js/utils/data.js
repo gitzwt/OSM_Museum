@@ -9,7 +9,8 @@ var GYE_SENSITIVITY_Y = 5;
 
 var SCALE_SENSITIVITY_BG = 0.0001;
 var PARALLAX_SENSITIVITY_PART1 = 0.1;
-var PARALLAX_SENSITIVITY_PART2 = 0.3;
+var PARALLAX_SENSITIVITY_PART2 = 0.2;
+var PARALLAX_SENSITIVITY_PART3 = 0.3;
 
 var BgPageX = 0, WindowW = 0;
 
@@ -40,12 +41,14 @@ var dialogData = {
         bg:"drug/1.png"
     },
     farm:{
-        bg:"farm/1.png"
+        bg:"farm/1.png",
+        word: "farmWord",
     },
     king:{
         bg:"king/1.png",
         key:"king",
-        nums:4
+        nums:4,
+        word: "kingWord",
     },
     product:{
         bg:"product/1.png"
