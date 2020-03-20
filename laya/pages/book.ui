@@ -53,7 +53,7 @@
         {
             "x":15,
             "type":"Text",
-            "props":{"y":310,"x":819,"width":49,"var":"times","text":"0","height":16,"fontSize":21,"font":"Microsoft YaHei","color":"#757d87","align":"center"},
+            "props":{"y":305,"x":819,"width":49,"var":"times","text":"0","height":16,"fontSize":21,"font":"Microsoft YaHei","color":"#757d87","align":"center"},
             "nodeParent":1,
             "label":"Text(times)",
             "isDirectory":false,
@@ -66,7 +66,7 @@
         {
             "x":15,
             "type":"Text",
-            "props":{"y":380,"x":662,"width":294,"var":"num1","text":"0","height":63,"fontSize":58,"font":"Microsoft YaHei","color":"#373f45","align":"center"},
+            "props":{"y":368,"x":662,"width":294,"var":"num1","text":"0","height":63,"fontSize":58,"font":"Microsoft YaHei","color":"#373f45","align":"center"},
             "nodeParent":1,
             "label":"Text(num1)",
             "isDirectory":false,
@@ -92,7 +92,7 @@
         {
             "x":15,
             "type":"Text",
-            "props":{"y":559,"x":594,"width":160,"var":"date","text":"2020年3月5日","height":28,"fontSize":17,"color":"#5e6976"},
+            "props":{"y":557,"x":594,"width":160,"var":"date","text":"2020年3月5日","height":28,"fontSize":17,"color":"#5e6976"},
             "nodeParent":1,
             "label":"Text(date)",
             "isDirectory":false,
@@ -118,7 +118,7 @@
         {
             "x":15,
             "type":"Sprite",
-            "props":{"y":114,"x":1125,"width":78,"var":"closeBtn","height":72},
+            "props":{"y":111,"x":1112,"width":134,"var":"closeBtn","pivotY":10,"pivotX":8,"height":124},
             "nodeParent":1,
             "label":"Sprite(closeBtn)",
             "isDirectory":false,

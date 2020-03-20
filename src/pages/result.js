@@ -33,29 +33,29 @@ var ResultPage = function () {
      */
     function judgeCode() {
         var code = iUtils.getQueryString("fwm");
-        var info = null;
-        // var info = {
-        //     "guid": 1,
-        //     "productName": "35ml\u73cd\u73e0\u767d\u51c0\u900f\u6da6\u767d\u7cbe\u534e\u6db2\uff08\u70b9\u4eae\u7248\uff09",
-        //     "generatedtime": "2020-03-10",
-        //     "queriedTimes": 6,
-        //     "blockAddress": "b478abd269b811eab3b652540065a75b"
-        // };
+        // var info = null;
+        var info = {
+            "guid": 1,
+            "productName": "35ml\u73cd\u73e0\u767d\u51c0\u900f\u6da6\u767d\u7cbe\u534e\u6db2\uff08\u70b9\u4eae\u7248\uff09",
+            "generatedtime": "2020-03-10",
+            "queriedTimes": 6,
+            "blockAddress": "b478abd269b811eab3b652540065a75b"
+        };
         if (code) {
-            try {
-                API.GetCodeInfo(code, function (data) {
-                    // console.log(data)
-                    if (data.status == 0) {
-                        info = data.data;
-                        iBook.init(info);
-                    }
-                });
-            }
-            catch (e){
+            // try {
+            //     API.GetCodeInfo(code, function (data) {
+            //         // console.log(data)
+            //         if (data.status == 0) {
+            //             info = data.data;
+            //             iBook.init(info);
+            //         }
+            //     });
+            // }
+            // catch (e){
 
-            }
+            // }
 
-            // iBook.init(info);
+            iBook.init(info);
             setTimeout(function () {
                 if (info) {
                     var btn = page.btn;
