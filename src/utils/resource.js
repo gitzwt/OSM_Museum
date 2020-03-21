@@ -12,7 +12,7 @@ var PreResources = [
 ];
 var Resources = [
     { url: 'images/culture/bg_01.jpg', type: Loader.IMAGE },
-    { url: 'images/culture/bg_02.jpg', type: Loader.IMAGE },
+    { url: 'images/culture/bg_022.jpg', type: Loader.IMAGE },
     { url: 'images/culture/bg_03.jpg', type: Loader.IMAGE },
     { url: 'images/culture/bg_04.jpg', type: Loader.IMAGE },
     { url: 'images/culture/2/p.png', type: Loader.IMAGE },
@@ -41,7 +41,7 @@ var Resources = [
     { url: 'images/hall/3/s3.png', type: Loader.IMAGE },
     { url: 'images/hall/3/s4.png', type: Loader.IMAGE },
     { url: 'images/hall/3/s5.png', type: Loader.IMAGE },
-    { url: 'images/hall/3/title.png', type: Loader.IMAGE },
+    { url: 'images/hall/3/title2.png', type: Loader.IMAGE },
     { url: 'images/hall/2/flag.png', type: Loader.IMAGE },
     { url: 'images/hall/bg_01.jpg', type: Loader.IMAGE },
     { url: 'images/hall/bg_02.jpg', type: Loader.IMAGE },

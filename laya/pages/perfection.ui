@@ -2,7 +2,7 @@
     "x":0,
     "type":"View",
     "selectedBox":66,
-    "selecteID":71,
+    "selecteID":38,
     "props":{"y":750,"x":1624,"width":4871,"sceneColor":"#000000","sceneBg":"laya/views/perfection.jpg","pivotY":750,"pivotX":1624,"height":750},
     "nodeParent":-1,
     "label":"View",
@@ -563,13 +563,14 @@
                     "props":{"y":57,"x":3120,"width":1478,"scaleY":0.85,"scaleX":0.85,"name":"part3","height":678},
                     "nodeParent":66,
                     "label":"Box(part3)",
-                    "isOpen":false,
+                    "isOpen":true,
                     "isDirectory":true,
                     "isAniNode":true,
                     "hasChild":true,
                     "compId":38,
                     "child":[
                         {
+                            "x":45,
                             "type":"Box",
                             "props":{"y":122,"x":231,"name":"a"},
                             "nodeParent":38,
@@ -606,6 +607,7 @@
                                 }]
                         },
                         {
+                            "x":45,
                             "type":"Box",
                             "props":{"y":239,"x":945,"name":"d"},
                             "nodeParent":38,
@@ -642,6 +644,7 @@
                                 }]
                         },
                         {
+                            "x":45,
                             "type":"Box",
                             "props":{"y":201,"x":607,"name":"b"},
                             "nodeParent":38,
@@ -678,6 +681,7 @@
                                 }]
                         },
                         {
+                            "x":45,
                             "type":"Box",
                             "props":{"y":156,"x":794,"name":"c"},
                             "nodeParent":38,
@@ -714,6 +718,7 @@
                                 }]
                         },
                         {
+                            "x":45,
                             "type":"Image",
                             "props":{"y":296,"x":105,"skin":"images/perfection/3/title.png","name":"title"},
                             "nodeParent":38,
@@ -726,8 +731,9 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"Image",
-                            "props":{"y":47,"x":466,"skin":"images/perfection/3/t.png"},
+                            "props":{"y":47,"x":466,"width":82,"skin":"images/perfection/3/t.png","height":37},
                             "nodeParent":38,
                             "label":"Image",
                             "isDirectory":false,

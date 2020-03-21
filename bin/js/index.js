@@ -19,7 +19,7 @@ LayaInit();
  */
 function loadUIInit() {
     CountPageSize();
-    // iOutPage.init();
+    iOutPage.init();
     remUnitConverter(750);
     turnBoxPortraitTips();
     // landscape_lock();
@@ -31,7 +31,7 @@ function loadUIInit() {
  * 加载进度
  */
 function loadPerUpdate(num){
-    // iOutPage.setPer(num);
+    iOutPage.setPer(num);
 }
 
 /**
@@ -39,8 +39,8 @@ function loadPerUpdate(num){
  */
 function loadComplete() {
     iIntro.init();
-    // iOutPage.openAnime();
-    DevelopTest();
+    iOutPage.openAnime();
+    // DevelopTest();
     
 }
 
@@ -48,8 +48,8 @@ function loadComplete() {
  *  开发测试用
  */
 function DevelopTest(){
-    // iHallPage.init();
-    iPerfectionPage.init();
+    iHallPage.init();
+    // iPerfectionPage.init();
     // iCulturePage.init();
     // iLabPage.init();
     // iResultPage.init();
