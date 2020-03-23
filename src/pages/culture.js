@@ -11,6 +11,7 @@ var CulturePage = function () {
     var moveViewFlag = false;
     var lightAniFlag = true;
     var MoveData;
+    var startData;
     var bgWidth = 5320;
 
     /**
@@ -81,6 +82,8 @@ var CulturePage = function () {
             MoveData = {};
             MoveData.x = e.stageX;
             MoveData.y = e.stageY;
+            startData = {};
+            startData.x = e.stageX;
             hideTips();
             clickFlag = true;
         }
@@ -100,7 +103,7 @@ var CulturePage = function () {
             MoveData.x = e.stageX;
             MoveData.y = e.stageY;
 
-            clickFlag = false;
+            if(Math.abs(startData.x - e.stageX) > 15) clickFlag = false;
         }
     }
 
@@ -109,6 +112,7 @@ var CulturePage = function () {
      */
     function clearMoveData() {
         MoveData = null;
+        startData = null;
         moveViewFlag = false;
     }
 

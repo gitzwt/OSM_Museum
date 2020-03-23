@@ -13,6 +13,7 @@ var HallPage = function(){
 
     var moveViewFlag = false;
     var MoveData;
+    var startData;
     var GyeData;
 
     var ParallaxTimer;
@@ -172,6 +173,8 @@ var HallPage = function(){
             MoveData = {};
             MoveData.x = e.stageX;
             MoveData.y = e.stageY;
+            startData = {};
+            startData.x = e.stageX;
             hideTips();
             clickFlag = true;
         }
@@ -196,7 +199,7 @@ var HallPage = function(){
             MoveData.x = e.stageX;
             MoveData.y = e.stageY;
 
-            clickFlag = false;
+            if(Math.abs(startData.x - e.stageX) > 15) clickFlag = false;
         }
     }
 
@@ -205,6 +208,7 @@ var HallPage = function(){
      */
     function clearMoveData() {
         MoveData = null;
+        startData = null;
         moveViewFlag = false;
     }
 

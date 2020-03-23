@@ -10,6 +10,7 @@ var PerfectionPage = function () {
     var clickFlag = false;
     var moveViewFlag = false;
     var MoveData;
+    var startData;
     var bgWidth = 4871;
 
     /**
@@ -86,6 +87,8 @@ var PerfectionPage = function () {
             MoveData = {};
             MoveData.x = e.stageX;
             MoveData.y = e.stageY;
+            startData = {};
+            startData.x = e.stageX;
             hideTips();
             clickFlag = true;
         }
@@ -105,7 +108,7 @@ var PerfectionPage = function () {
             MoveData.x = e.stageX;
             MoveData.y = e.stageY;
 
-            clickFlag = false;
+            if(Math.abs(startData.x - e.stageX) > 15) clickFlag = false;
         }
     }
 
@@ -114,6 +117,7 @@ var PerfectionPage = function () {
      */
     function clearMoveData() {
         MoveData = null;
+        startData = null;
         moveViewFlag = false;
     }
 

@@ -10,6 +10,7 @@ var LabPage = function () {
     var clickFlag = false;
     var moveViewFlag = false;
     var MoveData;
+    var startData;
     var bgWidth = 3248;
 
     /**
@@ -78,6 +79,8 @@ var LabPage = function () {
             MoveData = {};
             MoveData.x = e.stageX;
             MoveData.y = e.stageY;
+            startData = {};
+            startData.x = e.stageX;
             hideTips();
             clickFlag = true;
         }
@@ -97,7 +100,7 @@ var LabPage = function () {
             MoveData.x = e.stageX;
             MoveData.y = e.stageY;
 
-            clickFlag = false;
+            if(Math.abs(startData.x - e.stageX) > 15) clickFlag = false;
         }
     }
 
@@ -106,6 +109,7 @@ var LabPage = function () {
      */
     function clearMoveData() {
         MoveData = null;
+        startData = null;
         moveViewFlag = false;
     }
 
