@@ -53,9 +53,9 @@ var dialogData = {
     product:{
         bg:"product/1.png"
     },
-    sea:{
-        bg:"sea/1.png",
-        key:"sea",
+    sea2:{
+        bg:"sea2/1.png",
+        key:"sea2",
         nums:3
     },
     seabed:{

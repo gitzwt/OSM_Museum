@@ -63,7 +63,7 @@ var CulturePage = function () {
         page.YJYBtn.on(Laya.Event.CLICK, this, showIntro,["YJY"]);
         page.kingBtn.on(Laya.Event.CLICK, this, showIntro,["king"]);
         page.farmBtn.on(Laya.Event.CLICK, this, showIntro,["farm"]);
-        page.seaBtn.on(Laya.Event.CLICK, this, showIntro,["sea"]);
+        page.seaBtn.on(Laya.Event.CLICK, this, showIntro,["sea2"]);
     }
 
     /**

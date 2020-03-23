@@ -22,7 +22,7 @@ var Book = function () {
      * 更新UI
      */
     function updateUI(info){
-        page.times.text = info.queriedTimes;
+        page.times.text = "本次为第"+info.queriedTimes+"次查询，查询均记录于区块链系统，具有不可篡改性";
         page.date.text = iUtils.dateFormat(info.generatedtime);
         page.num2.text = info.blockAddress;
         page.num1.text = info.guid;

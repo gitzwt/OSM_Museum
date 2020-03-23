@@ -103,7 +103,7 @@ P AB3F67DC tips.png
 D images/result
 P F42F9432 b.png
 R 41BDBCBE bg.jpg
-R 9B920529 book.png
+R A2145AD9 book2.png
 R 61811AF6 pattern.png
 P ADDAF746 w1.png
 P 240356A5 w2.png
@@ -182,8 +182,8 @@ R 40435E2E bg.png
 P 93B1F945 shadow.png
 D images/dialog/product
 R 889077B6 1.png
-D images/dialog/sea
-R 52E368BB 1.png
+D images/dialog/sea2
+R D53F15C1 1.png
 P AD87A316 11.png
 P E3FC31EE 12.png
 P F4CDB636 13.png
