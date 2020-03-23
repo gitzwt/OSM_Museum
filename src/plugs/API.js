@@ -3,7 +3,7 @@ var API = new importAPI();
 function importAPI () {
 	var _self = this;
 
-	var requestDomain = "http://129.204.187.100/api/blockchain/state";
+	var requestDomain = "https://129.204.187.100/api/blockchain/state";
 
 	function _Ajax(opts){
 	    var type = opts.type || "POST";
