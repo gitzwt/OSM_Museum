@@ -3,13 +3,13 @@ var API = new importAPI();
 function importAPI () {
 	var _self = this;
 
-	var requestDomain = "https://129.204.187.100/api/blockchain/state";
+	var requestDomain = "https://wechat.dhteam.net/mazda/ajax/getdata.ashx";
 
 	function _Ajax(opts){
 	    var type = opts.type || "POST";
 	    $.ajax({
 	        type: type,
-	        url: requestDomain + "?code=" + opts.data,
+	        url: requestDomain + "?fwm=" + opts.data,
 	        dataType: 'json',
 	        async: true,
 	        // data: opts.data,
