@@ -777,7 +777,7 @@
                                 "tween":true,
                                 "target":23,
                                 "key":"alpha",
-                                "index":75
+                                "index":125
                             },
                             {
                                 "value":0,
@@ -785,7 +785,7 @@
                                 "tween":true,
                                 "target":23,
                                 "key":"alpha",
-                                "index":90
+                                "index":140
                             }]
                     }
                 },
@@ -807,7 +807,7 @@
                                 "tween":true,
                                 "target":24,
                                 "key":"alpha",
-                                "index":90
+                                "index":140
                             },
                             {
                                 "value":1,
@@ -815,7 +815,7 @@
                                 "tween":true,
                                 "target":24,
                                 "key":"alpha",
-                                "index":105
+                                "index":155
                             },
                             {
                                 "value":1,
@@ -823,7 +823,7 @@
                                 "tween":true,
                                 "target":24,
                                 "key":"alpha",
-                                "index":165
+                                "index":266
                             },
                             {
                                 "value":0,
@@ -831,7 +831,7 @@
                                 "tween":true,
                                 "target":24,
                                 "key":"alpha",
-                                "index":180
+                                "index":280
                             }]
                     }
                 },
@@ -853,7 +853,7 @@
                                 "tween":true,
                                 "target":25,
                                 "key":"alpha",
-                                "index":180
+                                "index":280
                             },
                             {
                                 "value":1,
@@ -861,7 +861,7 @@
                                 "tween":true,
                                 "target":25,
                                 "key":"alpha",
-                                "index":195
+                                "index":295
                             },
                             {
                                 "value":1,
@@ -869,7 +869,7 @@
                                 "tween":true,
                                 "target":25,
                                 "key":"alpha",
-                                "index":260
+                                "index":390
                             },
                             {
                                 "value":0,
@@ -877,7 +877,7 @@
                                 "tween":true,
                                 "target":25,
                                 "key":"alpha",
-                                "index":275
+                                "index":405
                             }]
                     }
                 },
@@ -899,7 +899,7 @@
                                 "tween":true,
                                 "target":27,
                                 "key":"alpha",
-                                "index":275
+                                "index":405
                             },
                             {
                                 "value":1,
@@ -907,7 +907,7 @@
                                 "tween":true,
                                 "target":27,
                                 "key":"alpha",
-                                "index":290
+                                "index":420
                             }]
                     }
                 }],

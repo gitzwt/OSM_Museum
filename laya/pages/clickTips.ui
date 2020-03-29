@@ -3,7 +3,7 @@
     "type":"View",
     "selectedBox":1,
     "selecteID":1,
-    "props":{"width":58,"sceneColor":"#000000","scaleY":2,"scaleX":2,"height":73},
+    "props":{"width":58,"sceneColor":"#000000","scaleY":1.5,"scaleX":1.5,"height":73},
     "nodeParent":-1,
     "label":"View",
     "isOpen":true,

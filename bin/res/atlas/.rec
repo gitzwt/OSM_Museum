@@ -6,9 +6,9 @@ R A8533C65 bg_01.jpg
 R 098A3A55 bg_02.jpg
 R F5ABE69A bg_03.jpg
 R 86ACF73C bg_04.jpg
-P 8E5EBFA2 t1.png
-P B80A1168 t2.png
-P 4F2383FB t3.png
+P 8141CD3F t1.png
+P E2BBE26A t2.png
+P 2D3F487B t3.png
 D images/dialog
 P A86B7473 ar.png
 P BEE74D0B arL.png
@@ -95,7 +95,7 @@ R EF95870A bg_01.jpg
 R 1B105457 bg_02.jpg
 R C35CCD77 bg_03.jpg
 R 25D9F3C8 bg_04.jpg
-P AB3F67DC tips.png
+P B8211560 tips.png
 D images/result
 P 401C87FB b.png
 R 7E9C4072 bg.jpg

@@ -24,13 +24,13 @@ var OutPage = function () {
         setTimeout(function () {
             eventInit();
             showOutView();
-        }, 15000);
+        }, 22000);
     }
 
     /**
      * 设置百分比
      */
-    _self.setPer = function(num){
+    _self.setPer = function (num) {
         page.per.x = -650 + 650 * num;
         page.perword.text = parseInt(num * 100) + "%";
     }
@@ -38,7 +38,7 @@ var OutPage = function () {
     /**
      * 销毁
      */
-    _self.distroy = function(){
+    _self.distroy = function () {
         showFlag = false;
         page.removeSelf();
     }
@@ -46,14 +46,14 @@ var OutPage = function () {
     /**
      * 事件初始化
      */
-    function eventInit(){
-        page.enterBtn.on(Laya.Event.CLICK,this,showHallPage);
+    function eventInit() {
+        page.enterBtn.on(Laya.Event.CLICK, this, showHallPage);
     }
 
     /**
      * 显示外景
      */
-    function showOutView(){
+    function showOutView() {
         page.ar.alpha = 1;
         page.ar.visible = true;
         Laya.Tween.to(page.aside, {
@@ -63,34 +63,66 @@ var OutPage = function () {
             alpha: 1
         }, 500);
 
-        setTimeout(function(){
+        setTimeout(function () {
             page.aside.visible = false;
-        },500);
+        }, 500);
+
+        document.getElementById("gyeBtn").addEventListener('touchstart', startGye, false);
     }
 
     /**
      * 显示大厅页面
      */
-    function showHallPage(){
-        if(showFlag){
+    function showHallPage() {
+        if (showFlag) {
             showFlag = false;
             page.zOrder = 99;
             iHallPage.init();
             Laya.Tween.to(page, {
                 scaleX: 1.5,
                 scaleY: 1.5
-            }, 1000,Laya.Ease.linearIn,null,50);
+            }, 1000, Laya.Ease.linearIn, null, 50);
 
             Laya.Tween.to(page, {
                 scaleX: 2,
                 scaleY: 2,
-                alpha:0
-            }, 800,Laya.Ease.linearIn,null,1000);
+                alpha: 0
+            }, 800, Laya.Ease.linearIn, null, 1000);
 
-            setTimeout(function(){
+            setTimeout(function () {
                 _self.distroy();
-            },1800);
+            }, 1800);
         }
+    }
+
+    /**
+     * 开启陀螺仪
+     */
+    function startGye() {
+        // alert(111)
+        if (typeof DeviceMotionEvent.requestPermission === 'function') {
+            // alert(1)
+            DeviceMotionEvent.requestPermission()
+                .then(response => {
+                    // alert("1" + response)
+                    // if (response == 'granted') {
+                        iHallPage.gyeAuto();
+                    // }
+                })
+                .catch(console.error)
+
+            DeviceOrientationEvent.requestPermission()
+                .then(response => {
+                    // alert("2" + response)
+                    // if (response == 'granted') {
+                        iHallPage.gyeAuto();
+                    // }
+                })
+                .catch(console.error)
+        } else {
+            iHallPage.gyeAuto();
+        }
+        showHallPage();
     }
 
     /**
@@ -101,7 +133,7 @@ var OutPage = function () {
         Laya.stage.addChild(page);
         page.x = BgPageX + page.pivotX;
         var mask = new Laya.Sprite();
-        mask.graphics.drawRect(0,0,650,4,"#ffffff");
+        mask.graphics.drawRect(0, 0, 650, 4, "#ffffff");
         page.perbox.mask = mask;
     }
 }

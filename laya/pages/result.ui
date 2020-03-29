@@ -2,7 +2,7 @@
     "x":0,
     "type":"View",
     "selectedBox":1,
-    "selecteID":9,
+    "selecteID":6,
     "props":{"width":1624,"sceneColor":"#000000","height":750},
     "nodeParent":-1,
     "label":"View",
@@ -28,7 +28,7 @@
         {
             "x":15,
             "type":"Image",
-            "props":{"y":83,"x":812,"skin":"images/result/w1.png","pivotX":85},
+            "props":{"y":67,"x":812,"skin":"images/result/w1.png","scaleY":1.2,"scaleX":1.2,"pivotX":85},
             "nodeParent":1,
             "label":"Image",
             "isDirectory":false,
@@ -41,7 +41,7 @@
         {
             "x":15,
             "type":"Image",
-            "props":{"y":224,"x":812,"skin":"images/result/w2.png","pivotX":180},
+            "props":{"y":224,"x":812,"skin":"images/result/w2.png","scaleY":1.2,"scaleX":1.2,"pivotX":180},
             "nodeParent":1,
             "label":"Image",
             "isDirectory":false,
@@ -54,7 +54,7 @@
         {
             "x":15,
             "type":"Image",
-            "props":{"y":333,"x":810,"skin":"images/result/w3.png","pivotX":492},
+            "props":{"y":336,"x":812,"skin":"images/result/w3.png","scaleY":1.2,"scaleX":1.2,"pivotX":492},
             "nodeParent":1,
             "label":"Image",
             "isDirectory":false,
@@ -67,7 +67,7 @@
         {
             "x":15,
             "type":"Image",
-            "props":{"y":485,"x":812,"skin":"images/result/w4.png","pivotX":208},
+            "props":{"y":486,"x":812,"skin":"images/result/w4.png","scaleY":1.2,"scaleX":1.2,"pivotX":208},
             "nodeParent":1,
             "label":"Image",
             "isDirectory":false,
@@ -92,7 +92,7 @@
                 {
                     "x":30,
                     "type":"Image",
-                    "props":{"y":0,"x":0,"skin":"images/result/b.png"},
+                    "props":{"y":0,"x":0,"skin":"images/result/b.png","scaleY":1.2,"scaleX":1.2},
                     "nodeParent":8,
                     "label":"Image",
                     "isOpen":true,

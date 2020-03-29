@@ -46,15 +46,15 @@ var Intro = function () {
         peopleBoxInit();
         eventInit();
         Laya.Dialog.manager.maskLayer.alpha = 0;
-        var screenProp = Laya.Browser.height / Laya.Browser.width;
-        if (screenProp < 0.54) {
-            page.cont.scaleX = 1.1;
-            page.cont.scaleY = 1.1;
-        }
-        else {
-            page.cont.scaleX = 1;
-            page.cont.scaleY = 1;
-        }
+        // var screenProp = Laya.Browser.height / Laya.Browser.width;
+        // if (screenProp < 0.54) {
+        //     page.cont.scaleX = 1;
+        //     page.cont.scaleY = 1;
+        // }
+        // else {
+        //     page.cont.scaleX = 1;
+        //     page.cont.scaleY = 1;
+        // }
     }
 
     /**
@@ -282,6 +282,7 @@ var Intro = function () {
     function pageHide() {
         page.close();
         clearTimeout(autoTimer);
+        page.slide.alpha = 0;
     }
 }
 var iIntro = new Intro();

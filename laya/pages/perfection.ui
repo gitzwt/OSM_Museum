@@ -329,7 +329,7 @@
                         },
                         {
                             "type":"Image",
-                            "props":{"y":-16,"x":-69,"skin":"images/perfection/1/t.png","scaleY":2,"scaleX":2},
+                            "props":{"y":-16,"x":-33,"skin":"images/perfection/1/t.png","scaleY":1.6,"scaleX":1.6},
                             "nodeParent":6,
                             "label":"Image",
                             "isDirectory":false,
@@ -546,7 +546,7 @@
                         },
                         {
                             "type":"Image",
-                            "props":{"y":49,"x":812,"skin":"images/perfection/2/t.png","scaleY":2,"scaleX":2},
+                            "props":{"y":58,"x":807,"skin":"images/perfection/2/t.png","scaleY":1.6,"scaleX":1.6},
                             "nodeParent":21,
                             "label":"Image",
                             "isDirectory":false,
@@ -733,7 +733,7 @@
                         {
                             "x":45,
                             "type":"Image",
-                            "props":{"y":84,"x":610,"width":82,"skin":"images/perfection/3/t.png","scaleY":2,"scaleX":2,"height":37},
+                            "props":{"y":96,"x":602,"width":82,"skin":"images/perfection/3/t.png","scaleY":1.6,"scaleX":1.6,"height":37},
                             "nodeParent":38,
                             "label":"Image",
                             "isDirectory":false,
@@ -760,7 +760,7 @@
                 {
                     "x":30,
                     "type":"Image",
-                    "props":{"y":250,"x":4441,"width":134,"skin":"images/perfection/tips.png","scaleY":1.5,"scaleX":1.5,"height":129},
+                    "props":{"y":244,"x":4421,"width":250,"skin":"images/perfection/tips.png","scaleY":1,"scaleX":1,"height":250},
                     "nodeParent":66,
                     "label":"Image",
                     "isDirectory":false,
@@ -785,7 +785,7 @@
                         {
                             "x":45,
                             "type":"Sprite",
-                            "props":{"y":-22,"x":-59,"width":116,"height":146},
+                            "props":{"y":6,"x":-45,"width":87,"height":110},
                             "nodeParent":59,
                             "label":"Sprite",
                             "isDirectory":false,
@@ -798,7 +798,7 @@
                         {
                             "x":45,
                             "type":"Sprite",
-                            "props":{"y":57,"x":1620,"width":116,"height":146},
+                            "props":{"y":90,"x":1636,"width":87,"height":110},
                             "nodeParent":59,
                             "label":"Sprite",
                             "isDirectory":false,
@@ -811,7 +811,7 @@
                         {
                             "x":45,
                             "type":"Sprite",
-                            "props":{"y":23,"x":2656,"width":116,"height":146},
+                            "props":{"y":43,"x":2657,"width":87,"height":110},
                             "nodeParent":59,
                             "label":"Sprite",
                             "isDirectory":false,
@@ -828,16 +828,15 @@
                     "props":{"y":171,"x":619,"name":"btnBox"},
                     "nodeParent":66,
                     "label":"Box(btnBox)",
-                    "isOpen":true,
+                    "isOpen":false,
                     "isDirectory":true,
                     "isAniNode":true,
                     "hasChild":true,
                     "compId":71,
                     "child":[
                         {
-                            "x":45,
                             "type":"Sprite",
-                            "props":{"y":59,"x":3728,"width":443,"var":"nextBtn","height":480},
+                            "props":{"y":-2,"x":3728,"width":533,"var":"nextBtn","height":589},
                             "nodeParent":71,
                             "label":"Sprite(nextBtn)",
                             "isDirectory":false,
@@ -846,12 +845,11 @@
                             "compId":55,
                             "child":[
                                 ],
-                            "$HIDDEN":true
+                            "$HIDDEN":false
                         },
                         {
-                            "x":45,
                             "type":"Sprite",
-                            "props":{"y":-136,"x":-120,"width":696,"var":"seabedBtn","height":696},
+                            "props":{"y":-136,"x":-220,"width":1144,"var":"seabedBtn","height":696},
                             "nodeParent":71,
                             "label":"Sprite(seabedBtn)",
                             "isDirectory":false,
@@ -862,9 +860,8 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"Sprite",
-                            "props":{"y":-127,"x":1585,"width":566,"var":"drugBtn","height":696},
+                            "props":{"y":-127,"x":1398,"width":858,"var":"drugBtn","height":696},
                             "nodeParent":71,
                             "label":"Sprite(drugBtn)",
                             "isDirectory":false,
@@ -875,9 +872,8 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"Sprite",
-                            "props":{"y":19,"x":2607,"width":1056,"var":"peoplesBtn","height":404},
+                            "props":{"y":-150,"x":2607,"width":1056,"var":"peoplesBtn","height":660},
                             "nodeParent":71,
                             "label":"Sprite(peoplesBtn)",
                             "isDirectory":false,

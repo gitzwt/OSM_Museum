@@ -1,8 +1,8 @@
 {
     "x":0,
     "type":"View",
-    "selectedBox":1,
-    "selecteID":18,
+    "selectedBox":29,
+    "selecteID":45,
     "props":{"y":750,"x":1200,"width":3248,"sceneColor":"#000000","sceneBg":"laya/views/lab.jpg","pivotY":750,"pivotX":1200,"height":750},
     "nodeParent":-1,
     "label":"View",
@@ -370,7 +370,7 @@
                         {
                             "x":45,
                             "type":"Sprite",
-                            "props":{"y":45,"x":163,"width":116,"height":146},
+                            "props":{"y":76,"x":177,"width":87,"height":110},
                             "nodeParent":21,
                             "label":"Sprite",
                             "isDirectory":false,
@@ -383,7 +383,7 @@
                         {
                             "x":45,
                             "type":"Sprite",
-                            "props":{"y":-30,"x":1642,"width":116,"height":146},
+                            "props":{"y":1,"x":1657,"width":87,"height":110},
                             "nodeParent":21,
                             "label":"Sprite",
                             "isDirectory":false,
@@ -398,7 +398,7 @@
                 {
                     "x":30,
                     "type":"Sprite",
-                    "props":{"y":398,"x":2808,"width":322,"var":"nextBtn","height":307},
+                    "props":{"y":338,"x":2808,"width":406,"var":"nextBtn","height":367},
                     "nodeParent":29,
                     "label":"Sprite(nextBtn)",
                     "isDirectory":false,
@@ -474,7 +474,7 @@
                 {
                     "x":30,
                     "type":"Sprite",
-                    "props":{"y":156,"x":338,"width":1001,"var":"wallBtn","height":517},
+                    "props":{"y":74,"x":240,"width":1131,"var":"wallBtn","height":652},
                     "nodeParent":29,
                     "label":"Sprite(wallBtn)",
                     "isDirectory":false,
@@ -488,7 +488,7 @@
                 {
                     "x":30,
                     "type":"Sprite",
-                    "props":{"y":185,"x":2087,"width":593,"var":"productBtn","height":550},
+                    "props":{"y":8,"x":1995,"width":703,"var":"productBtn","height":727},
                     "nodeParent":29,
                     "label":"Sprite(productBtn)",
                     "isDirectory":false,
@@ -502,7 +502,7 @@
                 {
                     "x":30,
                     "type":"Image",
-                    "props":{"y":225,"x":998,"skin":"images/lab/t.png","scaleY":2,"scaleX":2},
+                    "props":{"y":234,"x":991,"width":70,"skin":"images/lab/t.png","scaleY":1.6,"scaleX":1.6,"height":32},
                     "nodeParent":29,
                     "label":"Image",
                     "isDirectory":false,
