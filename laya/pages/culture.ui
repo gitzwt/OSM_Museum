@@ -1,8 +1,8 @@
 {
     "x":0,
     "type":"View",
-    "selectedBox":52,
-    "selecteID":50,
+    "selectedBox":58,
+    "selecteID":43,
     "props":{"y":750,"x":1350,"width":5320,"sceneColor":"#000000","sceneBg":"laya/views/culture.jpg","pivotY":750,"pivotX":1350,"height":750},
     "nodeParent":-1,
     "label":"View",
@@ -30,14 +30,13 @@
                     "props":{"y":0,"x":0,"name":"bg"},
                     "nodeParent":53,
                     "label":"Box(bg)",
-                    "isOpen":true,
+                    "isOpen":false,
                     "isDirectory":true,
                     "isAniNode":true,
                     "hasChild":true,
                     "compId":52,
                     "child":[
                         {
-                            "x":45,
                             "type":"Image",
                             "props":{"skin":"images/culture/bg_01.jpg"},
                             "nodeParent":52,
@@ -50,9 +49,8 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"Image",
-                            "props":{"x":1330,"skin":"images/culture/bg_022.jpg"},
+                            "props":{"x":1330,"skin":"images/culture/bg_02.jpg"},
                             "nodeParent":52,
                             "label":"Image",
                             "isDirectory":false,
@@ -63,7 +61,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"Image",
                             "props":{"x":2660,"skin":"images/culture/bg_03.jpg"},
                             "nodeParent":52,
@@ -76,7 +73,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"Image",
                             "props":{"y":0,"x":3990,"skin":"images/culture/bg_04.jpg"},
                             "nodeParent":52,
@@ -107,7 +103,7 @@
                             "props":{"y":0,"x":0,"var":"ball"},
                             "nodeParent":11,
                             "label":"Box(ball)",
-                            "isOpen":true,
+                            "isOpen":false,
                             "isDirectory":true,
                             "isAniNode":true,
                             "hasChild":true,
@@ -248,7 +244,7 @@
                         },
                         {
                             "type":"Image",
-                            "props":{"y":105,"x":694,"skin":"images/culture/1/t.png"},
+                            "props":{"y":58,"x":691,"skin":"images/culture/1/t.png","scaleY":2,"scaleX":2},
                             "nodeParent":11,
                             "label":"Image",
                             "isDirectory":false,
@@ -371,7 +367,7 @@
                 {
                     "x":30,
                     "type":"Box",
-                    "props":{"y":142,"x":3824,"var":"part3","scaleY":0.83,"scaleX":0.83},
+                    "props":{"y":129,"x":3695,"var":"part3","scaleY":0.83,"scaleX":0.83},
                     "nodeParent":53,
                     "label":"Box(part3)",
                     "isOpen":false,
@@ -549,7 +545,7 @@
                 {
                     "x":30,
                     "type":"Image",
-                    "props":{"y":260,"x":5134,"skin":"images/culture/3/t.png"},
+                    "props":{"y":186,"x":4072,"skin":"images/culture/3/t.png","scaleY":2,"scaleX":2},
                     "nodeParent":53,
                     "label":"Image",
                     "isDirectory":false,
@@ -562,7 +558,7 @@
                 {
                     "x":30,
                     "type":"Box",
-                    "props":{"y":516,"x":5156,"name":"tips"},
+                    "props":{"y":331,"x":5044,"scaleY":2,"scaleX":2,"name":"tips"},
                     "nodeParent":53,
                     "label":"Box(tips)",
                     "isOpen":false,
@@ -614,16 +610,15 @@
                     "props":{"y":58,"x":509,"var":"clickTips"},
                     "nodeParent":53,
                     "label":"Box(clickTips)",
-                    "isOpen":true,
+                    "isOpen":false,
                     "isDirectory":true,
                     "isAniNode":true,
                     "hasChild":true,
                     "compId":45,
                     "child":[
                         {
-                            "x":45,
                             "type":"Sprite",
-                            "props":{"y":30,"x":88,"width":58,"height":73},
+                            "props":{"y":-38,"x":58,"width":116,"height":146},
                             "nodeParent":45,
                             "label":"Sprite",
                             "isDirectory":false,
@@ -634,9 +629,8 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"Sprite",
-                            "props":{"y":39,"x":4091,"width":58,"rotation":0,"pivotY":42,"pivotX":29,"height":73},
+                            "props":{"y":-29,"x":3931,"width":116,"rotation":0,"pivotY":42,"pivotX":29,"height":146},
                             "nodeParent":45,
                             "label":"Sprite",
                             "isDirectory":false,
@@ -647,9 +641,8 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"Sprite",
-                            "props":{"y":184,"x":1716,"width":58,"height":73},
+                            "props":{"y":110,"x":1670,"width":116,"height":146},
                             "nodeParent":45,
                             "label":"Sprite",
                             "isDirectory":false,
@@ -660,9 +653,8 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"Sprite",
-                            "props":{"y":165,"x":4545,"width":58,"height":73},
+                            "props":{"y":73,"x":3431,"width":116,"height":146},
                             "nodeParent":45,
                             "label":"Sprite",
                             "isDirectory":false,
@@ -679,15 +671,16 @@
                     "props":{"y":161,"x":488,"name":"btnBox"},
                     "nodeParent":53,
                     "label":"Box(btnBox)",
-                    "isOpen":false,
+                    "isOpen":true,
                     "isDirectory":true,
                     "isAniNode":true,
                     "hasChild":true,
                     "compId":58,
                     "child":[
                         {
+                            "x":45,
                             "type":"Sprite",
-                            "props":{"width":322,"var":"YJYBtn","height":554},
+                            "props":{"y":-149,"x":-206,"width":644,"var":"YJYBtn","height":731},
                             "nodeParent":58,
                             "label":"Sprite(YJYBtn)",
                             "isDirectory":false,
@@ -698,21 +691,9 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"Sprite",
-                            "props":{"y":337,"x":4655,"width":135,"var":"nextBtn","height":226},
-                            "nodeParent":58,
-                            "label":"Sprite(nextBtn)",
-                            "isDirectory":false,
-                            "isAniNode":true,
-                            "hasChild":false,
-                            "compId":43,
-                            "child":[
-                                ],
-                            "$HIDDEN":true
-                        },
-                        {
-                            "type":"Sprite",
-                            "props":{"y":173,"x":1598,"width":322,"var":"kingBtn","height":397},
+                            "props":{"y":-49,"x":1364,"width":661,"var":"kingBtn","height":636},
                             "nodeParent":58,
                             "label":"Sprite(kingBtn)",
                             "isDirectory":false,
@@ -723,8 +704,9 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"Sprite",
-                            "props":{"y":-6,"x":3087,"width":1750,"var":"seaBtn","height":433},
+                            "props":{"y":-155,"x":3013,"width":1750,"var":"seaBtn","height":735},
                             "nodeParent":58,
                             "label":"Sprite(seaBtn)",
                             "isDirectory":false,
@@ -732,11 +714,13 @@
                             "hasChild":false,
                             "compId":61,
                             "child":[
-                                ]
+                                ],
+                            "$HIDDEN":true
                         },
                         {
+                            "x":45,
                             "type":"Sprite",
-                            "props":{"y":-16,"x":3870,"width":482,"var":"farmBtn","height":433},
+                            "props":{"y":-104,"x":3641,"width":652,"var":"farmBtn","height":586},
                             "nodeParent":58,
                             "label":"Sprite(farmBtn)",
                             "isDirectory":false,
@@ -745,6 +729,20 @@
                             "compId":60,
                             "child":[
                                 ]
+                        },
+                        {
+                            "x":45,
+                            "type":"Sprite",
+                            "props":{"y":116,"x":4529,"width":266,"var":"nextBtn","height":445},
+                            "nodeParent":58,
+                            "label":"Sprite(nextBtn)",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":43,
+                            "child":[
+                                ],
+                            "$HIDDEN":true
                         }],
                     "$HIDDEN":true
                 }]

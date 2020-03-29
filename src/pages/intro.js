@@ -10,22 +10,25 @@ var Intro = function () {
     var introKey = "";
     var introNums = 0;
     var nowIntroId = 0;
+    var autoTimer;
+    var firstTips = false;
 
     var nowPeople = 0;
-    var standPos = 142;
+    var standPos = 383;
     var peoplePos = [{
         dis: 0,
         scale: 1
     }, {
-        dis: 190,
+        dis: 120,
         scale: 0.9
     }, {
-        dis: 250,
+        dis: 210,
         scale: 0.75
     }, {
         dis: 240,
         scale: 0.5
     }];
+    var firstTips2 = false;
 
     /**
      * 初始化
@@ -45,12 +48,12 @@ var Intro = function () {
         Laya.Dialog.manager.maskLayer.alpha = 0;
         var screenProp = Laya.Browser.height / Laya.Browser.width;
         if (screenProp < 0.54) {
-            page.cont.scaleX = 1.3;
-            page.cont.scaleY = 1.3;
-        }
-        else {
             page.cont.scaleX = 1.1;
             page.cont.scaleY = 1.1;
+        }
+        else {
+            page.cont.scaleX = 1;
+            page.cont.scaleY = 1;
         }
     }
 
@@ -60,17 +63,26 @@ var Intro = function () {
     _self.show = function (type, data) {
         page.farmWord.visible = false;
         page.kingWord.visible = false;
+        page.sea2Word.visible = false;
+        page.seabedWord.visible = false;
         if (type == "intro") {
             updateIntroUI(data);
             peopleBox.visible = false;
             if (data.hasOwnProperty("word")) {
                 page[data.word].visible = true;
+                page.ar.alpha = 1;
+            }
+            else{
+                page.ar.alpha = 0;
             }
         }
         else if (type == "people") {
             bg.source = Laya.Loader.getRes('images/dialog/peoples/bg.png');
             introBox.visible = false;
             peopleBox.visible = true;
+            if(!firstTips2){
+                page.slide.alpha = 1;
+            }
         }
 
         pageShow();
@@ -87,6 +99,12 @@ var Intro = function () {
             introKey = data.key;
             nowIntro.source = Laya.Loader.getRes('images/dialog/' + introKey + '/1' + nowIntroId + ".png");
             introBox.visible = true;
+            if(!firstTips){
+                page.slide.alpha = 1;
+            }
+            autoTimer = setTimeout(function(){
+                switchIntro(1);
+            }, 5000);
         }
         else {
             introBox.visible = false;
@@ -181,6 +199,16 @@ var Intro = function () {
             setTimeout(function () {
                 animeFlag = true;
             }, 500)
+
+            clearTimeout(autoTimer);
+            autoTimer = setTimeout(function(){
+                switchIntro(dir);
+            }, 5000);
+
+            if(!firstTips){
+                page.slide.alpha = 0;
+                firstTips = true;
+            }
         }
     }
 
@@ -199,6 +227,11 @@ var Intro = function () {
             setTimeout(function () {
                 animeFlag = true;
             }, 300)
+
+            if(!firstTips2){
+                page.slide.alpha = 0;
+                firstTips2 = true;
+            }
         }
     }
 
@@ -248,6 +281,7 @@ var Intro = function () {
      */
     function pageHide() {
         page.close();
+        clearTimeout(autoTimer);
     }
 }
 var iIntro = new Intro();

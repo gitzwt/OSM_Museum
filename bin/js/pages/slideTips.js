@@ -4,8 +4,8 @@ var SlideTips = function(){
     _self.init = function(box){
         var tips = new slideTipsUI();
         box.addChild(tips);
-        tips.y = 600;
-        tips.x = WindowW - 200;
+        tips.y = 550;
+        tips.x = WindowW - 500;
         return tips;
     }
 }

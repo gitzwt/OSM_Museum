@@ -1,8 +1,8 @@
 {
     "type":"View",
     "selectedBox":1,
-    "selecteID":3,
-    "props":{"width":300,"sceneColor":"#000000","height":200},
+    "selecteID":4,
+    "props":{"width":600,"sceneColor":"#000000","scaleY":1,"scaleX":1,"height":200},
     "nodeParent":-1,
     "label":"View",
     "isOpen":true,
@@ -13,25 +13,13 @@
     "child":[
         {
             "type":"Image",
-            "props":{"y":0,"x":102,"width":127,"skin":"images/tips/h1.png","height":135},
+            "props":{"width":301,"skin":"images/tips/s.png","height":195},
             "nodeParent":1,
             "label":"Image",
             "isDirectory":false,
             "isAniNode":true,
             "hasChild":false,
-            "compId":2,
-            "child":[
-                ]
-        },
-        {
-            "type":"Image",
-            "props":{"y":0,"x":102,"width":127,"skin":"images/tips/h2.png","height":135},
-            "nodeParent":1,
-            "label":"Image",
-            "isDirectory":false,
-            "isAniNode":true,
-            "hasChild":false,
-            "compId":3,
+            "compId":4,
             "child":[
                 ]
         }],
@@ -39,69 +27,31 @@
         {
             "nodes":[
                 {
-                    "target":3,
+                    "target":4,
                     "keyframes":{
                         "y":[
                             {
                                 "value":0,
                                 "tweenMethod":"linearNone",
                                 "tween":true,
-                                "target":3,
+                                "target":4,
                                 "key":"y",
                                 "index":0
                             }],
                         "x":[
                             {
-                                "value":100,
+                                "value":300,
                                 "tweenMethod":"linearNone",
                                 "tween":true,
-                                "target":3,
+                                "target":4,
                                 "key":"x",
                                 "index":0
                             },
                             {
-                                "value":20,
+                                "value":0,
                                 "tweenMethod":"linearNone",
                                 "tween":true,
-                                "target":3,
-                                "key":"x",
-                                "index":20
-                            },
-                            {
-                                "value":100,
-                                "tweenMethod":"linearNone",
-                                "tween":true,
-                                "target":3,
-                                "key":"x",
-                                "index":30
-                            }]
-                    }
-                },
-                {
-                    "target":2,
-                    "keyframes":{
-                        "x":[
-                            {
-                                "value":100,
-                                "tweenMethod":"linearNone",
-                                "tween":true,
-                                "target":2,
-                                "key":"x",
-                                "index":0
-                            },
-                            {
-                                "value":20,
-                                "tweenMethod":"linearNone",
-                                "tween":true,
-                                "target":2,
-                                "key":"x",
-                                "index":20
-                            },
-                            {
-                                "value":100,
-                                "tweenMethod":"linearNone",
-                                "tween":true,
-                                "target":2,
+                                "target":4,
                                 "key":"x",
                                 "index":30
                             }]

@@ -1,8 +1,8 @@
 {
     "x":0,
     "type":"Dialog",
-    "selectedBox":1,
-    "selecteID":39,
+    "selectedBox":36,
+    "selecteID":30,
     "props":{"y":325,"x":812,"width":1624,"sceneColor":"#000000","scaleY":1,"scaleX":1,"pivotY":325,"pivotX":812,"height":750},
     "nodeParent":-1,
     "label":"Dialog",
@@ -27,7 +27,7 @@
                 {
                     "x":30,
                     "type":"Image",
-                    "props":{"y":375,"x":812,"var":"bg","skin":"images/dialog/king/1.png","pivotY":210,"pivotX":425},
+                    "props":{"y":375,"x":812,"width":1214,"var":"bg","skin":"images/dialog/sea2/1.png","pivotY":301,"pivotX":607,"height":602},
                     "nodeParent":37,
                     "label":"Image(bg)",
                     "isDirectory":false,
@@ -51,10 +51,10 @@
                     "child":[
                         {
                             "type":"Sprite",
-                            "props":{"y":190,"x":455,"width":319,"var":"intro","height":344},
+                            "props":{"y":86,"x":248,"width":698,"var":"intro","height":572},
                             "nodeParent":6,
                             "label":"Sprite(intro)",
-                            "isOpen":false,
+                            "isOpen":true,
                             "isDirectory":true,
                             "isAniNode":true,
                             "hasChild":true,
@@ -62,7 +62,7 @@
                             "child":[
                                 {
                                     "type":"Image",
-                                    "props":{"y":0,"x":0,"var":"ia","skin":"images/dialog/conch/12.png"},
+                                    "props":{"y":0,"x":0,"width":698,"var":"ia","skin":"images/dialog/conch/12.png","height":572},
                                     "nodeParent":21,
                                     "label":"Image(ia)",
                                     "isDirectory":false,
@@ -74,7 +74,7 @@
                                 },
                                 {
                                     "type":"Image",
-                                    "props":{"y":0,"x":0,"var":"ib","skin":"images/dialog/conch/12.png","alpha":0},
+                                    "props":{"y":0,"x":0,"width":698,"var":"ib","skin":"images/dialog/conch/12.png","height":572,"alpha":0},
                                     "nodeParent":21,
                                     "label":"Image(ib)",
                                     "isDirectory":false,
@@ -87,7 +87,7 @@
                         },
                         {
                             "type":"Sprite",
-                            "props":{"y":295,"x":400,"width":57,"var":"arL","height":120},
+                            "props":{"y":304,"x":213,"width":57,"var":"arL","height":120},
                             "nodeParent":6,
                             "label":"Sprite(arL)",
                             "isOpen":false,
@@ -111,7 +111,7 @@
                         },
                         {
                             "type":"Sprite",
-                            "props":{"y":295,"x":765,"width":57,"var":"arR","height":120},
+                            "props":{"y":308,"x":918,"width":57,"var":"arR","height":120},
                             "nodeParent":6,
                             "label":"Sprite(arR)",
                             "isOpen":false,
@@ -134,7 +134,7 @@
                                 }]
                         }],
                     "$LOCKED":true,
-                    "$HIDDEN":false
+                    "$HIDDEN":true
                 },
                 {
                     "x":30,
@@ -142,15 +142,16 @@
                     "props":{"y":0,"x":0,"width":1624,"visible":false,"var":"peopleBox","height":750},
                     "nodeParent":37,
                     "label":"Box(peopleBox)",
-                    "isOpen":false,
+                    "isOpen":true,
                     "isDirectory":true,
                     "isAniNode":true,
                     "hasChild":true,
                     "compId":15,
                     "child":[
                         {
+                            "x":45,
                             "type":"Box",
-                            "props":{"y":220,"x":670,"var":"peoples"},
+                            "props":{"y":375,"x":812,"width":767,"var":"peoples","pivotY":230,"pivotX":383,"height":459},
                             "nodeParent":15,
                             "label":"Box(peoples)",
                             "isOpen":true,
@@ -160,11 +161,12 @@
                             "compId":36,
                             "child":[
                                 {
+                                    "x":60,
                                     "type":"Sprite",
-                                    "props":{"y":155,"x":142,"width":284,"pivotY":155,"pivotX":142,"name":"people","height":311},
+                                    "props":{"y":230,"x":383,"width":767,"pivotY":230,"pivotX":383,"name":"people","height":459},
                                     "nodeParent":36,
                                     "label":"Sprite(people)",
-                                    "isOpen":true,
+                                    "isOpen":false,
                                     "isDirectory":true,
                                     "isAniNode":true,
                                     "hasChild":true,
@@ -172,7 +174,7 @@
                                     "child":[
                                         {
                                             "type":"Image",
-                                            "props":{"skin":"images/dialog/peoples/3.png","name":"intro"},
+                                            "props":{"width":767,"skin":"images/dialog/peoples/3.png","name":"intro","height":459},
                                             "nodeParent":24,
                                             "label":"Image(intro)",
                                             "isDirectory":false,
@@ -184,7 +186,7 @@
                                         },
                                         {
                                             "type":"Image",
-                                            "props":{"skin":"images/dialog/peoples/shadow.png","name":"shadow","alpha":0},
+                                            "props":{"width":767,"skin":"images/dialog/peoples/shadow.png","name":"shadow","height":459,"alpha":0},
                                             "nodeParent":24,
                                             "label":"Image(shadow)",
                                             "isDirectory":false,
@@ -196,11 +198,12 @@
                                         }]
                                 },
                                 {
+                                    "x":60,
                                     "type":"Sprite",
-                                    "props":{"y":155,"x":332,"width":284,"scaleY":0.9,"scaleX":0.9,"pivotY":155,"pivotX":142,"name":"people","height":311},
+                                    "props":{"y":230,"x":503,"width":767,"scaleY":0.9,"scaleX":0.9,"pivotY":230,"pivotX":383,"name":"people","height":459},
                                     "nodeParent":36,
                                     "label":"Sprite(people)",
-                                    "isOpen":true,
+                                    "isOpen":false,
                                     "isDirectory":true,
                                     "isAniNode":true,
                                     "hasChild":true,
@@ -208,7 +211,7 @@
                                     "child":[
                                         {
                                             "type":"Image",
-                                            "props":{"skin":"images/dialog/peoples/4.png","name":"intro"},
+                                            "props":{"width":767,"skin":"images/dialog/peoples/4.png","name":"intro","height":459},
                                             "nodeParent":27,
                                             "label":"Image(intro)",
                                             "isDirectory":false,
@@ -220,7 +223,7 @@
                                         },
                                         {
                                             "type":"Image",
-                                            "props":{"skin":"images/dialog/peoples/shadow.png","name":"shadow"},
+                                            "props":{"width":767,"skin":"images/dialog/peoples/shadow.png","name":"shadow","height":459},
                                             "nodeParent":27,
                                             "label":"Image(shadow)",
                                             "isDirectory":false,
@@ -232,11 +235,12 @@
                                         }]
                                 },
                                 {
+                                    "x":60,
                                     "type":"Sprite",
-                                    "props":{"y":155,"x":392,"width":284,"scaleY":0.75,"scaleX":0.75,"pivotY":155,"pivotX":142,"name":"people","height":311},
+                                    "props":{"y":230,"x":593,"width":767,"scaleY":0.7,"scaleX":0.7,"pivotY":230,"pivotX":383,"name":"people","height":459},
                                     "nodeParent":36,
                                     "label":"Sprite(people)",
-                                    "isOpen":true,
+                                    "isOpen":false,
                                     "isDirectory":true,
                                     "isAniNode":true,
                                     "hasChild":true,
@@ -244,7 +248,7 @@
                                     "child":[
                                         {
                                             "type":"Image",
-                                            "props":{"skin":"images/dialog/peoples/1.png","name":"intro"},
+                                            "props":{"width":767,"skin":"images/dialog/peoples/1.png","name":"intro","height":459},
                                             "nodeParent":30,
                                             "label":"Image(intro)",
                                             "isDirectory":false,
@@ -256,7 +260,7 @@
                                         },
                                         {
                                             "type":"Image",
-                                            "props":{"skin":"images/dialog/peoples/shadow.png","name":"shadow"},
+                                            "props":{"width":767,"skin":"images/dialog/peoples/shadow.png","name":"shadow","height":459},
                                             "nodeParent":30,
                                             "label":"Image(shadow)",
                                             "isDirectory":false,
@@ -268,11 +272,12 @@
                                         }]
                                 },
                                 {
+                                    "x":60,
                                     "type":"Sprite",
-                                    "props":{"y":155,"x":382,"width":284,"scaleY":0.5,"scaleX":0.5,"pivotY":155,"pivotX":142,"name":"people","height":311},
+                                    "props":{"y":230,"x":623,"width":767,"scaleY":0.5,"scaleX":0.5,"pivotY":230,"pivotX":383,"name":"people","height":459},
                                     "nodeParent":36,
                                     "label":"Sprite(people)",
-                                    "isOpen":true,
+                                    "isOpen":false,
                                     "isDirectory":true,
                                     "isAniNode":true,
                                     "hasChild":true,
@@ -280,7 +285,7 @@
                                     "child":[
                                         {
                                             "type":"Image",
-                                            "props":{"skin":"images/dialog/peoples/2.png","name":"intro"},
+                                            "props":{"width":767,"skin":"images/dialog/peoples/2.png","name":"intro","height":459},
                                             "nodeParent":33,
                                             "label":"Image(intro)",
                                             "isDirectory":false,
@@ -292,7 +297,7 @@
                                         },
                                         {
                                             "type":"Image",
-                                            "props":{"skin":"images/dialog/peoples/shadow.png","name":"shadow"},
+                                            "props":{"width":767,"skin":"images/dialog/peoples/shadow.png","name":"shadow","height":459},
                                             "nodeParent":33,
                                             "label":"Image(shadow)",
                                             "isDirectory":false,
@@ -305,8 +310,9 @@
                                 }]
                         },
                         {
+                            "x":45,
                             "type":"Sprite",
-                            "props":{"y":375,"x":400,"width":57,"var":"arLbtn","pivotY":60,"height":120},
+                            "props":{"y":376,"x":223,"width":57,"var":"arLbtn","pivotY":60,"height":120},
                             "nodeParent":15,
                             "label":"Sprite(arLbtn)",
                             "isOpen":false,
@@ -329,8 +335,9 @@
                                 }]
                         },
                         {
+                            "x":45,
                             "type":"Sprite",
-                            "props":{"y":375,"x":1155,"width":57,"var":"arRbtn","pivotY":60,"height":120},
+                            "props":{"y":376,"x":1307,"width":57,"var":"arRbtn","pivotY":60,"height":120},
                             "nodeParent":15,
                             "label":"Sprite(arRbtn)",
                             "isOpen":false,
@@ -353,12 +360,12 @@
                                 }]
                         }],
                     "$LOCKED":false,
-                    "$HIDDEN":true
+                    "$HIDDEN":false
                 },
                 {
                     "x":30,
                     "type":"Panel",
-                    "props":{"y":290,"x":850,"width":290,"var":"kingWord","vScrollBarSkin":"images/tips/vscroll.png","height":210},
+                    "props":{"y":238,"x":966,"width":375,"var":"kingWord","vScrollBarSkin":"images/tips/vscroll.png","height":314},
                     "nodeParent":37,
                     "label":"Panel(kingWord)",
                     "isOpen":false,
@@ -369,7 +376,7 @@
                     "child":[
                         {
                             "type":"Image",
-                            "props":{"y":0,"x":0,"skin":"images/dialog/king/word.png"},
+                            "props":{"y":0,"x":0,"skin":"images/dialog/king/word.png","scaleY":1.2,"scaleX":1.2},
                             "nodeParent":39,
                             "label":"Image",
                             "isDirectory":false,
@@ -378,24 +385,24 @@
                             "compId":38,
                             "child":[
                                 ]
-                        }]
+                        }],
+                    "$HIDDEN":false
                 },
                 {
                     "x":30,
                     "type":"Panel",
-                    "props":{"y":290,"x":850,"width":290,"var":"farmWord","vScrollBarSkin":"images/tips/vscroll.png","height":210},
+                    "props":{"y":276,"x":990,"width":390,"var":"farmWord","vScrollBarSkin":"images/tips/vscroll.png","height":275},
                     "nodeParent":37,
                     "label":"Panel(farmWord)",
-                    "isOpen":true,
+                    "isOpen":false,
                     "isDirectory":true,
                     "isAniNode":true,
                     "hasChild":true,
                     "compId":41,
                     "child":[
                         {
-                            "x":45,
                             "type":"Image",
-                            "props":{"y":0,"x":0,"skin":"images/dialog/farm/word.png"},
+                            "props":{"y":0,"x":0,"skin":"images/dialog/farm/word.png","scaleY":1.2,"scaleX":1.2},
                             "nodeParent":41,
                             "label":"Image",
                             "isDirectory":false,
@@ -404,12 +411,65 @@
                             "compId":42,
                             "child":[
                                 ]
-                        }]
+                        }],
+                    "$HIDDEN":true
+                },
+                {
+                    "x":30,
+                    "type":"Panel",
+                    "props":{"y":286,"x":989,"width":386,"var":"seabedWord","vScrollBarSkin":"images/tips/vscroll.png","height":266},
+                    "nodeParent":37,
+                    "label":"Panel(seabedWord)",
+                    "isOpen":false,
+                    "isDirectory":true,
+                    "isAniNode":true,
+                    "hasChild":true,
+                    "compId":45,
+                    "child":[
+                        {
+                            "type":"Image",
+                            "props":{"y":0,"x":0,"skin":"images/dialog/seabed/word.png","scaleY":1.2,"scaleX":1.2},
+                            "nodeParent":45,
+                            "label":"Image",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":46,
+                            "child":[
+                                ]
+                        }],
+                    "$HIDDEN":true
+                },
+                {
+                    "x":30,
+                    "type":"Panel",
+                    "props":{"y":278,"x":988,"width":378,"var":"sea2Word","vScrollBarSkin":"images/tips/vscroll.png","height":283},
+                    "nodeParent":37,
+                    "label":"Panel(sea2Word)",
+                    "isOpen":false,
+                    "isDirectory":true,
+                    "isAniNode":true,
+                    "hasChild":true,
+                    "compId":43,
+                    "child":[
+                        {
+                            "type":"Image",
+                            "props":{"y":0,"x":0,"skin":"images/dialog/sea2/word.png","scaleY":1.2,"scaleX":1.2},
+                            "nodeParent":43,
+                            "label":"Image",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":44,
+                            "child":[
+                                ]
+                        }],
+                    "$HIDDEN":true
                 },
                 {
                     "x":30,
                     "type":"Sprite",
-                    "props":{"y":172,"x":1037,"width":180,"var":"backBtn","height":79},
+                    "props":{"y":83,"x":1211,"width":180,"var":"backBtn","height":116},
                     "nodeParent":37,
                     "label":"Sprite(backBtn)",
                     "isDirectory":false,
@@ -419,15 +479,108 @@
                     "child":[
                         ],
                     "$HIDDEN":true
+                },
+                {
+                    "x":30,
+                    "type":"Image",
+                    "props":{"y":588,"x":1124,"width":72,"var":"ar","skin":"images/dialog/ar.png","height":29,"alpha":0},
+                    "nodeParent":37,
+                    "label":"Image(ar)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":47,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Image",
+                    "props":{"y":311,"x":563,"var":"slide","skin":"images/dialog/slide.png","alpha":0},
+                    "nodeParent":37,
+                    "label":"Image(slide)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":48,
+                    "child":[
+                        ]
                 }]
         }],
     "animations":[
         {
             "nodes":[
-                ],
+                {
+                    "target":47,
+                    "keyframes":{
+                        "y":[
+                            {
+                                "value":590,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":47,
+                                "key":"y",
+                                "index":0
+                            },
+                            {
+                                "value":600,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":47,
+                                "key":"y",
+                                "index":15
+                            },
+                            {
+                                "value":590,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":47,
+                                "key":"y",
+                                "index":30
+                            }]
+                    }
+                }],
             "name":"ani1",
             "id":1,
             "frameRate":24,
-            "action":0
+            "action":2
+        },
+        {
+            "nodes":[
+                {
+                    "target":48,
+                    "keyframes":{
+                        "y":[
+                            {
+                                "value":310,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":48,
+                                "key":"y",
+                                "index":0
+                            }],
+                        "x":[
+                            {
+                                "value":560,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":48,
+                                "key":"x",
+                                "index":0
+                            },
+                            {
+                                "value":400,
+                                "tweenMethod":"linearNone",
+                                "tween":true,
+                                "target":48,
+                                "key":"x",
+                                "index":35
+                            }]
+                    }
+                }],
+            "name":"ani2",
+            "id":2,
+            "frameRate":24,
+            "action":2
         }]
 }

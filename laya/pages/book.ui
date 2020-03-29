@@ -2,7 +2,7 @@
     "x":0,
     "type":"Dialog",
     "selectedBox":1,
-    "selecteID":7,
+    "selecteID":8,
     "props":{"width":1624,"sceneColor":"#000000","height":750},
     "nodeParent":-1,
     "label":"Dialog",
@@ -40,7 +40,7 @@
         {
             "x":15,
             "type":"Image",
-            "props":{"y":375,"x":812,"skin":"images/result/book2.png","pivotY":278,"pivotX":443,"name":"book"},
+            "props":{"y":375,"x":812,"skin":"images/result/book2.png","scaleY":1.2,"scaleX":1.2,"pivotY":278,"pivotX":443,"name":"book"},
             "nodeParent":1,
             "label":"Image(book)",
             "isDirectory":false,
@@ -53,7 +53,7 @@
         {
             "x":15,
             "type":"Text",
-            "props":{"y":305,"x":401,"width":808,"var":"times","text":"本次为第0次查询，查询均记录于区块链系统，具有不可篡改性","height":29,"fontSize":20,"font":"SimHei","color":"#757d87","align":"center"},
+            "props":{"y":290,"x":410,"width":808,"var":"times","text":"本次为第0次查询，查询均记录于区块链系统，具有不可篡改性","height":29,"fontSize":20,"font":"SimHei","color":"#757d87","align":"center"},
             "nodeParent":1,
             "label":"Text(times)",
             "isDirectory":false,
@@ -66,7 +66,7 @@
         {
             "x":15,
             "type":"Text",
-            "props":{"y":368,"x":662,"width":294,"var":"num1","text":"0","height":63,"fontSize":58,"font":"Microsoft YaHei","color":"#373f45","align":"center"},
+            "props":{"y":378,"x":648,"width":316,"var":"num1","text":"0","height":63,"fontSize":58,"font":"SimHei","color":"#373f45","align":"center"},
             "nodeParent":1,
             "label":"Text(num1)",
             "isDirectory":false,
@@ -79,7 +79,7 @@
         {
             "x":15,
             "type":"Text",
-            "props":{"y":524,"x":596,"width":304,"var":"num2","text":"b478abd269b811eab3b652540065a75b","height":22,"fontSize":17,"color":"#5e6976"},
+            "props":{"y":554,"x":552,"width":362,"var":"num2","text":"b478abd269b811eab3b652540065a75b","height":22,"fontSize":17,"color":"#5e6976"},
             "nodeParent":1,
             "label":"Text(num2)",
             "isDirectory":false,
@@ -92,7 +92,7 @@
         {
             "x":15,
             "type":"Text",
-            "props":{"y":557,"x":594,"width":160,"var":"date","text":"2020年3月5日","height":28,"fontSize":17,"color":"#5e6976"},
+            "props":{"y":593,"x":552,"width":160,"var":"date","text":"2020年3月5日","height":28,"fontSize":17,"color":"#5e6976"},
             "nodeParent":1,
             "label":"Text(date)",
             "isDirectory":false,
@@ -105,7 +105,7 @@
         {
             "x":15,
             "type":"Image",
-            "props":{"y":375,"x":813,"skin":"images/result/pattern.png","pivotY":278,"pivotX":443,"name":"pattern"},
+            "props":{"y":375,"x":813,"skin":"images/result/pattern.png","scaleY":1.2,"scaleX":1.2,"pivotY":278,"pivotX":443,"name":"pattern"},
             "nodeParent":1,
             "label":"Image(pattern)",
             "isDirectory":false,
@@ -118,7 +118,7 @@
         {
             "x":15,
             "type":"Sprite",
-            "props":{"y":111,"x":1112,"width":134,"var":"closeBtn","pivotY":10,"pivotX":8,"height":124},
+            "props":{"y":59,"x":1161,"width":172,"var":"closeBtn","pivotY":10,"pivotX":8,"height":124},
             "nodeParent":1,
             "label":"Sprite(closeBtn)",
             "isDirectory":false,

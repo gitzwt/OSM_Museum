@@ -48,8 +48,8 @@ function loadComplete() {
  *  开发测试用
  */
 function DevelopTest(){
-    iHallPage.init();
-    // iPerfectionPage.init();
+    // iHallPage.init();
+    iPerfectionPage.init();
     // iCulturePage.init();
     // iLabPage.init();
     // iResultPage.init();

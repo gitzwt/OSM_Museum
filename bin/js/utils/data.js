@@ -3,7 +3,7 @@ var WebGL = Laya.WebGL;
 var Loader = Laya.Loader;
 var Stat = Laya.Stat;
 
-var MOVE_SENSITIVITY = 1;
+var MOVE_SENSITIVITY = 1.5;
 var GYE_SENSITIVITY_X = 27;
 var GYE_SENSITIVITY_Y = 5;
 
@@ -56,10 +56,12 @@ var dialogData = {
     sea2:{
         bg:"sea2/1.png",
         key:"sea2",
-        nums:3
+        nums:3,
+        word: "sea2Word"
     },
     seabed:{
-        bg:"seabed/1.png"
+        bg:"seabed/1.png",
+        word: "seabedWord"
     },
     ship:{
         bg:"ship/1.png",

@@ -1,8 +1,8 @@
 {
     "x":0,
     "type":"View",
-    "selectedBox":210,
-    "selecteID":98,
+    "selectedBox":112,
+    "selecteID":111,
     "props":{"y":750,"x":812,"width":6494,"sceneColor":"#000000","sceneBg":"laya/views/hall.jpg","pivotY":750,"pivotX":812,"height":1125},
     "nodeParent":-1,
     "label":"View",
@@ -30,13 +30,14 @@
                     "props":{"y":375,"x":0,"width":6494,"var":"bg","pivotY":375,"pivotX":0,"height":750},
                     "nodeParent":115,
                     "label":"Box(bg)",
-                    "isOpen":false,
+                    "isOpen":true,
                     "isDirectory":true,
                     "isAniNode":true,
                     "hasChild":true,
                     "compId":112,
                     "child":[
                         {
+                            "x":45,
                             "type":"Image",
                             "props":{"skin":"images/hall/bg_01.jpg"},
                             "nodeParent":112,
@@ -49,6 +50,7 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"Image",
                             "props":{"x":1624,"skin":"images/hall/bg_02.jpg"},
                             "nodeParent":112,
@@ -61,8 +63,9 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"Image",
-                            "props":{"x":3247,"skin":"images/hall/bg_03.jpg"},
+                            "props":{"x":3248,"skin":"images/hall/bg_03.jpg"},
                             "nodeParent":112,
                             "label":"Image",
                             "isDirectory":false,
@@ -73,8 +76,9 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"Image",
-                            "props":{"x":4871,"skin":"images/hall/bg_04.jpg"},
+                            "props":{"y":0,"x":4871,"width":1625,"skin":"images/hall/bg_04.jpg","height":1127},
                             "nodeParent":112,
                             "label":"Image",
                             "isDirectory":false,
@@ -276,14 +280,13 @@
                     "props":{"y":0,"x":0,"var":"part2"},
                     "nodeParent":115,
                     "label":"Box(part2)",
-                    "isOpen":true,
+                    "isOpen":false,
                     "isDirectory":true,
                     "isAniNode":true,
                     "hasChild":true,
                     "compId":197,
                     "child":[
                         {
-                            "x":45,
                             "type":"Box",
                             "props":{"y":783,"x":2469,"var":"tips","scaleY":0.8,"scaleX":0.8},
                             "nodeParent":197,
@@ -295,7 +298,6 @@
                             "compId":5,
                             "child":[
                                 {
-                                    "x":60,
                                     "type":"Image",
                                     "props":{"x":-3.666666666666667,"width":190,"skin":"images/hall/p1.png","height":103},
                                     "nodeParent":5,
@@ -308,7 +310,6 @@
                                         ]
                                 },
                                 {
-                                    "x":60,
                                     "type":"Image",
                                     "props":{"y":0,"x":0,"width":190,"skin":"images/hall/p2.png","height":103},
                                     "nodeParent":5,
@@ -322,7 +323,6 @@
                                 }]
                         },
                         {
-                            "x":45,
                             "type":"Box",
                             "props":{"y":337,"x":3380,"scaleY":0.95,"scaleX":0.95,"name":"shells"},
                             "nodeParent":197,
@@ -395,9 +395,8 @@
                                 }]
                         },
                         {
-                            "x":45,
                             "type":"Image",
-                            "props":{"y":360,"x":2584,"skin":"images/hall/2/t.png","name":"title"},
+                            "props":{"y":310,"x":2606,"skin":"images/hall/2/t.png","scaleY":2,"scaleX":2,"name":"title"},
                             "nodeParent":197,
                             "label":"Image(title)",
                             "isDirectory":false,
@@ -408,9 +407,8 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"Box",
-                            "props":{"y":435,"x":2300,"scaleY":0.9,"scaleX":0.9,"name":"shell"},
+                            "props":{"y":431,"x":2280,"scaleY":1,"scaleX":1,"name":"shell"},
                             "nodeParent":197,
                             "label":"Box(shell)",
                             "isOpen":false,
@@ -589,7 +587,6 @@
                                 }]
                         },
                         {
-                            "x":45,
                             "type":"Box",
                             "props":{"y":237,"x":80,"scaleY":0.9,"scaleX":0.9,"name":"Pearl"},
                             "nodeParent":197,
@@ -747,7 +744,6 @@
                             "$HIDDEN":false
                         },
                         {
-                            "x":45,
                             "type":"Box",
                             "props":{"y":243,"x":47,"scaleY":0.9,"scaleX":0.9,"name":"Bubbles"},
                             "nodeParent":197,
@@ -809,19 +805,17 @@
                             "$HIDDEN":false
                         },
                         {
-                            "x":45,
                             "type":"Box",
                             "props":{"y":621,"x":5148,"name":"arTips"},
                             "nodeParent":197,
                             "label":"Box(arTips)",
-                            "isOpen":true,
+                            "isOpen":false,
                             "isDirectory":true,
                             "isAniNode":true,
                             "hasChild":true,
                             "compId":9,
                             "child":[
                                 {
-                                    "x":60,
                                     "type":"Animation",
                                     "props":{"source":"images/hall/ar1.png,images/hall/ar2.png,images/hall/ar3.png","interval":200,"autoPlay":true},
                                     "nodeParent":9,
@@ -836,9 +830,8 @@
                             "$HIDDEN":false
                         },
                         {
-                            "x":45,
                             "type":"Image",
-                            "props":{"y":279,"x":706,"skin":"images/hall/1/t.png"},
+                            "props":{"y":193,"x":790,"skin":"images/hall/1/t.png","scaleY":2,"scaleX":2},
                             "nodeParent":197,
                             "label":"Image",
                             "isDirectory":false,
@@ -857,14 +850,13 @@
                     "props":{"y":0,"x":0,"var":"part3"},
                     "nodeParent":115,
                     "label":"Box(part3)",
-                    "isOpen":true,
+                    "isOpen":false,
                     "isDirectory":true,
                     "isAniNode":true,
                     "hasChild":true,
                     "compId":210,
                     "child":[
                         {
-                            "x":45,
                             "type":"Box",
                             "props":{"y":242,"x":684,"width":2879,"var":"clickTips","height":185},
                             "nodeParent":210,
@@ -877,7 +869,7 @@
                             "child":[
                                 {
                                     "type":"Sprite",
-                                    "props":{"y":20,"x":-51,"width":58,"height":73},
+                                    "props":{"y":-49,"x":-37,"width":116,"height":146},
                                     "nodeParent":100,
                                     "label":"Sprite",
                                     "isDirectory":false,
@@ -889,7 +881,7 @@
                                 },
                                 {
                                     "type":"Sprite",
-                                    "props":{"y":90,"x":1824,"width":58,"height":73},
+                                    "props":{"y":25,"x":1794,"width":116,"height":146},
                                     "nodeParent":100,
                                     "label":"Sprite",
                                     "isDirectory":false,
@@ -901,7 +893,7 @@
                                 },
                                 {
                                     "type":"Sprite",
-                                    "props":{"y":193,"x":2777,"width":58,"height":73},
+                                    "props":{"y":134,"x":2762,"width":116,"height":146},
                                     "nodeParent":100,
                                     "label":"Sprite",
                                     "isDirectory":false,
@@ -913,7 +905,7 @@
                                 },
                                 {
                                     "type":"Sprite",
-                                    "props":{"y":93,"x":3114,"width":58,"height":73},
+                                    "props":{"y":31,"x":3057,"width":116,"height":146},
                                     "nodeParent":100,
                                     "label":"Sprite",
                                     "isDirectory":false,
@@ -925,7 +917,7 @@
                                 },
                                 {
                                     "type":"Sprite",
-                                    "props":{"y":144,"x":3456,"width":58,"height":73},
+                                    "props":{"y":80,"x":3345,"width":116,"height":146},
                                     "nodeParent":100,
                                     "label":"Sprite",
                                     "isDirectory":false,
@@ -937,7 +929,7 @@
                                 },
                                 {
                                     "type":"Sprite",
-                                    "props":{"y":54,"x":3733,"width":58,"height":73},
+                                    "props":{"y":-16,"x":3653,"width":116,"height":146},
                                     "nodeParent":100,
                                     "label":"Sprite",
                                     "isDirectory":false,
@@ -949,7 +941,7 @@
                                 },
                                 {
                                     "type":"Sprite",
-                                    "props":{"y":-2,"x":3960,"width":58,"height":73},
+                                    "props":{"y":-65,"x":3913,"width":116,"height":146},
                                     "nodeParent":100,
                                     "label":"Sprite",
                                     "isDirectory":false,
@@ -961,20 +953,6 @@
                                 }]
                         },
                         {
-                            "x":45,
-                            "type":"Image",
-                            "props":{"y":228,"x":3540,"skin":"images/hall/3/title2.png","name":"title"},
-                            "nodeParent":210,
-                            "label":"Image(title)",
-                            "isDirectory":false,
-                            "isAniNode":true,
-                            "hasChild":false,
-                            "compId":98,
-                            "child":[
-                                ]
-                        },
-                        {
-                            "x":45,
                             "type":"Image",
                             "props":{"y":566,"x":2003,"skin":"images/hall/2/title.png","name":"intro"},
                             "nodeParent":210,
@@ -987,7 +965,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"Image",
                             "props":{"y":417,"x":207,"width":265,"skin":"images/hall/1/title.png","name":"title","height":264},
                             "nodeParent":210,
@@ -996,6 +973,66 @@
                             "isAniNode":true,
                             "hasChild":false,
                             "compId":64,
+                            "child":[
+                                ]
+                        },
+                        {
+                            "type":"Image",
+                            "props":{"y":204,"x":4699,"skin":"images/hall/3/t1.png","scaleY":2,"scaleX":2,"name":"t1"},
+                            "nodeParent":210,
+                            "label":"Image(t1)",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":213,
+                            "child":[
+                                ]
+                        },
+                        {
+                            "type":"Image",
+                            "props":{"y":317,"x":4432,"skin":"images/hall/3/t2.png","scaleY":2,"scaleX":2,"name":"t2"},
+                            "nodeParent":210,
+                            "label":"Image(t2)",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":214,
+                            "child":[
+                                ]
+                        },
+                        {
+                            "type":"Image",
+                            "props":{"y":373,"x":4154,"skin":"images/hall/3/t3.png","scaleY":2,"scaleX":2,"name":"t3"},
+                            "nodeParent":210,
+                            "label":"Image(t3)",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":215,
+                            "child":[
+                                ]
+                        },
+                        {
+                            "type":"Image",
+                            "props":{"y":283,"x":3853,"skin":"images/hall/3/t4.png","scaleY":2,"scaleX":2,"name":"t4"},
+                            "nodeParent":210,
+                            "label":"Image(t4)",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":216,
+                            "child":[
+                                ]
+                        },
+                        {
+                            "type":"Image",
+                            "props":{"y":398,"x":3538,"skin":"images/hall/3/t5.png","scaleY":2,"scaleX":2,"name":"t5"},
+                            "nodeParent":210,
+                            "label":"Image(t5)",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":217,
                             "child":[
                                 ]
                         }],
@@ -1007,15 +1044,16 @@
                     "props":{"y":0,"x":0,"name":"btnBox"},
                     "nodeParent":115,
                     "label":"Box(btnBox)",
-                    "isOpen":false,
+                    "isOpen":true,
                     "isDirectory":true,
                     "isAniNode":true,
                     "hasChild":true,
                     "compId":200,
                     "child":[
                         {
+                            "x":45,
                             "type":"Sprite",
-                            "props":{"y":616,"x":5110,"width":511,"var":"nextBtn","height":281},
+                            "props":{"y":545,"x":5045,"width":642,"var":"nextBtn","height":353},
                             "nodeParent":200,
                             "label":"Sprite(nextBtn)",
                             "isOpen":true,
@@ -1028,8 +1066,9 @@
                             "$HIDDEN":true
                         },
                         {
+                            "x":45,
                             "type":"Sprite",
-                            "props":{"y":271,"x":463,"width":753,"var":"shipBtn","height":617},
+                            "props":{"y":130,"x":334,"width":989,"var":"shipBtn","height":810},
                             "nodeParent":200,
                             "label":"Sprite(shipBtn)",
                             "isDirectory":false,
@@ -1040,8 +1079,9 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"Sprite",
-                            "props":{"y":415,"x":2268,"width":586,"var":"bellBtn","height":433},
+                            "props":{"y":352,"x":2139,"width":710,"var":"bellBtn","height":525},
                             "nodeParent":200,
                             "label":"Sprite(bellBtn)",
                             "isDirectory":false,
@@ -1052,8 +1092,9 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"Sprite",
-                            "props":{"y":419,"x":3297,"width":316,"var":"conch1Btn","height":356},
+                            "props":{"y":383,"x":3279,"width":328,"var":"conch1Btn","height":489},
                             "nodeParent":200,
                             "label":"Sprite(conch1Btn)",
                             "isDirectory":false,
@@ -1064,8 +1105,9 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"Sprite",
-                            "props":{"y":367,"x":3690,"width":316,"var":"conch2Btn","height":356},
+                            "props":{"y":314,"x":3660,"width":316,"var":"conch2Btn","height":487},
                             "nodeParent":200,
                             "label":"Sprite(conch2Btn)",
                             "isDirectory":false,
@@ -1076,8 +1118,9 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"Sprite",
-                            "props":{"y":478,"x":4048,"width":239,"var":"conch3Btn","height":356},
+                            "props":{"y":478,"x":4048,"width":239,"var":"conch3Btn","height":510},
                             "nodeParent":200,
                             "label":"Sprite(conch3Btn)",
                             "isDirectory":false,
@@ -1088,8 +1131,9 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"Sprite",
-                            "props":{"y":398,"x":4332,"width":193,"var":"conch4Btn","height":231},
+                            "props":{"y":398,"x":4332,"width":193,"var":"conch4Btn","height":355},
                             "nodeParent":200,
                             "label":"Sprite(conch4Btn)",
                             "isDirectory":false,
@@ -1100,8 +1144,9 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"Sprite",
-                            "props":{"y":310,"x":4577,"width":193,"var":"conch5Btn","height":172},
+                            "props":{"y":310,"x":4577,"width":193,"var":"conch5Btn","height":255},
                             "nodeParent":200,
                             "label":"Sprite(conch5Btn)",
                             "isDirectory":false,

@@ -1,8 +1,8 @@
 {
     "x":0,
     "type":"View",
-    "selectedBox":42,
-    "selecteID":42,
+    "selectedBox":1,
+    "selecteID":18,
     "props":{"y":750,"x":1200,"width":3248,"sceneColor":"#000000","sceneBg":"laya/views/lab.jpg","pivotY":750,"pivotX":1200,"height":750},
     "nodeParent":-1,
     "label":"View",
@@ -46,7 +46,8 @@
                             "hasChild":false,
                             "compId":25,
                             "child":[
-                                ]
+                                ],
+                            "$HIDDEN":false
                         },
                         {
                             "type":"Image",
@@ -58,7 +59,8 @@
                             "hasChild":false,
                             "compId":26,
                             "child":[
-                                ]
+                                ],
+                            "$HIDDEN":false
                         }],
                     "$HIDDEN":true
                 },
@@ -68,14 +70,13 @@
                     "props":{"y":198,"x":364,"name":"wall"},
                     "nodeParent":29,
                     "label":"Box(wall)",
-                    "isOpen":true,
+                    "isOpen":false,
                     "isDirectory":true,
                     "isAniNode":true,
                     "hasChild":true,
                     "compId":37,
                     "child":[
                         {
-                            "x":45,
                             "type":"Image",
                             "props":{"y":3,"x":-1,"skin":"images/lab/b1.png"},
                             "nodeParent":37,
@@ -88,7 +89,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"Image",
                             "props":{"y":3,"x":-1,"skin":"images/lab/b2.png"},
                             "nodeParent":37,
@@ -217,7 +217,7 @@
                 {
                     "x":30,
                     "type":"Image",
-                    "props":{"y":183,"x":298,"skin":"images/lab/title.png"},
+                    "props":{"y":171,"x":294,"skin":"images/lab/title.png","scaleY":1.1,"scaleX":1.1},
                     "nodeParent":29,
                     "label":"Image",
                     "isDirectory":false,
@@ -330,7 +330,7 @@
                         {
                             "x":45,
                             "type":"Image",
-                            "props":{"y":-6,"x":79,"width":91,"skin":"images/lab/tips.png","height":90},
+                            "props":{"y":-80,"x":76,"width":91,"skin":"images/lab/tips.png","scaleY":2,"scaleX":2,"height":90,"alpha":1},
                             "nodeParent":20,
                             "label":"Image",
                             "isDirectory":false,
@@ -343,7 +343,7 @@
                         {
                             "x":45,
                             "type":"Image",
-                            "props":{"y":103,"x":61,"width":72,"skin":"images/lab/ar.png","height":30},
+                            "props":{"y":103.13333333333333,"x":-2.8000000000000007,"width":72,"skin":"images/lab/ar.png","scaleY":2,"scaleX":2,"height":30},
                             "nodeParent":20,
                             "label":"Image",
                             "isDirectory":false,
@@ -352,7 +352,8 @@
                             "compId":19,
                             "child":[
                                 ]
-                        }]
+                        }],
+                    "$HIDDEN":false
                 },
                 {
                     "x":30,
@@ -360,15 +361,16 @@
                     "props":{"y":118,"x":684,"var":"clickTips"},
                     "nodeParent":29,
                     "label":"Box(clickTips)",
-                    "isOpen":false,
+                    "isOpen":true,
                     "isDirectory":true,
                     "isAniNode":true,
                     "hasChild":true,
                     "compId":21,
                     "child":[
                         {
+                            "x":45,
                             "type":"Sprite",
-                            "props":{"y":83,"x":215,"width":58,"height":73},
+                            "props":{"y":45,"x":163,"width":116,"height":146},
                             "nodeParent":21,
                             "label":"Sprite",
                             "isDirectory":false,
@@ -379,8 +381,9 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"Sprite",
-                            "props":{"y":41,"x":1672,"width":58,"height":73},
+                            "props":{"y":-30,"x":1642,"width":116,"height":146},
                             "nodeParent":21,
                             "label":"Sprite",
                             "isDirectory":false,
@@ -395,7 +398,7 @@
                 {
                     "x":30,
                     "type":"Sprite",
-                    "props":{"y":502,"x":2907,"width":156,"var":"nextBtn","height":153},
+                    "props":{"y":398,"x":2808,"width":322,"var":"nextBtn","height":307},
                     "nodeParent":29,
                     "label":"Sprite(nextBtn)",
                     "isDirectory":false,
@@ -403,7 +406,8 @@
                     "hasChild":false,
                     "compId":28,
                     "child":[
-                        ]
+                        ],
+                    "$HIDDEN":true
                 },
                 {
                     "x":30,
@@ -470,7 +474,7 @@
                 {
                     "x":30,
                     "type":"Sprite",
-                    "props":{"y":236,"x":440,"width":872,"var":"wallBtn","height":416},
+                    "props":{"y":156,"x":338,"width":1001,"var":"wallBtn","height":517},
                     "nodeParent":29,
                     "label":"Sprite(wallBtn)",
                     "isDirectory":false,
@@ -484,7 +488,7 @@
                 {
                     "x":30,
                     "type":"Sprite",
-                    "props":{"y":250,"x":2166,"width":448,"var":"productBtn","height":416},
+                    "props":{"y":185,"x":2087,"width":593,"var":"productBtn","height":550},
                     "nodeParent":29,
                     "label":"Sprite(productBtn)",
                     "isDirectory":false,
@@ -498,7 +502,7 @@
                 {
                     "x":30,
                     "type":"Image",
-                    "props":{"y":219,"x":976,"skin":"images/lab/t.png"},
+                    "props":{"y":225,"x":998,"skin":"images/lab/t.png","scaleY":2,"scaleX":2},
                     "nodeParent":29,
                     "label":"Image",
                     "isDirectory":false,
@@ -506,7 +510,8 @@
                     "hasChild":false,
                     "compId":45,
                     "child":[
-                        ]
+                        ],
+                    "$HIDDEN":false
                 }]
         }],
     "animations":[
@@ -937,41 +942,11 @@
         {
             "nodes":[
                 {
-                    "target":18,
-                    "keyframes":{
-                        "alpha":[
-                            {
-                                "value":0.3,
-                                "tweenMethod":"linearNone",
-                                "tween":true,
-                                "target":18,
-                                "key":"alpha",
-                                "index":0
-                            },
-                            {
-                                "value":1,
-                                "tweenMethod":"linearNone",
-                                "tween":true,
-                                "target":18,
-                                "key":"alpha",
-                                "index":15
-                            },
-                            {
-                                "value":0.3,
-                                "tweenMethod":"linearNone",
-                                "tween":true,
-                                "target":18,
-                                "key":"alpha",
-                                "index":30
-                            }]
-                    }
-                },
-                {
                     "target":19,
                     "keyframes":{
                         "y":[
                             {
-                                "value":104,
+                                "value":105,
                                 "tweenMethod":"linearNone",
                                 "tween":true,
                                 "target":19,
@@ -979,7 +954,7 @@
                                 "index":0
                             },
                             {
-                                "value":98,
+                                "value":91,
                                 "tweenMethod":"linearNone",
                                 "tween":true,
                                 "target":19,
@@ -987,7 +962,7 @@
                                 "index":15
                             },
                             {
-                                "value":104,
+                                "value":105,
                                 "tweenMethod":"linearNone",
                                 "tween":true,
                                 "target":19,
@@ -996,7 +971,7 @@
                             }],
                         "x":[
                             {
-                                "value":63,
+                                "value":-6,
                                 "tweenMethod":"linearNone",
                                 "tween":true,
                                 "target":19,
@@ -1004,7 +979,7 @@
                                 "index":0
                             },
                             {
-                                "value":83,
+                                "value":18,
                                 "tweenMethod":"linearNone",
                                 "tween":true,
                                 "target":19,
@@ -1012,7 +987,7 @@
                                 "index":15
                             },
                             {
-                                "value":63,
+                                "value":-6,
                                 "tweenMethod":"linearNone",
                                 "tween":true,
                                 "target":19,
@@ -1021,7 +996,7 @@
                             }]
                     }
                 }],
-            "name":"ani7",
+            "name":"exit",
             "id":7,
             "frameRate":24,
             "action":2

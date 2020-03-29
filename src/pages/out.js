@@ -24,7 +24,7 @@ var OutPage = function () {
         setTimeout(function () {
             eventInit();
             showOutView();
-        }, 10000);
+        }, 15000);
     }
 
     /**
