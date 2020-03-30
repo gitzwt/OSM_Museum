@@ -1,8 +1,8 @@
 {
     "x":0,
     "type":"Dialog",
-    "selectedBox":37,
-    "selecteID":48,
+    "selectedBox":33,
+    "selecteID":34,
     "props":{"y":325,"x":812,"width":1624,"sceneColor":"#000000","scaleY":1,"scaleX":1,"pivotY":325,"pivotX":812,"height":750},
     "nodeParent":-1,
     "label":"Dialog",
@@ -174,7 +174,7 @@
                                     "child":[
                                         {
                                             "type":"Image",
-                                            "props":{"width":767,"skin":"images/dialog/peoples/3.png","name":"intro","height":459},
+                                            "props":{"width":767,"skin":"images/dialog/peoples/p3.png","name":"intro","height":459},
                                             "nodeParent":24,
                                             "label":"Image(intro)",
                                             "isDirectory":false,
@@ -211,7 +211,7 @@
                                     "child":[
                                         {
                                             "type":"Image",
-                                            "props":{"width":767,"skin":"images/dialog/peoples/4.png","name":"intro","height":459},
+                                            "props":{"width":767,"skin":"images/dialog/peoples/p4.png","name":"intro","height":459},
                                             "nodeParent":27,
                                             "label":"Image(intro)",
                                             "isDirectory":false,
@@ -248,7 +248,7 @@
                                     "child":[
                                         {
                                             "type":"Image",
-                                            "props":{"width":767,"skin":"images/dialog/peoples/1.png","name":"intro","height":459},
+                                            "props":{"width":767,"skin":"images/dialog/peoples/p1.png","name":"intro","height":459},
                                             "nodeParent":30,
                                             "label":"Image(intro)",
                                             "isDirectory":false,
@@ -277,15 +277,16 @@
                                     "props":{"y":230,"x":623,"width":767,"scaleY":0.5,"scaleX":0.5,"pivotY":230,"pivotX":383,"name":"people","height":459},
                                     "nodeParent":36,
                                     "label":"Sprite(people)",
-                                    "isOpen":false,
+                                    "isOpen":true,
                                     "isDirectory":true,
                                     "isAniNode":true,
                                     "hasChild":true,
                                     "compId":33,
                                     "child":[
                                         {
+                                            "x":75,
                                             "type":"Image",
-                                            "props":{"width":767,"skin":"images/dialog/peoples/2.png","name":"intro","height":459},
+                                            "props":{"width":767,"skin":"images/dialog/peoples/p2.png","name":"intro","height":459},
                                             "nodeParent":33,
                                             "label":"Image(intro)",
                                             "isDirectory":false,
@@ -296,6 +297,7 @@
                                                 ]
                                         },
                                         {
+                                            "x":75,
                                             "type":"Image",
                                             "props":{"width":767,"skin":"images/dialog/peoples/shadow.png","name":"shadow","height":459},
                                             "nodeParent":33,
