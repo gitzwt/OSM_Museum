@@ -67,7 +67,7 @@ var OutPage = function () {
             page.aside.visible = false;
         }, 500);
 
-        document.getElementById("gyeBtn").addEventListener('touchstart', startGye, false);
+        document.getElementById("gyeBtn").addEventListener('click', startGye, false);
     }
 
     /**
@@ -104,21 +104,25 @@ var OutPage = function () {
             // alert(1)
             DeviceMotionEvent.requestPermission()
                 .then(response => {
-                    // alert("1" + response)
+                    console.log("1" + response)
                     // if (response == 'granted') {
                         iHallPage.gyeAuto();
                     // }
                 })
-                .catch(console.error)
+                .catch(res => {
+                    console.log(res);
+                })
 
             DeviceOrientationEvent.requestPermission()
                 .then(response => {
-                    // alert("2" + response)
+                    console.log("2" + response)
                     // if (response == 'granted') {
                         iHallPage.gyeAuto();
                     // }
                 })
-                .catch(console.error)
+                .catch(res => {
+                    console.log(res);
+                })
         } else {
             iHallPage.gyeAuto();
         }

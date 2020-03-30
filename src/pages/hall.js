@@ -36,6 +36,7 @@ var HallPage = function () {
     _self.open = function () {
         controlFlag = true;
         showFlag = true;
+        document.getElementById("gyeBtn").style.display = "none";
     }
 
     /**
