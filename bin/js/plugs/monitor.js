@@ -3,7 +3,7 @@
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?fd459702d174af6f8131222c814332ed";
+  hm.src = "https://hm.baidu.com/hm.js?ce0317c84f94154b4074976ff0770520";
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
