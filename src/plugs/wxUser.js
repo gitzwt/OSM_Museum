@@ -12,14 +12,14 @@ function WxUser() {
     var dominUrl, shareInfo;
     var appId = "wxf51a06ff7222539a";
     var imonitor = window.imonitor || {};
-    var jsdkAPI = 'https://scrm2.beats-digital.com/scrm/api/getconfig';
-    var authAPI = 'http://t.phper.be-xx.com/invisalign/index.php';
+    var jsdkAPI = 'https://wechat.dhteam.net/unionpay/webajax/wxshare.ashx';
+    var authAPI = 'https://wechat.dhteam.net/unionpay/webajax/wxshare.ashx';
 
     var returnUserInfo = null;
     var TIME_USERINFO = 60 * 1000; //1分钟后过期 重新拉取用户信息 防止不同步
     var DEFAULT_USERINFO = {
         "openid": "test",
-        "nickname": "彼邑测试账号",
+        "nickname": "",
         "headimgurl": "images/share.jpg",
         "country": "中国",
         "province": "上海",
@@ -45,9 +45,26 @@ function WxUser() {
             appid: appId
         };
 
-        $.get(jsdkAPI, data, function (data) {
-            wxShareConfig(data.data, shareInfo);
-        }, 'JSON')
+        // console.log(111)
+        $.ajax({
+	        // type: "POST",
+	        url: jsdkAPI,
+	        dataType: 'jsonp',
+	        async: true,
+	        data: "url=" + encodeURIComponent(location.href),
+	        success: function(data){
+                // console.log("success:")
+                // console.log(data)
+                // data = data.replace("(","");
+                // data = data.replace(")","");
+                // data = eval('(' + data + ')');
+                wxShareConfig(data, shareInfo);
+	        },
+	        error: function(data){
+	        	console.log("error:")
+                console.log(data)
+	        }
+	    });
     }
 
     /**
@@ -74,6 +91,7 @@ function WxUser() {
     _self.shareReset = function (info) {
         if (_self.wxSigned) {
             if (info) shareInfo = $.extend(shareInfo, info);
+            // console.log(shareInfo)
             wx.onMenuShareAppMessage({
                 title: shareInfo.title,                         // 分享标题
                 desc: shareInfo.friend,                         // 分享描述
@@ -137,6 +155,7 @@ function WxUser() {
      * @param {*} shareInfo 
      */
     function wxShareConfig(data, shareInfo) {
+        // console.log(data)
         wx.config({
             debug: false,
             appId: data.appId,

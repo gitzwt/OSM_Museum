@@ -9,7 +9,7 @@ function LayaInit() {
     Laya.stage.screenMode = "horizontal";
     Laya.stage.bgColor = "#ffffff";
     Laya.UIConfig.closeDialogOnSide = false;
-    // Laya.URL.basePath = "https://beatsAdgame.beats-digital.com/";
+    Laya.URL.basePath = "https://cdn2.dhteam.net/osm/";
     Laya.loader.load(PreResources, laya.utils.Handler.create(this, loadUIInit), null);
 }
 LayaInit();
@@ -23,14 +23,14 @@ function loadUIInit() {
     remUnitConverter(750);
     turnBoxPortraitTips();
     // landscape_lock();
-    
+
     Laya.loader.load(Resources, laya.utils.Handler.create(this, loadComplete), laya.utils.Handler.create(this, loadPerUpdate, null, false));
 }
 
 /**
  * 加载进度
  */
-function loadPerUpdate(num){
+function loadPerUpdate(num) {
     iOutPage.setPer(num);
 }
 
@@ -41,13 +41,23 @@ function loadComplete() {
     iIntro.init();
     iOutPage.openAnime();
     // DevelopTest();
-    
+    if (typeof wx) {
+        wxUser.init({
+            shareInfo: {
+                title: "欧诗漫",
+                friend: "欢迎光临欧诗漫博物馆",
+                timeline: "欢迎光临欧诗漫博物馆",
+                link: "https://wechat.dhteam.net/osm/index.html",
+                image: "https://wechat.dhteam.net/osm/share.jpg",
+            }
+        });
+    }
 }
 
 /**
  *  开发测试用
  */
-function DevelopTest(){
+function DevelopTest() {
     // iHallPage.init();
     iPerfectionPage.init();
     // iCulturePage.init();
