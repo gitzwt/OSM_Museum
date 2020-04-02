@@ -1,8 +1,8 @@
 {
     "x":0,
     "type":"View",
-    "selectedBox":210,
-    "selecteID":213,
+    "selectedBox":1,
+    "selecteID":115,
     "props":{"y":750,"x":812,"width":6494,"sceneColor":"#000000","sceneBg":"laya/views/hall.jpg","pivotY":750,"pivotX":812,"height":1125},
     "nodeParent":-1,
     "label":"View",
@@ -30,15 +30,16 @@
                     "props":{"y":375,"x":0,"width":6494,"var":"bg","pivotY":375,"pivotX":0,"height":750},
                     "nodeParent":115,
                     "label":"Box(bg)",
-                    "isOpen":false,
+                    "isOpen":true,
                     "isDirectory":true,
                     "isAniNode":true,
                     "hasChild":true,
                     "compId":112,
                     "child":[
                         {
+                            "x":45,
                             "type":"Image",
-                            "props":{"skin":"images/hall/bg_01.jpg"},
+                            "props":{"skin":"images/hall/b_01.jpg"},
                             "nodeParent":112,
                             "label":"Image",
                             "isDirectory":false,
@@ -49,8 +50,9 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"Image",
-                            "props":{"x":1624,"skin":"images/hall/bg_02.jpg"},
+                            "props":{"x":1624,"skin":"images/hall/b_02.jpg"},
                             "nodeParent":112,
                             "label":"Image",
                             "isDirectory":false,
@@ -61,8 +63,9 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"Image",
-                            "props":{"x":3248,"skin":"images/hall/bg_03.jpg"},
+                            "props":{"x":3247,"skin":"images/hall/b_03.jpg"},
                             "nodeParent":112,
                             "label":"Image",
                             "isDirectory":false,
@@ -73,8 +76,9 @@
                                 ]
                         },
                         {
+                            "x":45,
                             "type":"Image",
-                            "props":{"y":0,"x":4871,"width":1625,"skin":"images/hall/bg_04.jpg","height":1127},
+                            "props":{"y":0,"x":4871,"skin":"images/hall/b_04.jpg"},
                             "nodeParent":112,
                             "label":"Image",
                             "isDirectory":false,
