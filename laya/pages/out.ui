@@ -769,7 +769,7 @@
                                 "tween":true,
                                 "target":23,
                                 "key":"alpha",
-                                "index":15
+                                "index":30
                             },
                             {
                                 "value":1,
@@ -777,7 +777,7 @@
                                 "tween":true,
                                 "target":23,
                                 "key":"alpha",
-                                "index":125
+                                "index":110
                             },
                             {
                                 "value":0,
@@ -815,7 +815,7 @@
                                 "tween":true,
                                 "target":24,
                                 "key":"alpha",
-                                "index":155
+                                "index":170
                             },
                             {
                                 "value":1,
@@ -823,7 +823,7 @@
                                 "tween":true,
                                 "target":24,
                                 "key":"alpha",
-                                "index":266
+                                "index":250
                             },
                             {
                                 "value":0,
@@ -861,7 +861,7 @@
                                 "tween":true,
                                 "target":25,
                                 "key":"alpha",
-                                "index":295
+                                "index":310
                             },
                             {
                                 "value":1,
@@ -869,7 +869,7 @@
                                 "tween":true,
                                 "target":25,
                                 "key":"alpha",
-                                "index":390
+                                "index":375
                             },
                             {
                                 "value":0,
@@ -907,7 +907,7 @@
                                 "tween":true,
                                 "target":27,
                                 "key":"alpha",
-                                "index":420
+                                "index":435
                             }]
                     }
                 }],
